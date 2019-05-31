@@ -20,13 +20,21 @@ body {
   display: flex;
   flex-direction: row;
   margin-left: 2rem;
-  justify-content: space-around;
+  justify-content: flex-end;
   list-style: none;
-  padding: 1rem 1rem 0rem 0rem;
+  padding: 1rem 1rem 0rem 1rem;
 }
 
 .menu a{
   text-decoration: none;
   color: black;
 
+}
+
+.menu li {
+  margin-left: 1rem;
+}
+
+.header {
+  border-bottom: 1px solid #ccc;
 }
