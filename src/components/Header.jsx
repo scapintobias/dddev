@@ -7,7 +7,7 @@ export function Header(props) {
       <Link to="/" className="logo">
         DisciplineDesign
       </Link>
-      <input className="menu-btn" type="checkbox" id="menu-btn" />
+      
       <label className="menu-icon" htmlFor="menu-btn">
         <span className="navicon" />
       </label>
