@@ -1,7 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export function Header(props) {
+
   return (
     <header className="header">
       <Link to="/" className="logo">
@@ -9,7 +12,10 @@ export function Header(props) {
       </Link>
 
       <label className="menu-icon" htmlFor="menu-btn">
-        <span className="navicon" />
+        <span className="navicon">
+      <FontAwesomeIcon icon={faBars} size="2x"/>
+        </span>
+
       </label>
       <ul className="menu">
         <li>
