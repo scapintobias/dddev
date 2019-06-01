@@ -13,7 +13,9 @@ export function Header(props) {
 
       <label className="menu-icon" htmlFor="menu-btn">
         <span className="navicon">
+
       <FontAwesomeIcon icon={faBars} size="2x"/>
+
         </span>
 
       </label>
