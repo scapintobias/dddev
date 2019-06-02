@@ -70,4 +70,9 @@ color: #ef5419;
   display: block;
   margin-right: 1rem;
 }
+
+.navicon a {
+  color: black;
+}
+
 }

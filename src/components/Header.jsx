@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export function Header(props) {
+  const handleClick = e => {
+    // Fai cose
+  };
 
   return (
     <header className="header">
@@ -14,7 +17,7 @@ export function Header(props) {
       <label className="menu-icon" htmlFor="menu-btn">
         <span className="navicon">
 
-      <FontAwesomeIcon icon={faBars} size="2x"/>
+          <FontAwesomeIcon icon={faBars} size="2x" onClick={handleClick}/>
 
         </span>
 
