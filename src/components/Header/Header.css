@@ -1,0 +1,84 @@
+.Header {
+  position: fixed;
+  top: 0.5rem;
+  width: 100vw;
+  display: grid;
+  grid-template-areas: "logo nav";
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ccc;
+}
+.Header a {
+  text-decoration: none;
+}
+.Logo {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: Helvetica;
+  letter-spacing: -3px;
+  padding-left: 1rem;
+}
+.logo a {
+  text-decoration: none;
+  color: #ef5419;
+}
+
+.logo a:visited {
+  text-decoration: none;
+  color: #ef5419;
+}
+
+.Nav {
+  display: grid;
+  grid-area: nav;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+}
+.Nav a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+.Nav a:hover {
+  color: #ef5419;
+}
+
+.Burger {
+  display: none;
+  border-color: transparent;
+}
+
+@media (max-width: 700px) {
+  .Header {
+    grid-template-areas: "logo burger" "nav nav";
+  border-bottom: 1px solid #ccc;
+    margin-right: 1rem;
+  }
+  .Nav {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 2rem;
+    line-height: 2rem;
+    background-color: white;
+  }
+  .Burger {
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    padding-right: 1rem;
+  }
+}
+
+.logo a {
+  text-decoration: none;
+  color: #ef5419;
+  padding-right: 1rem;
+}
+
+.logo a:visited {
+  text-decoration: none;
+  color: #ef5419;
+}

@@ -1,0 +1,80 @@
+table, td, th {
+  vertical-align: middle;
+}
+
+h1 {
+  font-weight: normal;
+  font-style: italic;
+  line-height: 6px;
+  font-size: 0.9em;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 8px;
+}
+
+h3 {
+  font-weight: normal;
+  line-height: 6px;
+  font-size: 0.9em;
+}
+
+
+a {
+  text-decoration: none;
+  padding-bottom: 1px;
+}
+
+a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #666;
+}
+
+a:active {
+  color: #ef5419;
+}
+
+a:hover {
+  color: #ef5419;
+  text-decoration: none;
+}
+
+.unfiled {
+  color: #666;
+  text-decoration: line-through;
+
+}
+
+table {
+  table-layout: auto;
+  border-collapse:  collapse;
+  margin-bottom: 1.5em;
+  width: 100%;
+  margin-right: 1rem;
+}
+
+ td {
+  text-align: left;
+  vertical-align: top;
+  padding-top: 8px;
+  border-bottom: 1px solid #ccc !important;
+  padding-left: 1rem;
+}
+
+.year {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+#footer {
+  padding-bottom: 1rem;
+  color: #666;
+}
