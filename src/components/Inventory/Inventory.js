@@ -3,9 +3,10 @@ import "./Inventory.css"
 import {rows} from "./Projects.js"
 
 function Inventory() {
+
   return (
         <table>
-
+          <tbody>
           {rows.map(row => (
 
             <tr >
@@ -25,7 +26,7 @@ function Inventory() {
 
             </tr>
           ))}
-
+            </tbody>
         </table>
   );
 }
