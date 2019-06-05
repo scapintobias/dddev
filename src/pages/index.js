@@ -4,3 +4,4 @@ export * from './about';
 export * from './contacts';
 export * from './home';
 export * from './preview';
+export * from './project';
