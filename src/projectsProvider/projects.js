@@ -1,33 +1,104 @@
-const createProject = (title, subtitle, type, desc, year, images) => ({
+const createProject = (title, subtitle, type, year, content) => ({
   title,
   subtitle,
   type,
-  desc,
   year,
-  images,
+  content,
 });
 
 const createImage = (src, alt) => ({src, alt});
 
+const createContent = (
+  headingImage,
+  desc,
+  imagesLeft,
+  textRight,
+  imagesBottom,
+  imagesGrid = null,
+) => ({
+  imagesGrid,
+  headingImage,
+  desc,
+  imagesLeft,
+  textRight,
+  imagesBottom,
+});
+
+const create4ImageGrid = (img1, img2, img3, img4) => ({
+  img1,
+  img2,
+  img3,
+  img4,
+});
+
 export const projects = [
-  createProject("Corte D'Arte", 'Sbacon', 'Exhibit', 'blabla bla', 2015, []),
+  createProject(
+    "Corte D'Arte",
+    'Sbacon',
+    'exhibit',
+    2015,
+    createContent(
+      createImage('https://placekitten.com/1500/1000', 'Meow'),
+      'blabla blqa la glad gdg',
+      [
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+      ],
+      'blagrsigneri geog eojfg oefjg owj gowgj ',
+      [
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+      ],
+    ),
+  ),
   createProject(
     'Lockton',
     'Analitics Facility',
-    'Corporate Image',
-    'blabla bla',
+    'corporate',
     2014,
-    [
-      createImage('https://placekitten.com/200/300', 'Meow'),
-      createImage('https://placekitten.com/300/200', 'Meow2'),
-    ],
+    createContent(
+      createImage('https://placekitten.com/1500/1000', 'Meow'),
+      'blabla blqa la glad gdg',
+      [
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+      ],
+      'blagrsigneri geog eojfg oefjg owj gowgj ',
+      [
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+      ],
+    ),
   ),
   createProject(
     "Corte D'Arte",
     'Christmas Greetings',
-    'Flyer',
-    'blabla bla',
+    'print',
     2014,
-    [],
+    createContent(
+      createImage('https://placekitten.com/1500/1000', 'Meow'),
+      'blabla blqa la glad gdg',
+      [
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+      ],
+      'blagrsigneri geog eojfg oefjg owj gowgj ',
+      [
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+      ],
+      create4ImageGrid(
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+      ),
+    ),
   ),
 ];

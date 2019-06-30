@@ -1,21 +1,14 @@
 import React from 'react';
+import {ProjectNavigation} from '../components/ProjectNavigation';
+import {ProjectContent} from '../components/ProjectContent';
 import {getProjectBySlug} from '../projectsProvider';
 
 export function Project({match}) {
-  const {title, subtitle, type, desc, year, images} = getProjectBySlug(
-    match.params.slug,
-  );
+  const project = getProjectBySlug(match.params.slug);
   return (
-    <div>
-      <h2>{title}</h2>
-      <h3>{subtitle}</h3>
-      <p>
-        {type} - {year}
-      </p>
-      {images.map(image => (
-        <img alt={image.alt} src={image.src} />
-      ))}
-      <p>{desc}</p>
-    </div>
+    <>
+      <ProjectNavigation project={project} />
+      <ProjectContent project={project} />
+    </>
   );
 }
