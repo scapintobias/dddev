@@ -33,10 +33,10 @@ const create4ImageGrid = (img1, img2, img3, img4) => ({
 
 export const projects = [
   createProject(
-    "Corte D'Arte",
-    'Sbacon',
-    'exhibit',
-    2015,
+    'Heatwave',
+    'Solutions',
+    'ux',
+    2018,
     createContent(
       createImage('https://placekitten.com/1500/1000', 'Meow'),
       'blabla blqa la glad gdg',
@@ -54,10 +54,10 @@ export const projects = [
     ),
   ),
   createProject(
-    'Lockton',
-    'Analitics Facility',
-    'corporate',
-    2014,
+    'Pantone',
+    'Cocktail solutions',
+    'event',
+    2018,
     createContent(
       createImage('https://placekitten.com/1500/1000', 'Meow'),
       'blabla blqa la glad gdg',
@@ -75,10 +75,64 @@ export const projects = [
     ),
   ),
   createProject(
-    "Corte D'Arte",
-    'Christmas Greetings',
-    'print',
-    2014,
+    'Pharma',
+    'Packaging innovation',
+    'pack',
+    2017,
+    createContent(
+      createImage('https://placekitten.com/1500/1000', 'Meow'),
+      'blabla blqa la glad gdg',
+      [
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+      ],
+      'blagrsigneri geog eojfg oefjg owj gowgj ',
+      [
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+      ],
+      create4ImageGrid(
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+      ),
+    ),
+  ),
+  createProject(
+    'Mourn',
+    '9/11',
+    'poster',
+    2016,
+    createContent(
+      createImage('https://placekitten.com/1500/1000', 'Meow'),
+      'blabla blqa la glad gdg',
+      [
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+      ],
+      'blagrsigneri geog eojfg oefjg owj gowgj ',
+      [
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+      ],
+      create4ImageGrid(
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+        createImage('https://placekitten.com/500/300', 'Meow'),
+        createImage('https://placekitten.com/400/300', 'Meow'),
+      ),
+    ),
+  ),
+  createProject(
+    'Ideascudo',
+    'Gruppo Creamoda',
+    'logo',
+    2016,
     createContent(
       createImage('https://placekitten.com/1500/1000', 'Meow'),
       'blabla blqa la glad gdg',

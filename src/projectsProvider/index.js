@@ -19,6 +19,7 @@ export const projectTypes = {
   wayfinding: 'Wayfinding',
   event: 'Events',
   corporate: 'Corporate Image',
+  logo: 'Logo',
   poster: 'Posters',
   pack: 'Packaging',
   exhibit: 'Exhibit',
