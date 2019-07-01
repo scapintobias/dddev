@@ -21,15 +21,18 @@
   flex-grow: 1;
 }
 
-.left {
+.arrow {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding-right: 1rem;
+  line-height: 0;
 }
+
+.left {
+  padding-right: 1rem;
+  justify-content: flex-start;
+}
+
 .right {
-  display: flex;
-  align-items: center;
   padding-left: 1rem;
   justify-content: flex-end;
 }

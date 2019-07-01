@@ -1,4 +1,5 @@
 import React from 'react';
+import {ArrowLeft, ArrowRight} from './arrows';
 import {projectTypes} from '../../projectsProvider';
 import './style.css';
 
@@ -9,14 +10,9 @@ export const ProjectNavigation = props => {
     <>
       <div className="project-navigation-wrapper">
         <div className="project-navigation">
-          <div className="left">
-            <a href="#">
-              <img
-                alt=""
-                src="https://visualpharm.com/assets/73/Back%20Arrow-595b40b75ba036ed117d802d.svg"
-              />
-            </a>
-          </div>
+          <a className="arrow left" href="#">
+            <ArrowLeft />
+          </a>
 
           <div id="titproj">
             <b style={{color: '#ef5419'}}>{title}</b>
@@ -25,14 +21,9 @@ export const ProjectNavigation = props => {
             {year}
           </div>
 
-          <div className="right">
-            <a href="#">
-              <img
-                alt=""
-                src="https://visualpharm.com/assets/375/Forward%20Button-595b40b75ba036ed117d8440.svg"
-              />
-            </a>
-          </div>
+          <a className="arrow right" href="#">
+            <ArrowRight />
+          </a>
         </div>
       </div>
       <div className="project-navigation-clearfix" />
