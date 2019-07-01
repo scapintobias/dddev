@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 export const ProjectNavigation = props => {
-  const {title, subtitle} = props.project;
+  const {title, subtitle, type, year} = props.project;
 
   return (
     <>
@@ -20,7 +20,7 @@ export const ProjectNavigation = props => {
           <div id="titproj">
             <b style={{color: '#ef5419'}}>{title}</b>
             <i style={{color: '#ef5419'}}>{subtitle}</i>
-            <b>Poster</b>2016
+            <b>{type}</b>{year}
           </div>
 
           <div className="right">
