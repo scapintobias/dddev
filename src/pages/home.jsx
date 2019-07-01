@@ -1,6 +1,7 @@
 import React from 'react';
-import {ProjectList} from '../components/ProjectList';
+
+import {Homepage} from '../components/Homepage';
 
 export function Home() {
-  return <ProjectList />;
+  return <Homepage />;
 }

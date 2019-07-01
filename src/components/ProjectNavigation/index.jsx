@@ -1,6 +1,8 @@
 import React from 'react';
-import {ArrowLeft, ArrowRight} from './arrows';
+
 import {projectTypes} from '../../projectsProvider';
+import {ArrowLeft, ArrowRight} from '../../icons';
+
 import './style.css';
 
 export const ProjectNavigation = props => {
@@ -10,7 +12,7 @@ export const ProjectNavigation = props => {
     <>
       <div className="project-navigation-wrapper">
         <div className="project-navigation">
-          <a className="arrow left" href="#">
+          <a className="arrow left" href="#left">
             <ArrowLeft />
           </a>
 
@@ -21,7 +23,7 @@ export const ProjectNavigation = props => {
             {year}
           </div>
 
-          <a className="arrow right" href="#">
+          <a className="arrow right" href="#right">
             <ArrowRight />
           </a>
         </div>

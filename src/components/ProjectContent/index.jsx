@@ -1,5 +1,7 @@
 import React from 'react';
+
 import {Image} from '../Image';
+
 import './style.css';
 
 export function ProjectContent({project}) {

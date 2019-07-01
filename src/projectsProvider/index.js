@@ -15,11 +15,11 @@ export function getProjectByUrlParams(type, year, slug) {
 }
 
 export const projectTypes = {
-  ux: 'UX',
+  ux: 'UX/UI',
   wayfinding: 'Wayfinding',
   event: 'Events',
   corporate: 'Corporate Image',
-  poster: 'Poster',
+  poster: 'Posters',
   pack: 'Packaging',
   exhibit: 'Exhibit',
   photography: 'Photography',

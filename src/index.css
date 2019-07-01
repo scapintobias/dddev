@@ -54,14 +54,13 @@ section {
 /************************************************
 Table
 ************************************************/
-body {
-  line-height: 1.5;
+html {
+  scroll-behavior: smooth;
 }
 
-table,
-td,
-th {
-  vertical-align: middle;
+body {
+  line-height: 1.5;
+  min-height: 100vh;
 }
 
 a img {
@@ -139,40 +138,6 @@ a:hover {
   margin-right: 1rem;
 }
 
-table {
-  table-layout: auto;
-  border-collapse: collapse;
-  margin-bottom: 1.5em;
-  width: 100%;
-  margin-right: 1rem;
-}
-
-td {
-  text-align: left;
-  vertical-align: top;
-}
-
-th.title {
-  width: auto;
-  padding-right: 1rem;
-}
-
-th.year,
-td.year {
-  text-align: right;
-  padding-right: 0.2em;
-}
-
-td {
-  border-bottom: 1px solid #ccc !important;
-  padding-bottom: 0.25em;
-  padding-top: 0.25em;
-}
-td a {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
 .header h1 {
   margin-top: 1.5em;
 }
@@ -216,76 +181,4 @@ td a {
   #freetext {
     width: 40vw;
   }
-}
-
-@media only screen and (min-width: 750px) {
-}
-
-/************************************************
-	Filter
-************************************************/
-
-.hide {
-  -webkit-animation: fadeOut 150ms ease;
-  animation: fadeOut 150ms ease;
-  opacity: 0;
-}
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.hide {
-  display: none;
-}
-#controls {
-  border-bottom: 1px solid #ccc;
-  columns: 2;
-  width: 100%;
-  line-height: 2;
-}
-#controls ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-}
-#controls ul li {
-  margin: 0;
-  padding-right: 0.5rem;
-  cursor: pointer;
-}
-#controls ul li:hover {
-  color: #ef5419;
-}
-@media (min-width: 700px) {
-  #controls {
-    border-bottom: 1px solid #ccc;
-    columns: 2;
-    width: 100%;
-  }
-  #controls ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-  }
-}
-#controls ul .active {
-  font-weight: bold;
-  color: #ef5419;
-}
-#controls ul .active:hover {
-  color: #ccc;
 }

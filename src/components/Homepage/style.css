@@ -1,0 +1,152 @@
+main {
+  overflow: hidden;
+}
+.message {
+  height: 85vh;
+  display: flex;
+  padding-left: 1rem;
+}
+#titolo {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding-top: 1rem;
+  font-size: 11vw;
+  line-height: 0.7;
+}
+#uno {
+  letter-spacing: -0.8vw;
+  font-weight: lighter;
+}
+#mark {
+  font-weight: bold;
+  font-family: Helvetica;
+  letter-spacing: -1vw;
+  color: #ef5419;
+}
+#one {
+  padding-top: 2rem;
+}
+
+.down {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.down img {
+  width: 3rem;
+}
+
+.hero {
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+}
+#sub {
+  width: 100vw;
+  height: 6vh;
+  display: flex;
+  justify-content: space-around;
+}
+.in {
+  margin-bottom: 0.2rem;
+}
+#sub img {
+  width: 3rem;
+}
+
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://source.unsplash.com/1600x900/?city);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-a {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://source.unsplash.com/1600x900/?nature);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-b {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://source.unsplash.com/1600x900/?mountain);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-c {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://source.unsplash.com/1600x900/?technology);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-inner {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  height: calc(70vh - 30px);
+  margin: auto;
+}
+
+main h1,
+main h2 {
+  text-align: left;
+  margin-left: 1rem;
+  color: white;
+}
+
+main h1 {
+  font-size: 3rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+main h2 {
+  font-weight: 400;
+  line-height: 1;
+  font-size: 2rem;
+}
+
+@media (max-width: 700px) {
+  .message {
+    height: 80vh;
+    display: flex;
+  }
+
+  .down {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+
+  .down img {
+    width: 4rem;
+  }
+
+  #one {
+    padding-top: 0;
+  }
+
+  .hero {
+    height: 80vh;
+    display: flex;
+    flex-flow: column;
+  }
+
+  #sub {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+  }
+}

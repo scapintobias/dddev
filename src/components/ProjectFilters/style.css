@@ -1,0 +1,64 @@
+#controls-container-clearfix {
+  width: 100%;
+  height: 54px;
+}
+#controls-container {
+  width: 100%;
+  position: fixed;
+  background: white;
+  z-index: 2;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+#controls-container .toggle {
+  cursor: pointer;
+}
+#controls-container .wrapper {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height ease-out 0.3s;
+  will-change: max-height;
+}
+#controls-container .wrapper.expanded {
+  max-height: 160px;
+}
+#controls {
+  columns: 2;
+  width: 100%;
+  line-height: 2;
+  margin-top: 0.5rem;
+}
+
+#controls ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+#controls ul:last-child {
+  margin-left: -7px;
+}
+
+#controls ul li {
+  margin: 0;
+  padding-right: 0.5rem;
+}
+
+#controls ul li a {
+  width: 100%;
+  display: block;
+}
+
+#controls ul li:hover {
+  color: #ef5419;
+}
+
+#controls ul .active {
+  font-weight: bold;
+  color: #ef5419;
+}
+
+#controls ul .active:hover {
+  color: #ccc;
+}

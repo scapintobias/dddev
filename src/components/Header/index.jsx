@@ -1,36 +1,31 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import CN from 'classnames';
 import {Link} from 'react-router-dom';
+
+import {useExpanded} from '../../hooks/useExpanded';
 
 import './style.css';
 
 export function Header(props) {
-  const [expanded, setExpanded] = useState(false);
-  const handleMenuTap = () => setExpanded(!expanded);
-  useEffect(() => {
-    const listener = e =>
-      e.target !== document.querySelector('.menu-icon') && setExpanded(false);
-    document.body.addEventListener('click', listener);
-    return () => document.body.removeEventListener('click', listener);
-  });
+  const [expanded, toggleExpanded] = useExpanded('.header .menu-icon');
   return (
     <>
       <header className={CN('header', {expanded})}>
         <Link to="/" className="logo">
           DisciplineDesign
         </Link>
-        <div className="menu-icon" onClick={handleMenuTap}>
+        <div className="menu-icon" onClick={toggleExpanded}>
           <span className="navicon" />
         </div>
         <ul className="menu">
           <li>
-            <Link to="/">Projects</Link>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
             <Link to="/preview">Preview</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/services">Services</Link>
           </li>
           <li>
             <Link to="/contacts">Contacts</Link>

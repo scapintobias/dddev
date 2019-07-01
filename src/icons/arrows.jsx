@@ -1,7 +1,11 @@
 import React from 'react';
 
 export const ArrowRight = props => (
-  <svg width={36} height={36} viewBox="0 0 24 24" {...props}>
+  <svg
+    width={props.width || 36}
+    height={props.height || 36}
+    viewBox="0 0 24 24"
+    {...props}>
     <path
       style={{
         textIndent: 0,
@@ -20,4 +24,12 @@ export const ArrowRight = props => (
 
 export const ArrowLeft = props => (
   <ArrowRight style={{transform: 'rotate(180deg)'}} {...props} />
+);
+
+export const ArrowUp = props => (
+  <ArrowRight style={{transform: 'rotate(-90deg)'}} {...props} />
+);
+
+export const ArrowDown = props => (
+  <ArrowRight style={{transform: 'rotate(90deg)'}} {...props} />
 );
