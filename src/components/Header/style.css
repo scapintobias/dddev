@@ -28,7 +28,7 @@
 }
 
 .header li a:hover,
-.header .menu-btn:hover {
+.header .menu-icon:hover {
   color: #ef5419;
 }
 
@@ -97,24 +97,24 @@
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
+.header.expanded .menu {
   max-height: 240px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
+.header.expanded .menu-icon .navicon {
   background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+.header.expanded .menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+.header.expanded .menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.header.expanded .menu-icon:not(.steps) .navicon:before,
+.header.expanded .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 

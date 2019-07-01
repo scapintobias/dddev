@@ -1,19 +1,27 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import CN from 'classnames';
 import {Link} from 'react-router-dom';
 
 import './style.css';
 
 export function Header(props) {
+  const [expanded, setExpanded] = useState(false);
+  const handleMenuTap = () => setExpanded(!expanded);
+  useEffect(() => {
+    const listener = e =>
+      e.target !== document.querySelector('.menu-icon') && setExpanded(false);
+    document.body.addEventListener('click', listener);
+    return () => document.body.removeEventListener('click', listener);
+  });
   return (
     <>
-      <header className="header">
+      <header className={CN('header', {expanded})}>
         <Link to="/" className="logo">
           DisciplineDesign
         </Link>
-        <input className="menu-btn" type="checkbox" id="menu-btn" />
-        <label className="menu-icon" htmlFor="menu-btn">
+        <div className="menu-icon" onClick={handleMenuTap}>
           <span className="navicon" />
-        </label>
+        </div>
         <ul className="menu">
           <li>
             <Link to="/">Projects</Link>
