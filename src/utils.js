@@ -1,5 +1,5 @@
 import slug from 'slugify';
 
-export function slugify(str) {
-  return slug(str, {lower: true, remove: /[*+~.()'"!:@]/g});
+export function slugify(...strings) {
+  return slug(strings.join(' '), {lower: true, remove: /[*+~.()'"!:@]/g});
 }

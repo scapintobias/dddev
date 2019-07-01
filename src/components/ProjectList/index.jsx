@@ -9,7 +9,11 @@ const projects = getAllProjects();
 export const ProjectList = () => (
   <ul className="projects-list">
     {projects.map((project, key) => (
-      <Link key={key} to={`/projects/${slugify(project.title)}`}>
+      <Link
+        key={key}
+        to={`/projects/${slugify(project.type)}/${project.year}/${slugify(
+          project.title,
+        )}`}>
         <li>
           <span className="title">
             <b>{project.title}</b>

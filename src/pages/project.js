@@ -1,14 +1,17 @@
 import React from 'react';
 import {ProjectNavigation} from '../components/ProjectNavigation';
 import {ProjectContent} from '../components/ProjectContent';
-import {getProjectBySlug} from '../projectsProvider';
+import {getProjectByUrlParams} from '../projectsProvider';
 
 export function Project({match}) {
-  const project = getProjectBySlug(match.params.slug);
-  return (
+  const {type, year, slug} = match.params;
+  const project = getProjectByUrlParams(type, year, slug);
+  return project ? (
     <>
       <ProjectNavigation project={project} />
       <ProjectContent project={project} />
     </>
+  ) : (
+    <h2 style={{padding: '1rem'}}>Project not found!</h2>
   );
 }

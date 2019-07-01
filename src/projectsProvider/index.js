@@ -5,8 +5,13 @@ export function getAllProjects() {
   return projects;
 }
 
-export function getProjectBySlug(slug) {
-  return projects.find(project => slugify(project.title) === slug);
+export function getProjectByUrlParams(type, year, slug) {
+  return projects.find(
+    project =>
+      slugify(project.title) === slug &&
+      project.year === Number(year) &&
+      slugify(project.type) === type,
+  );
 }
 
 export const projectTypes = {
