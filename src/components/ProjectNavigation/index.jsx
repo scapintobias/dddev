@@ -1,20 +1,29 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
-import {projectTypes} from '../../projectsProvider';
+import {slugify} from '../../utils';
 import {ArrowLeft, ArrowRight} from '../../icons';
+import {projectTypes, getPrevAndNextProjects} from '../../projectsProvider';
 
 import './style.css';
 
 export const ProjectNavigation = props => {
   const {title, subtitle, type, year} = props.project;
+  const {prev, next} = getPrevAndNextProjects(props.project);
 
   return (
     <>
       <div className="project-navigation-wrapper">
         <div className="project-navigation">
-          <a className="arrow left" href="#left">
-            <ArrowLeft />
-          </a>
+          {prev && (
+            <Link
+              to={`/projects/${slugify(prev.type)}/${prev.year}/${slugify(
+                prev.title,
+              )}`}
+              className="arrow left">
+              <ArrowLeft />
+            </Link>
+          )}
 
           <div id="titproj">
             <b style={{color: '#ef5419'}}>{title}</b>
@@ -23,9 +32,15 @@ export const ProjectNavigation = props => {
             {year}
           </div>
 
-          <a className="arrow right" href="#right">
-            <ArrowRight />
-          </a>
+          {next && (
+            <Link
+              to={`/projects/${slugify(next.type)}/${next.year}/${slugify(
+                next.title,
+              )}`}
+              className="arrow right">
+              <ArrowRight />
+            </Link>
+          )}
         </div>
       </div>
       <div className="project-navigation-clearfix" />

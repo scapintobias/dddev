@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import CN from 'classnames';
 import {NavLink} from 'react-router-dom';
 
@@ -10,6 +10,9 @@ import './style.css';
 export const ProjectFilters = props => {
   const [expanded, toggleExpanded] = useExpanded('#controls-container .toggle');
   const filterLabel = props.type ? projectTypes[props.type] : 'All';
+  useEffect(() => {
+    window.sessionStorage.setItem('currentType', props.type || '');
+  });
   return (
     <>
       <div id="controls-container">
