@@ -19,7 +19,7 @@ export const ProjectNavigation = props => {
             <Link
               to={`/projects/${slugify(prev.type)}/${prev.year}/${slugify(
                 prev.title,
-              )}`}
+              )}?prev`}
               className="arrow left">
               <ArrowLeft />
             </Link>
@@ -36,7 +36,7 @@ export const ProjectNavigation = props => {
             <Link
               to={`/projects/${slugify(next.type)}/${next.year}/${slugify(
                 next.title,
-              )}`}
+              )}?next`}
               className="arrow right">
               <ArrowRight />
             </Link>
