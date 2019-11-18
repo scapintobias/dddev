@@ -9,10 +9,6 @@ body {
    /*   margin: 1rem auto; */
 }
 
-.title {
-   font-size: 130px;
-}
-
 .item-a {
    /* grid-column-start: 1; */
    /* grid-column-end: 5; */
@@ -87,14 +83,6 @@ body {
    grid-row-end     : 3;
 }
 
-.playfair {
-   font-family: 'Playfair Display', serif;
-}
-
-.lora {
-   font-family: 'Lora', serif;
-}
-
 .f8 {
    font-size: 0.78rem;
 }
@@ -114,11 +102,6 @@ body {
       display              : grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       margin               : 1rem auto;
-   }
-
-   .title {
-      font-size : 130px;
-      margin-top: 0;
    }
 
    .item-b {
