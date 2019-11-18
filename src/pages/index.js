@@ -2,7 +2,7 @@
 // If you add more pages you should remember to add a row here as well.
 export * from './contacts';
 export * from './home';
-export * from './preview';
+export * from './work';
 export * from './project';
 export * from './projects';
-export * from './services';
+export * from './about';

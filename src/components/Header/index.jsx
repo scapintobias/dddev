@@ -18,16 +18,17 @@ export function Header(props) {
           <span className="navicon" />
         </div>
         <ul className="menu">
+        <li>
+          <Link to="/work">Case Studies</Link>
+        </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="/projects">Archive</Link>
           </li>
           <li>
-            <Link to="/preview">Preview</Link>
+           <Link to="/about">About</Link>
           </li>
-          <li>
-            <Link to="/services">Services</Link>
-          </li>
-          <li>
+
+             <li>
             <Link to="/contacts">Contacts</Link>
           </li>
         </ul>

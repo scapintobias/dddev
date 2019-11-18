@@ -1,60 +1,14 @@
 import React from 'react';
-
-import {ArrowUp, ArrowDown} from '../../icons';
-
-import './style.css';
+import {Link} from 'react-router-dom';
+import '../../tachyons.css';
+// import './style.css';
 
 export const Homepage = props => (
   <main>
-    <section className="message" id="top">
-      <div id="titolo">
-        <p id="uno">Welcome to</p>
-        <p id="mark">DisciplineDesign</p>
-      </div>
+    <section className="pt2 pl3 pr3 pl2-m pr1-m">
+        <p className="helvetica lh-title tracked-tight f-7 f-45-m fw6"><span className="orange">Product</span> & <span className="orange">Interaction</span> Designer based in Italy</p>
+        <p className="pt7 pt6-m caslon f-6 f2-m lh-title-s">My name is <b className="helvetica tracked-tight tracked-tight-m orange">Tobias</b>. I design useful and enjoyable experiences with a love for research, powerful typography and elegant design. Please feel free to check out my <span className="helvetica fw7 tracked-tight tracked-tight-m link black hover-orange"><Link to="/work">case studies</Link></span> or
+        my <b className="helvetica fw7 tracked-tight tracked-tight-m link black hover-light-blue"><Link to="/projects">archive</Link></b>. Whether interested in reading more <b className="helvetica fw7 tracked-tight tracked-tight-m link black hover-dark-blue"><a href="about.html">about me</a></b>, sit back: it could get quite long.</p>
     </section>
-    <div className="down">
-      <a href="#hero">
-        <ArrowDown />
-      </a>
-    </div>
-
-    <header className="hero" id="hero">
-      <div className="hero-inner">
-        <h1 className="animate-normal">Hero Title</h1>
-        <h2 className="animate-delay">
-          Marley was dead: to begin with. There is no doubt whatever about that.
-        </h2>
-      </div>
-    </header>
-
-    <header className="hero section-a">
-      <div className="hero-inner">
-        <h1 className="hero-title">Hero Title</h1>
-        <h2 className="hero-subtitle">
-          Marley was dead: to begin with. There is no doubt whatever about that.
-        </h2>
-      </div>
-    </header>
-    <header className="hero section-b">
-      <div className="hero-inner">
-        <h1 className="hero-title">Hero Title</h1>
-        <h2 className="hero-subtitle">
-          Marley was dead: to begin with. There is no doubt whatever about that.
-        </h2>
-      </div>
-    </header>
-    <header className="hero section-c" id="four">
-      <div className="hero-inner">
-        <h1 className="hero-title">Hero Title</h1>
-        <h2 className="hero-subtitle">
-          Marley was dead: to begin with. There is no doubt whatever about that.
-        </h2>
-      </div>
-      <div id="sub">
-        <a href="#top">
-          <ArrowUp />
-        </a>
-      </div>
-    </header>
   </main>
 );

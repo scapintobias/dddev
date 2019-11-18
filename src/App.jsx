@@ -5,7 +5,7 @@ import './App.css';
 
 import {useRouter} from './hooks/useRouter';
 import {Header} from './components/Header';
-import {Home, Services, Preview, Contacts, Project, Projects} from './pages';
+import {Home, Services, Work, Contacts, Project, Projects, About} from './pages';
 
 const slashMatcher = /\//g;
 
@@ -59,8 +59,8 @@ function PageContent() {
         <Route path="/projects" exact component={Projects} />
         <Route path="/projects/:type" exact component={Projects} />
         <Route path="/projects/:type/:year/:slug" component={Project} />
-        <Route path="/preview/" component={Preview} />
-        <Route path="/services/" component={Services} />
+        <Route path="/work/" component={Work} />
+        <Route path="/about/" component={About} />
         <Route path="/contacts/" component={Contacts} />
       </Switch>
     </animated.div>
