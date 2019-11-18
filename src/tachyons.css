@@ -1313,6 +1313,10 @@ code {
 }
 
 .lh-solid {
+	line-height: 1.2;
+}
+
+.lh-leading {
 	line-height: 1;
 }
 
@@ -3689,6 +3693,10 @@ code {
 
 .debug-black * {
 	outline: 1px solid #000;
+}
+
+.grid {
+	display: grid;
 }
 
 .debug-grid {
