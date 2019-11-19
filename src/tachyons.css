@@ -2883,6 +2883,10 @@ code {
 	padding-right: 16rem;
 }
 
+.mauto {
+	margin: 0 auto;
+}
+
 .ma0 {
 	margin: 0;
 }

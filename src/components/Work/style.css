@@ -8,10 +8,6 @@ body {
    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.title {
-   font-size: 130px;
-}
-
 .item-b {
    grid-column-start: 1;
    grid-column-end  : span 4;
@@ -110,16 +106,11 @@ body {
       margin               : 1rem auto;
    }
 
-   .title {
-      font-size : 130px;
-      margin-top: 0;
-   }
-
    .item-a {
-      /* grid-column-start: 1; */
-      /* grid-column-end: 5; */
-      /* grid-row-start: 1; */
-      /* grid-row-end: 3; */
+      grid-column-start: 1;
+      grid-column-end  : 5;
+      grid-row-start   : 1;
+      grid-row-end     : 3;
    }
 
    .item-b {
