@@ -1,20 +1,14 @@
-import React from 'react';
+import React from "react";
+import { Image } from "../Image";
+import "../../tachyons.css";
 
-import {Image} from '../Image';
-
-import './style.css';
-
-export function ProjectContent({project}) {
-  const {title, subtitle, type, year, content} = project;
-  const {headingImage} = content;
+export function ProjectContent({ project }) {
+  const { title, subtitle, type, year, content } = project;
+  const { headingImage, create4ImageGrid } = content;
   return (
-    <div className="project-container">
-      <Image {...headingImage} className="image" />
-      <h2>{title}</h2>
-      <h3>{subtitle}</h3>
-      <p>
-        {type} - {year}
-      </p>
+    <div className="pa3">
+      <Image {...headingImage} className="image pb3" />
+      <Image {...headingImage} className="image pt3" />
     </div>
   );
 }

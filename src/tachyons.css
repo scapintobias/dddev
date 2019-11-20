@@ -1157,6 +1157,14 @@ code {
 	font-family: neue-haas-grotesk-display, sans-serif;
 }
 
+.futura {
+	font-family: futura-pt, sans-serif;
+}
+
+.futurab {
+	font-family: futura-pt-bold, sans-serif;
+}
+
 .minion {
 	font-family: minion-pro-display, serif;
 }
@@ -1301,7 +1309,7 @@ code {
 }
 
 .tracked {
-	letter-spacing: 0.1em;
+	letter-spacing: -0.1rem;
 }
 
 .tracked-tight {

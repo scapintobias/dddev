@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../tachyons.css";
-// import './style.css';
 
 export const Homepage = props => (
   <main>
