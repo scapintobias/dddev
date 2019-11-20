@@ -4,25 +4,26 @@ import "./style.css";
 import "../../tachyons.css";
 import { Grid } from "./grid.jsx";
 import { Cell } from "./cell.jsx";
+import { CellText } from "./cell.jsx";
 
 export function Tab() {
   return (
     <Grid>
-      <Cell
+      <CellText
         link="./"
         title="UX"
         subtitle="Metro de Lima"
         description="Wayfinding design"
-        text="«La narrativa deve illuminaire, esplodere, ristorare. Non c'è alcuna filosofia morale nella narrativa oltre all'eccellenza. L'intensità della sensibilità e la rapidità le ho sempre ritenute. La gente cerca sempra la morale perché confonde narrative e filosofia»"
-        className="hover-white bg-animate bt bl hover-bg-green fl w-50  pv5"
+        text="«La narrativa deve illuminaire, esplodere, ristorare. Non c'è alcuna filosofia morale nella narrativa»"
+        className="hover-white bg-animate bt bl hover-bg-green fl w-50 h8  pv5"
       />
 
-      <Cell
+      <CellText
         link="./"
         title="UX"
         subtitle="e-Novia"
-        description="Wayfinding design"
-        text="«La narrativa deve illuminaire, esplodere, ristorare. Non c'è alcuna filosofia morale nella narrativa oltre all'eccellenza. L'intensità della sensibilità e la rapidità le ho sempre ritenute. La gente cerca sempra la morale perché confonde narrative e filosofia»"
+        description="A sourceful experience"
+        text="«Where I learned to do research, to fail, to work as a team member, and when to be quiet»"
         className="hover-white bg-animate hover-bg-blue bl br bt fl w-50 pv5"
       />
 
@@ -31,7 +32,6 @@ export function Tab() {
         title="UX"
         subtitle="Trenitalia"
         description="Ticket totem redesign"
-        text=""
         className="hover-white bg-animate hover-bg-blue bt bl bb fl w-25 pv5 mb1"
       />
       <Cell
@@ -39,7 +39,6 @@ export function Tab() {
         title="UI"
         subtitle="Metro de Lima"
         description="Wayfinding design"
-        text=""
         className="hover-white bg-animate hover-bg-blue bb bl bt br fl w-75 pv5 mb1"
       />
     </Grid>
