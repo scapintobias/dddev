@@ -1,17 +1,17 @@
-import React, {useEffect} from 'react';
-import CN from 'classnames';
-import {NavLink} from 'react-router-dom';
+import React, { useEffect } from "react";
+import CN from "classnames";
+import { NavLink } from "react-router-dom";
 
-import {useExpanded} from '../../hooks/useExpanded';
-import {projectTypes} from '../../projectsProvider';
+import { useExpanded } from "../../hooks/useExpanded";
+import { projectTypes } from "../../projectsProvider";
 
-import './style.css';
+import "./style.css";
 
 export const ProjectFilters = props => {
-  const [expanded, toggleExpanded] = useExpanded('#controls-container .toggle');
-  const filterLabel = props.type ? projectTypes[props.type] : 'All';
+  const [expanded, toggleExpanded] = useExpanded("#controls-container .toggle");
+  const filterLabel = props.type ? projectTypes[props.type] : "All";
   useEffect(() => {
-    window.sessionStorage.setItem('currentType', props.type || '');
+    window.sessionStorage.setItem("currentType", props.type || "");
   });
   return (
     <>
@@ -19,7 +19,7 @@ export const ProjectFilters = props => {
         <div className="toggle" onClick={toggleExpanded}>
           Currently showing: <b>{filterLabel}</b> projects
         </div>
-        <div className={CN('wrapper', {expanded})}>
+        <div className={CN("wrapper", { expanded })}>
           <section id="controls">
             <ul>
               <li>

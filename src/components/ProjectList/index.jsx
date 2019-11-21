@@ -1,10 +1,10 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import {slugify} from '../../utils';
-import {getAllProjects, projectTypes} from '../../projectsProvider';
+import { slugify } from "../../utils";
+import { getAllProjects, projectTypes } from "../../projectsProvider";
 
-import './style.css';
+import "./style.css";
 
 const projects = getAllProjects();
 
@@ -16,8 +16,9 @@ export const ProjectList = props => (
         <Link
           key={key}
           to={`/projects/${slugify(project.type)}/${project.year}/${slugify(
-            project.title,
-          )}`}>
+            project.title
+          )}`}
+        >
           <li>
             <span className="title">
               <b>{project.title}</b>

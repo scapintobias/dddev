@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from "react";
 
 export const useExpanded = toggleSelector => {
   const [expanded, setExpanded] = useState(false);
@@ -6,8 +6,8 @@ export const useExpanded = toggleSelector => {
   useEffect(() => {
     const listener = e =>
       e.target !== document.querySelector(toggleSelector) && setExpanded(false);
-    document.body.addEventListener('click', listener);
-    return () => document.body.removeEventListener('click', listener);
+    document.body.addEventListener("click", listener);
+    return () => document.body.removeEventListener("click", listener);
   });
 
   return [expanded, () => setExpanded(!expanded)];
