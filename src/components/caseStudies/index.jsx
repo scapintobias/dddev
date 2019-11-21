@@ -17,8 +17,8 @@ export function Article() {
      />
       <Title
         title="E-Novia"
-        subtitle="Metro de Lima"
-        description="Wayfinding design"
+        subtitle="The enterprise factory"
+        description="A sourceful experience. Where I learned to do research, to fail, to work as a team member, and when to shut up."
       />
       </Raster>
    );

@@ -1,2 +1,6 @@
 import React from "react";
-import { Article } from "../components/caseStudies/index.jsx";
+import { eNovia } from "../components/caseStudies/index.jsx";
+
+export function Env() {
+  return <eNovia />;
+}

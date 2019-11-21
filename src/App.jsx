@@ -64,6 +64,8 @@ function PageContent() {
         <Route path="/work/" component={Tab} />
         <Route path="/about/" component={About} />
         <Route path="/contacts/" component={Contacts} />
+<Route path="/eNovia" component={Article}
+        />
       </Switch>
     </animated.div>
   ));
