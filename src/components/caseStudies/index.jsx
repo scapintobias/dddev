@@ -4,13 +4,13 @@ import "../../tachyons.css";
 import "../../type.css";
 import "./style.css"
 
-import { Article } from "./components.jsx"
+import { Raster } from "./components.jsx"
 import { Date } from "./components.jsx"
 import { Title } from "./components.jsx"
 
 export function Article() {
   return (
-     <Article
+     <Raster>
      <Date
      place="Milano"
      time="MAY—NOV—2018"
@@ -20,6 +20,6 @@ export function Article() {
         subtitle="Metro de Lima"
         description="Wayfinding design"
       />
-      />
+      </Raster>
    );
 };

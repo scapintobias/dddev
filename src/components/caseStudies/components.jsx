@@ -5,7 +5,7 @@ import "../../type.css";
 import "./style.css"
 import CN from "classnames";
 
-export const Article = ({ children }) => (
+export const Raster = ({ children }) => (
   <article class="sans-serif dark-gray ph3 ph0-ns mv5 center grid layout measure-wide-m mw8-l">{children}</article>
 );
 

@@ -21,7 +21,7 @@ export function Tab() {
       />
 
       <CellText
-        link="./e-novia.jsx"
+        link="../../../eNovia"
         title="UX"
         subtitle="e-Novia"
         description="A sourceful experience"

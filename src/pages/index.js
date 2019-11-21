@@ -6,3 +6,4 @@ export * from './work';
 export * from './project';
 export * from './projects';
 export * from './about';
+export * from './eNovia';

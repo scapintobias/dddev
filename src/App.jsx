@@ -6,7 +6,8 @@ import "./App.css";
 import { useRouter } from "./hooks/useRouter";
 import { Header } from "./components/Header";
 import { Tab } from "./components/Work";
-import { Home, Contacts, Project, Projects, About } from "./pages";
+import { Article } from "./components/caseStudies"
+import { Home, Contacts, Project, Projects, About, eNovia } from "./pages";
 
 const slashMatcher = /\//g;
 
