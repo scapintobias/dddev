@@ -1,5 +1,3 @@
-@import url("https://use.typekit.net/vjl4fwe.css");
-
 html {
 	line-height             : 1.15;
 	-webkit-text-size-adjust: 100%;
@@ -1309,7 +1307,7 @@ code {
 }
 
 .tracked {
-	letter-spacing: -0.1rem;
+	letter-spacing: -0.06rem;
 }
 
 .tracked-tight {
@@ -1329,7 +1327,7 @@ code {
 }
 
 .lh-title {
-	line-height: 0.85;
+	line-height: 0.95;
 }
 
 .lh-title-s {
@@ -5624,7 +5622,9 @@ code {
 		border-top-style: solid;
 		border-top-width: 1px;
 	}
-
+.bt-n-m {
+	border-top-style: none;
+}
 	.br-m {
 		border-right-style: solid;
 		border-right-width: 1px;
@@ -6264,7 +6264,7 @@ code {
 	}
 
 	.lh-title-m {
-		line-height: 1.25;
+		line-height: 1.3;
 	}
 
 	.lh-copy-m {
@@ -7285,7 +7285,7 @@ code {
 		vertical-align: bottom;
 	}
 }
-@media screen and (min-width:60em) {
+@media screen and (min-width:600px) and (max-width:1000px) {
 	.aspect-ratio-l {
 		height  : 0;
 		position: relative;
@@ -7416,7 +7416,9 @@ code {
 		border-bottom-style: solid;
 		border-bottom-width: 1px;
 	}
-
+	.bb-n-l {
+		border-bottom-style: none;
+	}
 	.bl-l {
 		border-left-style: solid;
 		border-left-width: 1px;

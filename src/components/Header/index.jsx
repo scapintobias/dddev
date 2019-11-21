@@ -21,16 +21,20 @@ export function Header(props) {
         <li>
           <Link to="/work">Case Studies</Link>
         </li>
+        <li>
+        <Link to="/about">About</Link>
+        </li>
           <li>
-            <Link to="/projects">Archive</Link>
+          <a href="https://www.instagram.com/discipline.design" target="_blank">Photos</a>
           </li>
           <li>
-           <Link to="/about">About</Link>
+            <a href="mailto:info@discipline.design?subject=Enquiry">
+             <span class="f3-m f5 fw4 fw7-m">@</span></a>
           </li>
-
-             <li>
-            <Link to="/contacts">Contacts</Link>
-          </li>
+          <li class="pb3-m">
+         <a href="https://www.linkedin.com/in/scapintobias" target="_blank">
+         <span class="futurab f4 pb1 f3-m tracked">in</span></a>
+         </li>
         </ul>
       </header>
       <div className="header-clearfix" />
