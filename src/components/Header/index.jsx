@@ -29,11 +29,11 @@ export function Header(props) {
           </li>
           <li>
             <a href="mailto:info@discipline.design?subject=Enquiry">
-             <span class="f3-m f5 fw4 fw7-m">@</span></a>
+             <span className="f3-m f5 fw4 fw7-m">@</span></a>
           </li>
-          <li class="pb3-m">
+          <li className="pb3-m">
          <a href="https://www.linkedin.com/in/scapintobias" target="_blank">
-         <span class="futurab f4 pb1 f3-m tracked">in</span></a>
+         <span className="futurab f4 pb1 f3-m tracked">in</span></a>
          </li>
         </ul>
       </header>
