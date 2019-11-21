@@ -28,8 +28,13 @@
 }
 
 .header li a:hover,
-.header .menu-icon:hover {
+.header .menu-icon:hover,
+.header li a.active {
   color: #ef5419;
+}
+
+.header li a.active {
+  font-weight: 600;
 }
 
 .header .logo {
@@ -74,7 +79,7 @@
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
   background: #333;
-  content: "";
+  content: '';
   display: block;
   height: 100%;
   position: absolute;

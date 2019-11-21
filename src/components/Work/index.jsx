@@ -1,12 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "../../tachyons.css";
-import "../../type.css";
+import React from 'react';
 
-import { Grid } from "./grid.jsx";
-import { Cell } from "./cell.jsx";
-import { CellText } from "./cell.jsx";
-import { CellF } from "./cell.jsx";
+import {Grid} from './grid.jsx';
+import {Cell} from './cell.jsx';
+import {CellText} from './cell.jsx';
+import {CellF} from './cell.jsx';
 
 export function Tab() {
   return (
@@ -21,7 +18,7 @@ export function Tab() {
       />
 
       <CellText
-        link="../../../eNovia"
+        link="/case-studies/eNovia"
         title="UX"
         subtitle="e-Novia"
         description="A sourceful experience"

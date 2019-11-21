@@ -1,36 +1,36 @@
-import React from "react";
-import CN from "classnames";
-import { Link } from "react-router-dom";
+import React from 'react';
+import CN from 'classnames';
+import {NavLink} from 'react-router-dom';
 
-import { useExpanded } from "../../hooks/useExpanded";
+import {useExpanded} from '../../hooks/useExpanded';
 
-import "./style.css";
-import "../../tachyons.css";
-import "../../type.css";
+import './style.css';
 
 export function Header(props) {
-  const [expanded, toggleExpanded] = useExpanded(".header .menu-icon");
+  const [expanded, toggleExpanded] = useExpanded('.header .menu-icon');
   return (
     <>
-      <header className={CN("header helvetica", { expanded })}>
-        <Link to="/" className="logo helvetica">
+      <header className={CN('header helvetica', {expanded})}>
+        <NavLink to="/" className="logo helvetica">
           DisciplineDesign
-        </Link>
+        </NavLink>
         <div className="menu-icon" onClick={toggleExpanded}>
           <span className="navicon" />
         </div>
         <ul className="fw5 fw4-m menu">
           <li className="f3-m">
-            <Link to="/work">Case Studies</Link>
+            <NavLink exact to="/case-studies">
+              Case Studies
+            </NavLink>
           </li>
           <li className="f3-m">
-            <Link to="/about">About</Link>
+            <NavLink to="/about">About</NavLink>
           </li>
           <li className="f3-m">
             <a
               href="https://www.instagram.com/discipline.design"
               target="_blank"
-            >
+              rel="noopener noreferrer">
               Photos
             </a>
           </li>
@@ -40,7 +40,10 @@ export function Header(props) {
             </a>
           </li>
           <li className="pb3-m pt2-m">
-            <a href="https://www.linkedin.com/in/scapintobias" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/scapintobias"
+              target="_blank"
+              rel="noopener noreferrer">
               <span className="futurab f4 pb1 f2-m tracked">in</span>
             </a>
           </li>
