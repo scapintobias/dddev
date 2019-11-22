@@ -5,7 +5,7 @@ import TextLoop from "react-text-loop";
 const Random = () => (
   <span>
   based in{' '}
-<TextLoop interval={550}>
+<TextLoop interval={800}>
         <span>Germany</span>
         <span>Australia</span>
         <span>UK</span>
@@ -14,6 +14,7 @@ const Random = () => (
         <span>Italy</span>
         <span>Scotland</span>
         <span>Canada</span>
+        <span>Austria</span>
         <span>Bali</span>
         <span>Ireland</span>
       </TextLoop>.
