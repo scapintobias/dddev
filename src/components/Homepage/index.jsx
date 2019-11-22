@@ -16,6 +16,7 @@ const RandomCity = () => (
     <span>Austria</span>
     <span>Bali</span>
     <span>Ireland</span>
+    <span>Thailand</span>
   </TextLoop></span>
 );
 
