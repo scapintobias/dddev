@@ -42,7 +42,7 @@ export const Homepage = props => (
         , sit back: it gets quite long.
       </p>
     </section>
-    <section className="pl3 pr5 pb5 caslon silver f4">
+    <section className="pl3 pr5 pb5 caslon silver f3">
     ©DisciplineDesign 2019
     </section>
   </main>

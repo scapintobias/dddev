@@ -10,7 +10,8 @@ export function Enovia() {
       <Title
         title="E-Novia"
         subtitle="The enterprise factory"
-        description="A sourceful experience. Where I learned to do research, to fail, to work as a team member, and when to shut up."
+        description="A sourceful experience."
+        line2="Where I learned to do research, to fail, to work as a team member, and when to shut up."
       />
     </Raster>
   );
