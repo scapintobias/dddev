@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import TextLoop from 'react-text-loop';
 
 const RandomCity = () => (
+   <span>based in{' '}<br className="dn dib-m dib-ns dib-l"></br>
   <TextLoop interval={800}>
     <span>Germany</span>
     <span>Australia</span>
@@ -15,7 +16,7 @@ const RandomCity = () => (
     <span>Austria</span>
     <span>Bali</span>
     <span>Ireland</span>
-  </TextLoop>
+  </TextLoop></span>
 );
 
 export const Homepage = props => (
@@ -23,8 +24,7 @@ export const Homepage = props => (
     <section className="pt2 pl3 pr3 pl2-m pr2-m pb4">
       <div className="helvetica lh-title tracked-tight f-7 f-45-m fw6">
         <span className="orange">Product</span> &{' '}
-        <span className="orange">Interaction</span> Designer based in{' '}
-        <RandomCity />.
+        <span className="orange">Interaction</span> Designer {' '}<RandomCity />.
       </div>
       <p className="pt7 pt6-m caslon f-6 f2-m lh-title-s">
         My name is{' '}
@@ -44,7 +44,7 @@ export const Homepage = props => (
         , sit back: it gets quite long.
       </p>
     </section>
-    <section className="pl3 pr5 pb5 caslon silver f3">
+    <section className="pl3 pr5 pb4 pt5 caslon silver f3 f4-m">
       ©DisciplineDesign 2019
     </section>
   </main>
