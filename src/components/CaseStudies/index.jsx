@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-import {Date, Raster, Title} from './components.jsx';
+import { Date, Raster, Title } from './components.jsx';
 
 export function Enovia() {
   return (

@@ -128,14 +128,17 @@
   .header li {
     float: left;
   }
+
   .header li a {
     padding: 16px 15px;
   }
+
   .header .menu {
     clear: none;
     float: right;
     max-height: none;
   }
+
   .header .menu-icon {
     display: none;
   }

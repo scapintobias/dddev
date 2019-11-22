@@ -6,7 +6,10 @@ const createProject = (title, subtitle, type, year, content) => ({
   content,
 });
 
-const createImage = (src, alt) => ({src, alt});
+const createImage = (src, alt) => ({
+  src,
+  alt
+});
 const createContent = (
   headingImage,
   desc,

@@ -12,6 +12,6 @@ export function Project({ match }) {
       <ProjectContent project={project} />
     </>
   ) : (
-    <h2 style={{ padding: "1rem" }}>Project not found!</h2>
-  );
+      <h2 style={{ padding: "1rem" }}>Project not found!</h2>
+    );
 }

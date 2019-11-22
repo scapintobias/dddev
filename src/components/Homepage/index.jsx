@@ -1,23 +1,23 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import TextLoop from 'react-text-loop';
-import {Footer} from '../footer.jsx';
+import { Footer } from '../footer.jsx';
 const RandomCity = () => (
-   <span>based in{' '}<br className="dn dib-m dib-ns dib-l"></br>
-  <TextLoop interval={700}>
-    <span>Germany</span>
-    <span>Australia</span>
-    <span>UK</span>
-    <span>Maldives</span>
-    <span>USA</span>
-    <span>Italy</span>
-    <span>Scotland</span>
-    <span>Canada</span>
-    <span>Austria</span>
-    <span>Bali</span>
-    <span>Ireland</span>
-    <span>Thailand</span>
-  </TextLoop></span>
+  <span>based in{' '}<br className="dn dib-m dib-ns dib-l"></br>
+    <TextLoop interval={700}>
+      <span>Germany</span>
+      <span>Australia</span>
+      <span>UK</span>
+      <span>Maldives</span>
+      <span>USA</span>
+      <span>Italy</span>
+      <span>Scotland</span>
+      <span>Canada</span>
+      <span>Austria</span>
+      <span>Bali</span>
+      <span>Ireland</span>
+      <span>Thailand</span>
+    </TextLoop></span>
 );
 
 export const Homepage = props => (

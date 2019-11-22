@@ -2,6 +2,7 @@
   width: 100%;
   height: 54px;
 }
+
 #controls-container {
   width: 100%;
   position: fixed;
@@ -11,18 +12,22 @@
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
 }
+
 #controls-container .toggle {
   cursor: pointer;
 }
+
 #controls-container .wrapper {
   overflow: hidden;
   max-height: 0;
   transition: max-height ease-out 0.3s;
   will-change: max-height;
 }
+
 #controls-container .wrapper.expanded {
   max-height: 160px;
 }
+
 #controls {
   columns: 2;
   width: 100%;

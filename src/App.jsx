@@ -1,19 +1,19 @@
-import React, {useEffect} from 'react';
-import {useTransition, animated} from 'react-spring';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useTransition, animated } from 'react-spring';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import './tachyons.css';
 import './type.css';
 
-import {useRouter} from './hooks/useRouter';
-import {Header} from './components/Header';
-import {Tab} from './components/Work';
-import {Enovia} from './components/CaseStudies';
-import {Home, Project, Projects, About} from './pages';
+import { useRouter } from './hooks/useRouter';
+import { Header } from './components/Header';
+import { Tab } from './components/Work';
+import { Enovia } from './components/CaseStudies';
+import { Home, Project, Projects, About } from './pages';
 
-function ScrollToTop({children}) {
+function ScrollToTop({ children }) {
   const {
-    location: {pathname},
+    location: { pathname },
   } = useRouter();
 
   useEffect(() => {
@@ -23,7 +23,7 @@ function ScrollToTop({children}) {
   return children || null;
 }
 
-function getTransform({search}) {
+function getTransform({ search }) {
   if (search === '?next') return fromRightTransform;
   if (search === '?prev') return fromLeftTransform;
   return baseTransform;
@@ -35,13 +35,13 @@ const fromRightTransform = 'scale3d(1,1,1) translate3d(50%,0,0)';
 const fromLeftTransform = 'scale3d(1,1,1) translate3d(-50%,0,0)';
 
 function PageContent() {
-  const {location} = useRouter();
+  const { location } = useRouter();
   const transitions = useTransition(location, location => location.pathname, {
     from: item => ({
       opacity: 0,
       transform: getTransform(item),
     }),
-    enter: {opacity: 1, transform: bounceInTransform},
+    enter: { opacity: 1, transform: bounceInTransform },
     leave: item => ({
       opacity: 0,
       transform: baseTransform,
@@ -54,7 +54,7 @@ function PageContent() {
     },
   });
 
-  return transitions.map(({item, props, key}) => (
+  return transitions.map(({ item, props, key }) => (
     <animated.div className="fill-viewport" key={key} style={props}>
       <Switch location={item}>
         <Route path="/" exact component={Home} />
@@ -74,7 +74,7 @@ export default function App() {
     <Router>
       <ScrollToTop>
         <Header />
-        <div style={{overflow: 'hidden'}}>
+        <div style={{ overflow: 'hidden' }}>
           <PageContent />
         </div>
       </ScrollToTop>

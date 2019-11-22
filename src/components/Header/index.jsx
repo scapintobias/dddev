@@ -1,8 +1,8 @@
 import React from 'react';
 import CN from 'classnames';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-import {useExpanded} from '../../hooks/useExpanded';
+import { useExpanded } from '../../hooks/useExpanded';
 
 import './style.css';
 
@@ -10,7 +10,7 @@ export function Header(props) {
   const [expanded, toggleExpanded] = useExpanded('.header .menu-icon');
   return (
     <>
-      <header className={CN('header helvetica', {expanded})}>
+      <header className={CN('header helvetica', { expanded })}>
         <NavLink to="/" className="logo helvetica">
           DisciplineDesign
         </NavLink>
