@@ -1387,6 +1387,10 @@ code {
   max-width: 32rem;
 }
 
+.mw68 {
+	max-width: 42.5rem;
+}
+
 .mw7 {
   max-width: 48rem;
 }
@@ -3345,6 +3349,10 @@ code {
 .ttn {
   text-transform: none;
 }
+.abc {
+	font-size: 1.3125rem;
+	line-height: 1.58;
+}
 
 .f-7,
 .f-title {
@@ -3359,6 +3367,10 @@ code {
 .f-5,
 .f-subheadline {
   font-size: 5rem;
+}
+
+.f-4 {
+	font-size: 4rem;
 }
 
 .f1 {

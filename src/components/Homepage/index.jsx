@@ -1,10 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import TextLoop from 'react-text-loop';
-
+import {Footer} from '../footer.jsx';
 const RandomCity = () => (
    <span>based in{' '}<br className="dn dib-m dib-ns dib-l"></br>
-  <TextLoop interval={800}>
+  <TextLoop interval={700}>
     <span>Germany</span>
     <span>Australia</span>
     <span>UK</span>
@@ -21,7 +21,7 @@ const RandomCity = () => (
 
 export const Homepage = props => (
   <main>
-    <section className="pt2 pl3 pr3 pl2-m pr2-m pb4">
+    <section className="pt2 pl3 pr3 pl2-m pr2-m">
       <div className="helvetica lh-title tracked-tight f-7 f-45-m fw6">
         <span className="orange">Product</span> &{' '}
         <span className="orange">Interaction</span> Designer {' '}<RandomCity />.
@@ -44,8 +44,6 @@ export const Homepage = props => (
         , sit back: it gets quite long.
       </p>
     </section>
-    <section className="pl3 pr5 pb4 pt5 caslon silver f3 f4-m">
-      ©DisciplineDesign 2019
-    </section>
+    <Footer />
   </main>
 );

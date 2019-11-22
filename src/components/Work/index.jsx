@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Footer} from '../footer.jsx';
 import {Grid} from './grid.jsx';
 import {Cell} from './cell.jsx';
 import {CellText} from './cell.jsx';
@@ -7,6 +7,7 @@ import {CellF} from './cell.jsx';
 
 export function Tab() {
   return (
+     <main className="min-vh-100">
     <Grid>
       <CellText
         link="./"
@@ -40,6 +41,9 @@ export function Tab() {
         description="How I built this website"
         className="hover-orange bg-animate hover-bg-black-10 bb bl br b--silver fl w-75 w-100-m w-100-l pv5 mb1 mb3-m mb3-l"
       />
+
     </Grid>
+    <Footer />
+    </main>
   );
 }
