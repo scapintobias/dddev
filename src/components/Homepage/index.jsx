@@ -1,12 +1,30 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import TextLoop from "react-text-loop";
+
+const Random = () => (
+  <span>
+  based in{' '}
+<TextLoop interval={550}>
+        <span>Italy</span>
+        <span>Germany</span>
+        <span>Australia</span>
+        <span>United Kingdom</span>
+        <span>New Zealand</span>
+        <span>United States</span>
+        <span>Scotland</span>
+        <span>Canada</span>
+        <span>Bali</span>
+      </TextLoop>.
+  </span>
+);
 
 export const Homepage = props => (
   <main>
     <section className="pt2 pl3 pr3 pl2-m pr1-m">
       <p className="helvetica lh-title tracked-tight f-7 f-45-m fw6">
         <span className="orange">Product</span> &{' '}
-        <span className="orange">Interaction</span> Designer based in Italy
+        <span className="orange">Interaction</span> Designer <Random />
       </p>
       <p className="pt7 pt6-m caslon f-6 f2-m lh-title-s">
         My name is{' '}
