@@ -3351,8 +3351,8 @@ code {
 }
 
 .abc {
-  font-size: 1.3125rem;
-  line-height: 1.58;
+  font-size: 23px;
+  line-height: 1.6;
 }
 
 .f-7,
@@ -3380,6 +3380,10 @@ code {
 
 .f2 {
   font-size: 2.25rem;
+}
+
+.f25 {
+  font-size: 2rem;
 }
 
 .f3 {
@@ -7204,6 +7208,10 @@ code {
 
   .f2-m {
     font-size: 2.25rem;
+  }
+
+  .f25-m {
+    font-size: 2rem;
   }
 
   .f3-m {
