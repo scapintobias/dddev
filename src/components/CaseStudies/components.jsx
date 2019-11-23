@@ -10,7 +10,7 @@ export const Raster = ( { children } ) => (
 
 export const Date = ( { place, time } ) => (
 	<section className="mw68 w-100-l helvetica mauto pb4 pb2-m pt3 pt2-m">
-		<div className="fw6 f4">
+		<div className="fw6 f4 navy">
 			<p>{place}<br></br>
 				<time className="ttu silver">{time}</time></p>
 		</div>
@@ -18,16 +18,16 @@ export const Date = ( { place, time } ) => (
 );
 
 export const Title = ( { title, subtitle, description, line2 } ) => (
-	<header className="mw68 w-100-m w-100-l   mb3 mr3-m mauto justify-center helvetica lh-solid bb bw4 b--dark-blue">
-		<p className=" f-6 f-5-m fw7 tracked-tight dark-blue pb2-m pb6">{title}</p>
-		<p className="fw6 f1 green pb3 pb2-m fw6-m f2-m tracked">{subtitle}</p>
-		<p className="f2 minion fw5 fw6-m f25-m mb0 w-80 w-100-m light-red pb4 pb4-m lh-solid">{description}</p>
-		<p className="f2 minion fw5 fw6-m f25-m mb0 w-80 w-100-m light-red pb4 pb2-m lh-solid">{line2}</p>
+	<header className="mw68 w-100-m w-100-l   mb3 mr3-m mauto justify-center helvetica lh-solid bb bw4 b--silver">
+		<p className=" f-6 f-5-m fw7 tracked-tight navy pb2-m pb6">{title}</p>
+		<p className="fw6 f1 silver pb3 pb2-m fw6-m f2-m tracked">{subtitle}</p>
+		<p className="f2 minion fw5 fw6-m f25-m mb0 w-80 w-100-m navy pb4 pb4-m lh-solid">{description}</p>
+		<p className="f2 minion fw5 fw6-m f25-m mb0 w-80 w-100-m navy pb4 pb2-m lh-solid">{line2}</p>
 	</header>
 );
 export const HelTit = ( { line1, line2 } ) => (
 	<section className="mw68 w-100-m w-100-l mauto">
-		<div className="helvetica f1-m fw6-m fw6-l f-5-l f-5 pt2 fw6 tracked lh-title mb5">
+		<div className="helvetica navy f1-m fw6-m fw6-l f-5-l f-5 pt2 fw6 tracked lh-title mb5">
 			<p>{line1}</p>
 			<p className="pt4">{line2}</p>
 		</div>
@@ -35,7 +35,7 @@ export const HelTit = ( { line1, line2 } ) => (
 );
 export const Par = ( { children } ) => (
 
-	<section className="mw68 mauto">
+	<section className="mw68 mauto navy">
 		<p className="minion fw5 abc pr3">{children}</p></section>
 );
 
@@ -49,7 +49,7 @@ export const ParImg = ( { oneimg } ) => (
 
 export const SinImg = ( { oneimg } ) => (
 
-	<div className="mw800 mauto pt4 pb4">
+	<div className="mw800 mauto pl3 pl0-m pr0-m pr3 pt4 pb4">
 		<img src={oneimg} alt="img"></img>
 	</div>
 );
