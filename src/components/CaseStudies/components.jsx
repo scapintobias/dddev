@@ -26,20 +26,32 @@ export const Title = ( { title, subtitle, description, line2 } ) => (
 	</header>
 );
 
-export const Body = ( { p1, p2, p3, oneimg, image1, image2, image3 } ) => (
-	<article>
-		<section className="mw68 mauto w-100-m w-90-l">
-			<p className="minion fw5 abc pr3">{p1}</p></section>
-		<div className="mw800 w-100-m w-90-l mauto pt4 pb4 pr3-m">
-			<img src={oneimg} alt="img"></img>
-		</div>
+export const Par = ( { txt } ) => (
 
-		<section className="mw68 mauto w-100-m w-90-l"><p className="minion divfw5 abc pr3">{p2}</p></section>
-		<div className="w-90 w-100-m w-90-l flex flex-row justify-center items-center-m flex-column-m mauto pt4 pb4 pr3-m">
-			<img src={image1} alt="img" className="pa2"></img>
-			<img src={image2} alt="img" className="pa2"></img>
-			<img src={image3} alt="img" className="pa2"></img>
-		</div>
-		<section className="mw68 w-100-m w-90-l mauto"><p className="minion divfw5 abc pr3">{p3}</p></section>
-	</article>
+	<section className="mw68 mauto w-100-m w-90-l">
+		<p className="minion fw5 abc pr3">{txt}</p></section>
+);
+
+export const SinImg = ( { oneimg } ) => (
+
+	<div className="mw800 w-100-m w-90-l mauto pt4 pb4 pr3-m">
+		<img src={oneimg} alt="img"></img>
+	</div>
+);
+export const ThreeImg = ( { image1, image2, image3 } ) => (
+
+	<div className="w-90 w-100-m w-90-l flex flex-row justify-center items-center-m flex-column-m mauto pt4 pb4 pr3-m">
+		<img src={image1} alt="img" className="pa2"></img>
+		<img src={image2} alt="img" className="pa2"></img>
+		<img src={image3} alt="img" className="pa2"></img>
+	</div>
+);
+
+
+export const TwoImg = ( { image1, image2 } ) => (
+
+	<div className="w-90 w-100-m w-90-l flex flex-row justify-center items-center-m flex-column-m mauto pt4 pb4 pr3-m">
+		<img src={image1} alt="img" className="pa2"></img>
+		<img src={image2} alt="img" className="pa2"></img>
+	</div>
 );
