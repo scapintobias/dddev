@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Date, Raster, Title, Par, SinImg, ThreeImg, TwoImg } from './components.jsx';
+import { Date, Raster, Title, Par, SinImg, ThreeImg, TwoImg, ParImg } from './components.jsx';
 import { Footer } from '../footer.jsx';
 export function Enovia() {
   return (
@@ -13,7 +13,9 @@ export function Enovia() {
           description="A sourceful experience."
           line2="Where I learned to do research, to fail, to work as a team member, and when to shut up."
         />
-
+        <ParImg
+          oneimg="https://source.unsplash.com/random/800x800/?design"
+        />
         <Par
           txt="I was born in the Venice’ countryside, in a family of architects and designers. And that has been a strong starting point. Soon after middle school, I met Maurizio and Armando Milani, fellow designers of Massimo Vignelli, and that ensured me, my path had to be in design either, I was, ad am, completely fond. The actual rollercoaster really started when in 2008 the aforementioned brothers had at hand a rebrand to do, for the cultural centre not far from the school I was attending, and called me in, asking if I wanted to join them for a closed workshop, with the purpose to deliver the corporate image. I accepted. I have always been taught by all-rounders, who perhaps didn’t intend to move that part of their knowledge to the actual student, because from the 70s many things changed. I soon understood by myself I was to be an all rounder too, I’m far too passionate about each and every field of design not to be eager to showcase wide projects including e.g. a lamp, the packaging, and the ad campaign with photos, posters and catalogues to promote this idea machined into something real. In high school I majored in printing, graphic design and photography. This means I spent almost 30 hours a week either in a dark room, developing film, in a printing lab, learning how to screen-print, etch zinc, preparing and printing offset plates by hand (no digital tools involved) or designing books and corporate images. Completed this first deep dive into design, I decided to move to London, where I had the possibility to place in the real world all the skills I had been sharpening in school labs."
         />

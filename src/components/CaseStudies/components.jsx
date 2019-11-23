@@ -32,6 +32,14 @@ export const Par = ( { txt } ) => (
 		<p className="minion fw5 abc pr3">{txt}</p></section>
 );
 
+export const ParImg = ( { oneimg } ) => (
+
+	<div className="mw68 w-100-m w-90-l mauto pt4 pb4 pr3-m">
+		<img src={oneimg} alt="img"></img>
+	</div>
+);
+
+
 export const SinImg = ( { oneimg } ) => (
 
 	<div className="mw800 w-100-m w-90-l mauto pt4 pb4 pr3-m">
