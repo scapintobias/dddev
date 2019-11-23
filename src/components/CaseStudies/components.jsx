@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Raster = ( { children } ) => (
-	<div className="justify-center flex flex-column ml3-m pr3-m pb5 min-vh-100">
+	<div className="justify-center flex flex-column ml3-l pr3-l ml3-m pr3-m pb5 min-vh-100">
 		<article className="sans-serif  dark-gray center">
 			{children}
 		</article>
@@ -25,7 +25,14 @@ export const Title = ( { title, subtitle, description, line2 } ) => (
 		<p className="f2 minion fw5 fw6-m f25-m mb0 w-80 w-100-m light-red pb4 pb2-m lh-solid">{line2}</p>
 	</header>
 );
-
+export const HelTit = ( { line1, line2 } ) => (
+	<section className="mw68 w-100-m w-100-l mauto">
+		<div className="helvetica f1-m fw6-m fw6-l f-5-l f-5 pt2 fw6 tracked lh-title mb5">
+			<p>{line1}</p>
+			<p className="pt4">{line2}</p>
+		</div>
+	</section>
+);
 export const Par = ( { txt } ) => (
 
 	<section className="mw68 mauto">
