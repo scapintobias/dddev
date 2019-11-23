@@ -1,28 +1,32 @@
 import React from 'react';
-import './style.css';
 
-export const Raster = ({ children }) => (
-  <div className="pa4 pa1-m">
-    <article className="sans-serif dark-gray ph3 ph0-ns mv5 center grid layout measure-wide-m mw8-l">
+export const Raster = ( { children } ) => (
+  <div className="mw68 w-100-m w-90-l ml2-m pb5 min-vh-100 mauto">
+    <article className="sans-serif flex flex-column dark-gray center">
       {children}
     </article>
   </div>
 );
 
-export const Date = ({ place, time }) => (
-  <section className="layout--meta helvetica flex flex-column pt3 pb5-m">
-    <div className="fw6 f5 lh-solid  mb0-ns">
+export const Date = ( { place, time } ) => (
+  <section className="w5 helvetica flex flex-column mb4 mb1-m pt3 pt2-m">
+    <div className="fw6 f5 lh-solid">
       <p>{place}</p>
       <time className="ttu silver">{time}</time>
     </div>
   </section>
 );
 
-export const Title = ({ title, subtitle, description, line2 }) => (
-  <header className="layout--title helvetica lh-solid bb bw4 b--dark-blue pb3 mb0-m mb4 mr0-m flex flex-column space-between">
-    <p className=" f-6 f-5-m  fw7 tracked-tight dark-blue pb5-m pb6">{title}</p>
-    <p className="fw6 f1 green pb6 pb5-m fw5-m f3-m tracked">{subtitle}</p>
-    <p className="f2 caslon fw5 f4-m mb0 w-70 light-red pb4 lh-solid">{description}</p>
-    <p className="f2 caslon fw5 f4-m mb0 w-70 light-red pb4 lh-solid">{line2}</p>
+export const Title = ( { title, subtitle, description, line2 } ) => (
+  <header className="helvetica lh-solid bb bw4 mw68 mauto b--dark-blue flex flex-column mb5 mr3">
+    <p className=" f-6 f-5-m  fw7 tracked-tight dark-blue pb2-m pb6">{title}</p>
+    <p className="fw6 f1 green pb3 pb2-m fw6-m f2-m tracked">{subtitle}</p>
+    <p className="f2 minion fw5 fw6-m f25-m mb0 w-70 w-100-m light-red pb4 pb4-m lh-solid">{description}</p>
+    <p className="f2 minion fw5 fw6-m f25-m mb0 w-70 w-100-m light-red pb2 pb2-m lh-solid">{line2}</p>
   </header>
+);
+
+export const Body = ( { body } ) => (
+  <section className="mw68 w-100-m w-90-l mauto">
+    <p className="minion fw5 abc pr3">{body}</p></section>
 );

@@ -27,7 +27,7 @@ export const Homepage = props => (
         <span className="orange">Product</span> &{' '}
         <span className="orange">Interaction</span> Designer {' '}<RandomCity />.
       </div>
-      <p className="pt7 pt6-m minion f-6 f2-m lh-title-s">
+      <p className="pt7 pt5-m minion f-6 f2-m lh-title-s">
         My name is{' '}
         <b className="helvetica tracked-tight f-5 f25-m tracked-tight-m orange">Tobias</b>
         . I design useful and enjoyable experiences with a love for research,
@@ -37,7 +37,7 @@ export const Homepage = props => (
         </span>
         .
       </p>
-      <p className="pt2 pt3-m minion f-6 f2-m lh-title-s">
+      <p className="pt2 pt2-m minion f-6 f2-m lh-title-s">
         Whether interested in reading more{' '}
         <b className="helvetica fw7 f-5 f25-m tracked-tight tracked-tight-m link black hover-dark-blue">
           <a href="/about">about&nbsp;&nbsp;me</a>
