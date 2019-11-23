@@ -33,10 +33,10 @@ export const HelTit = ( { line1, line2 } ) => (
 		</div>
 	</section>
 );
-export const Par = ( { txt } ) => (
+export const Par = ( { children } ) => (
 
 	<section className="mw68 mauto">
-		<p className="minion fw5 abc pr3">{txt}</p></section>
+		<p className="minion fw5 abc pr3">{children}</p></section>
 );
 
 export const ParImg = ( { oneimg } ) => (
