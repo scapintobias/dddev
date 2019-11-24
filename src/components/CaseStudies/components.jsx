@@ -25,11 +25,12 @@ export const Title = ( { title, subtitle, description, line2 } ) => (
 		<p className="f2 minion fw5 fw6-m f25-m mb0 w-80 w-100-m navy pb4 pb2-m lh-solid">{line2}</p>
 	</header>
 );
-export const HelTit = ( { line1, line2 } ) => (
+export const HelTit = ( { line1, line2, line3 } ) => (
 	<section className="mw68 w-100-m w-100-l mauto">
-		<div className="helvetica navy f1-m fw6-m fw6-l f-5-l f-5 pt2 fw6 tracked lh-title mb5">
+		<div className="helvetica navy f1-m fw6-m fw6-l f-5-l f-5 pt2 fw6 tracked lh-title">
 			<p>{line1}</p>
 			<p className="pt4">{line2}</p>
+			<p className="pt5 f3 fw5 silver">{line3}</p>
 		</div>
 	</section>
 );
