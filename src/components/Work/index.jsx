@@ -23,7 +23,7 @@ export function Tab() {
           title="UX"
           subtitle="e-Novia"
           description="A sourceful experience"
-          text="Where I learned to do research, to fail, to work as a team member, and—more importantly—when to shut up."
+          text="Where I learned to play as a team member, to pitch my idea to the CEO, and—vital—when to shut up."
           className="hover-silver bg-animate hover-bg-navy bl br bt bt-n-m bb b--navy fl w-50 w-100-m w-100-l pv5"
         />
 

@@ -11,7 +11,7 @@ export function Enovia() {
           title="e-Novia"
           subtitle="The enterprise factory"
           description="A sourceful experience."
-          line2="Where I learned to do research, to fail, to work as a team member, and—more importantly—when to shut up."
+          line2="Where I learned to play as a team member, to pitch my idea to the CEO, and—vital—when to shut up."
         />
         <ParImg
           oneimg="https://source.unsplash.com/random/800x800/?furniture"
