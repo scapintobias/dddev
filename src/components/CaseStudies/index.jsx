@@ -103,16 +103,16 @@ export function metrodelima() {
           Team
           </p>
 <section className="flex flex-row ">
-         <ul className="w-25 list">
+        <ul className="w-25 list">
           <li>Samuel</li>
           <li>Martha</li>
           <li className="pt4">Tobias</li>
           </ul>
-<ul className="w-25 list">
+        <ul className="w-25 list">
           <li><i>Architect</i></li>
-<li><i>UI Designer</i></li>
+          <li><i>UI Designer</i></li>
           <li className="pt4"><i>Product Designer</i></li></ul>
-          </section>
+</section>
         </Par>
         <SinImg
           oneimg="https://source.unsplash.com/random/800x800/?underground"
@@ -134,6 +134,6 @@ export function metrodelima() {
         />
       </Raster>
       <Footer />
-    </main >
+    </main>
   );
 }
