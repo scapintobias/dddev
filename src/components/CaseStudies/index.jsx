@@ -93,7 +93,7 @@ export function metrodelima() {
           title="Metro de Lima"
           subtitle="Learning how people move"
           description="Designing a tube wayfinding system, scalable, integrated and economically sustainable."
-          line2="It sometimes starts with a map."
+          line2="It sometimes embodies a map."
         />
 
         <Par>
@@ -102,17 +102,27 @@ export function metrodelima() {
           <p className="helvetica pt4 pb2 silver fw7">
           Team
           </p>
-<section className="flex flex-row ">
-        <ul className="w-25 list">
+          <section className="flex flex-row ">
+          <ul className="w-25 list">
           <li>Samuel</li>
-          <li>Martha</li>
+          <li>Tomás</li>
           <li className="pt4">Tobias</li>
+          <li>Martha</li>
+
           </ul>
         <ul className="w-25 list">
           <li><i>Architect</i></li>
-          <li><i>UI Designer</i></li>
-          <li className="pt4"><i>Product Designer</i></li></ul>
+          <li><i>Civil Engineer</i></li>
+          <li className="pt4"><i>Product Designer</i></li>
+          <li><i>Junior UI Designer</i></li>
+          </ul>
+
 </section>
+<hr className="navy"></hr>
+<p className="helvetica pt4 pb2 silver fw7">
+Role
+</p>
+As a product designer I had various responsibilities, spanning from directing the research effort, draw conclusions, customise the process, to defining the user journey and interactions.
         </Par>
         <SinImg
           oneimg="https://source.unsplash.com/random/800x800/?underground"
