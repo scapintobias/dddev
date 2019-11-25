@@ -22,12 +22,12 @@ const RandomCity = () => (
 
 export const Homepage = props => (
   <main>
-    <section className="min-vh-100 pt2 pb5 pl3 pr3 pl2-m pr2-m">
+    <section className="pt2 pb5 pl3 pr3 pl2-m pr2-m">
       <div className="helvetica navy lh-title tracked-tight f-7 f-45-m fw6">
         <span className="orange">Product</span> &{' '}
         <span className="orange">Interaction</span> Designer {' '}<RandomCity />.
       </div>
-      <p className="pt7 pt5-m minion navy f-6 f2-m lh-title-s">
+      <p className="pt7 pt6-m minion navy f-6 f2-m lh-title-s">
         My name is{' '}
         <b className="helvetica tracked-tight f-5 f25-m tracked-tight-m orange">Tobias</b>
         . I design useful and enjoyable experiences with a love for research,
