@@ -83,3 +83,57 @@ export function DisciplineDesign() {
     </main >
   );
 }
+
+export function metrodelima() {
+  return (
+    <main>
+      <Raster>
+        <Date place="Lima/Perù" time="March 2019" />
+        <Title
+          title="Metro de Lima"
+          subtitle="Learning how people move"
+          description="Designing a tube wayfinding system, scalable, integrated and economically sustainable."
+          line2="It sometimes starts with a map."
+        />
+
+        <Par>
+          I have always been fascinated about public transportation. Living in Milan gave me the possibility to peruse its iconic wayfinding system, which later led the shaping of the MTA, Washington DC and São Paolo signage systems. So I was very excited when proposed with this project.
+
+          <p className="helvetica pt4 pb2 silver fw7">
+          Team
+          </p>
+<section className="flex flex-row ">
+         <ul className="w-25 list">
+          <li>Samuel</li>
+          <li>Martha</li>
+          <li className="pt4">Tobias</li>
+          </ul>
+<ul className="w-25 list">
+          <li><i>Architect</i></li>
+<li><i>UI Designer</i></li>
+          <li className="pt4"><i>Product Designer</i></li></ul>
+          </section>
+        </Par>
+        <SinImg
+          oneimg="https://source.unsplash.com/random/800x800/?underground"
+        />
+        <Par>
+          When choosing which university course to undertake, I considered many, but all in all, what I wanted was something as strong as engineering, deep as architecture, and detailed as a medium-format photograph. The match was Communication Design at the Milan Polytechnic, which embodies each and every aspect of my idea of design: disciplined, fast paced, and with very strong foundations. This long-lasting learning journey, helped me understand what exactly I can deem to be keen on, in the infinite field of design. Since the first steps—and of course it still hasn’t changed—I felt soundly bound to typography; it started I guess when I was asked to draw freehand the whole Bodoni and Neue Haas Grotesk alphabets, back in 2007, and that set off the basic instinct to become really accurate in seizing the right font, kerning and typographical grid for each and every task. Since I spent a lot of time learning how to actually print, the fastest turnaround was to step back, and understand how to design something in order to shape precisely the final printed result; so I approached designing books, catalogues, and anything that could stand on paper. Never forgetting the digital world growing around me, and trying to translate the rules drawn for printing, into digital objects.
+        </Par>
+        <ThreeImg
+          image1="https://source.unsplash.com/random/400x350/?design"
+          image2="https://source.unsplash.com/random/400x350/?city"
+          image3="https://source.unsplash.com/random/400x350/?company"
+        />
+        <Par>
+          My final project at university has been the redesign of a poem collection by Aldo Palazzeschi, which was published in 1930; resulting a quite successful effort to combine poetry and photography, in a visual book. Beyond those two major aspects, I tried in the years to channel my hobbies and passions into facets of my professional spectrum, be it photography, wayfinding, music production, industrial, web, or exhibit design. Architecture had a strong impact on my design taste, and has been part of my life ever since; many years ago I started a blog, trying to collect everything I liked, ranging from design to civil engineering. In these years, since 2009, I started my own design consultancy, named DisciplineDesign, based between Milan and London. The motto is ‘Design support, from the spoon to the city’, quoting Ernesto Nathan Rogers.
+          </Par>
+        <TwoImg
+          image1="https://source.unsplash.com/random/400x400/?design"
+          image2="https://source.unsplash.com/random/400x400/?city"
+        />
+      </Raster>
+      <Footer />
+    </main >
+  );
+}

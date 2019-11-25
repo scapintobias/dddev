@@ -9,44 +9,8 @@ export function Tab() {
   return (
     <main>
       <Grid>
-      <Cell
-        link="./case-studies/DisciplineDesign"
-        title="REACT"
-        subtitle="DisciplineDesign"
-        description="How I built this website"
-        className="hover-orange bg-animate hover-bg-black-10 bt bl  b--navy fl w-33 w-100-m w-100-l pv6"
-      />
-      <Cell
-        link="./case-studies/DisciplineDesign"
-        title="REACT"
-        subtitle="DisciplineDesign"
-        description="How I built this website"
-        className="hover-orange bg-animate hover-bg-black-10 bt bl  b--navy fl w-34 w-100-m w-100-l pv6"
-      />
-      <Cell
-        link="./case-studies/DisciplineDesign"
-        title="REACT"
-        subtitle="DisciplineDesign"
-        description="How I built this website"
-        className="hover-orange bg-animate hover-bg-black-10 bt bl br b--navy fl w-33 w-100-m w-100-l pv6"
-      />
-      <Cell
-        link="./case-studies/DisciplineDesign"
-        title="REACT"
-        subtitle="DisciplineDesign"
-        description="How I built this website"
-        className="hover-orange bg-animate hover-bg-black-10 bl br bt b--navy fl w-75 w-100-m w-100-l pv5"
-      />
-      <CellF
-        link="./"
-        title="UX" navy
-        subtitle="Trenitalia"
-        description="Ticket totem redesign"
-        className="hover-near-white bg-animate hover-bg-dark-blue b--navy bt br-m br fl w-25 w-100-m w-100-l pv5"
-      />
-
         <CellText
-          link="./"
+          link="/case-studies/metro-de-lima"
           title="UX"
           subtitle="Metro de Lima"
           description="Wayfinding design"
@@ -79,7 +43,6 @@ export function Tab() {
         />
 
       </Grid>
-      <Footer />
     </main>
   );
 }

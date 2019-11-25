@@ -42,9 +42,9 @@ export const Homepage = props => (
         <b className="helvetica fw7 f-5 f25-m tracked-tight tracked-tight-m link navy hover-silver">
           <a href="/about">about&nbsp;&nbsp;me</a>
         </b>
-        , sit back: it gets quite long.
+        , it comes in audio too.
       </p>
     </section>
-    <Footer />
+
   </main>
 );

@@ -8,7 +8,7 @@ import './type.css';
 import { useRouter } from './hooks/useRouter';
 import { Header } from './components/Header';
 import { Tab } from './components/Work';
-import { Enovia, DisciplineDesign } from './components/CaseStudies';
+import { Enovia, DisciplineDesign, metrodelima } from './components/CaseStudies';
 import { Home, Project, Projects, About } from './pages';
 
 function ScrollToTop( { children } ) {
@@ -65,6 +65,7 @@ function PageContent() {
         <Route path="/case-studies/" exact component={Tab} />
         <Route path="/case-studies/eNovia" exact component={Enovia} />
         <Route path="/case-studies/DisciplineDesign" exact component={DisciplineDesign} />
+        <Route path="/case-studies/metro-de-lima" exact component={metrodelima} />
       </Switch>
     </animated.div>
   ) );
