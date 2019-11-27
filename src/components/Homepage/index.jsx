@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom';
 import TextLoop from 'react-text-loop';
 import { Footer } from '../footer.jsx';
 const RandomCity = () => (
-  <span>based in{' '}<br className="dn dib-m dib-ns dib-l"></br>
+  <span>based in{' '}<br className="dn dib-m dib-ns dn-l"></br>
     <TextLoop interval={700}>
       <span>Germany</span>
       <span>Australia</span>
       <span>UK</span>
-      <span>Maldives</span>
       <span>USA</span>
       <span>Italy</span>
       <span>Scotland</span>
@@ -17,6 +16,8 @@ const RandomCity = () => (
       <span>Bali</span>
       <span>Ireland</span>
       <span>Thailand</span>
+      <span>Sweden</span>
+      <span>Tahiti</span>
     </TextLoop></span>
 );
 

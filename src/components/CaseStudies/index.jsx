@@ -103,18 +103,18 @@ export function metrodelima() {
           Team
           </p>
           <section className="flex flex-row ">
-          <ul className="w-25 list">
+          <ul className="list">
           <li>Samuel</li>
           <li>Tomás</li>
           <li className="pt4">Tobias</li>
           <li>Martha</li>
 
           </ul>
-        <ul className="w-25 list">
+        <ul className="list pl4">
           <li><i>Architect</i></li>
           <li><i>Civil Engineer</i></li>
-          <li className="pt4"><i>Product Designer</i></li>
-          <li><i>Junior UI Designer</i></li>
+          <li className="pt4"><i>PM, Product Designer</i></li>
+          <li><i>UI Designer</i></li>
           </ul>
 
 </section>

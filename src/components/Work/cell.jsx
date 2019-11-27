@@ -37,8 +37,8 @@ export const CellText = ( {
         <div className="w-90 tc">
           <p className="b f6 pb3 helvetica">{title}</p>
           <h1 className="helvetica tracked f2 b lh-leading pb3">{subtitle}</h1>
-          <p className="pb1 pt3 f3 i minion">{description}</p>
-          <p className="minion pt5 w-80 center lh-solid f3">{text}</p>
+          <p className="pt3 f3 i minion">{description}</p>
+          <p className="minion pt5 w-90 w-70-l center lh-solid f2 f3-m">{text}</p>
         </div>
       </div>
     </Link>
