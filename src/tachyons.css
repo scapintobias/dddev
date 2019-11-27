@@ -5643,7 +5643,7 @@ code {
   }
 
   .bt-n-m {
-    border-top-style: none;
+    border-top: none;
   }
 
   .br-m {
@@ -7431,6 +7431,10 @@ code {
   .bt-l {
     border-top-style: solid;
     border-top-width: 1px;
+  }
+
+  .bt-n-l {
+    border-top: none;
   }
 
   .br-l {
