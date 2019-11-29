@@ -70,3 +70,10 @@ export const TwoImg = ({image1, image2}) => (
 		<img src={image2} alt="img" className="pa2"></img>
 	</div>
 );
+
+export const Br = () => (
+	<span>
+		<br></br>
+		<br></br>
+	</span>
+);

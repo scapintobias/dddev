@@ -8,7 +8,8 @@ import {
 	SinImg,
 	ThreeImg,
 	TwoImg,
-	ParImg
+	ParImg,
+	Br
 } from "./components.jsx";
 import {Footer} from "../footer.jsx";
 export function Enovia() {
@@ -170,60 +171,59 @@ export function metrodelima() {
 	return (
 		<main>
 			<Raster>
-				<Date place="Italy/Perù" time="March-June 2019" />
+				<Date place="Italy/Perù" time="March-August 2019" />
 				<Title
 					title="Metro de Lima"
 					subtitle="Linea 2"
-					description="Designing a tube wayfinding system, scalable, integrated and economically sustainable."
-					line2="It sometimes embodies a map."
+					description="The ticket issue."
+					line2="After designing its wayfinding system earlier this year, we went back for the interface of the new ticket kiosks."
 				/>
 
 				<Par>
+					<p className="helvetica pt2 pb2 silver fw7">Preamble</p>
 					<p className="pb2">
 						I have always been fascinated about public transportation. Living in
-						Milan gave me the possibility to peruse its iconic wayfinding
-						system, which later led the shaping of the MTA, Washington DC and
-						São Paolo signage systems. So I was very excited when proposed with
-						this project.
+						Milan for a while gave me the possibility to peruse its iconic
+						wayfinding system, which later led the shaping of the MTA,
+						Washington DC and São Paolo signage systems. So I was very excited
+						when proposed with this project, back in March, which outcome you
+						can find{" "}
+						<a
+							className="helvetica link hover-orange fw7"
+							target="_blank"
+							href="http://anonima.design/archive/cat/34_lima.html"
+						>
+							here
+						</a>
+						<Br />
+						This time around, I was back with my Product Designer hat, in order
+						to develop an interface.
 					</p>
 					<hr className="navy"></hr>
-					<p className="helvetica pt2 pb2 silver fw7">Constraints</p>
+					<p className="helvetica pt2 pb2 silver fw7">Brief</p>
 					<p className="pb2">
-						The new line is anywhere close to be finished, and we were working
-						with bare bones 3D models of the stations, in another continent.
-						There wouldn't have been the slightest possibility to visit the site
-						due to political and personal security reasons.
+						The brief has been very clear from the beginning: develop the new
+						interface of the ticket kiosks, relying on the graphic standards we
+						designed in march.
 					</p>
-					<hr className="navy"></hr>
+					<hr className="navy mt4"></hr>
 					<p className="helvetica pt2 pb2 silver fw7">Team</p>
-					<section className="flex flex-row ">
-						<ul className="list">
-							<li>Samuel</li>
-							<li>Tomás</li>
-							<li className="pt4">Tobias</li>
-							<li>Martha</li>
-						</ul>
-						<ul className="list pl4">
-							<li>
-								<i>Architect</i>
-							</li>
-							<li>
-								<i>Civil Engineer</i>
-							</li>
-							<li className="pt4">
-								<i>PM, Product Designer</i>
-							</li>
-							<li>
-								<i>UI Designer</i>
-							</li>
-						</ul>
-					</section>
-					<hr className="navy"></hr>
+					Tobias, <i>Product Designer</i>—Samuel, <i>Architect, UI designer</i>
+					—Alexandra, <i>Software Developer</i>—Rodolfo,{" "}
+					<i>Industrial designer</i>.
 					<p className="helvetica pt2 pb2 silver fw7">Role</p>
 					<p className="pb2">
-						As a product designer I had various responsibilities, spanning from
-						directing the research effort, draw conclusions, customise the
-						process, to defining the user journey and interactions.
+						As a product designer I had various responsibilities: directing the
+						research effort and draw the necessary conclusions, overseeing the
+						production of the typographical system, in order to comply with
+						digital screen legibility, define the information architecture,
+						sketch the screens, and define the user experience of the ticket
+						kiosk. At the end of the first iteration, my duties encompassed the
+						planning for future developements, and assuring everyone was handed
+						off the appropriate documentation to develope all the solutions
+						within the designed system. Due to the political crysis in the late
+						summer of 2019, the project was stopped, as well as the developement
+						of the line.
 					</p>
 				</Par>
 				<SinImg oneimg="https://images.unsplash.com/photo-1496086278971-a39dad3a228f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" />
@@ -244,68 +244,11 @@ export function metrodelima() {
 						system, which takes advantage of the stations’ architecture, has a
 						inner modularity (hence using the pillars), and provides in a clear
 						way the few but essential informations (station name, train
-						direction, entries and exits)
+						direction, entries and exits)<br></br>
+						<br></br> The fourth stage, consisted in
 					</p>
-					<hr className="navy"></hr>
-					<p className="pt3">
-						Whether you’re an urban dweller passing through the turnstiles on a
-						daily basis, or a first-time visitor using it to navigate your way
-						through the countless stations of the network, an effective,
-						coherent and, last but not least, visually pleasant design is of the
-						essence. Designing the system of signs and bits of information that
-						guide people through such a complex experience it’s about
-						understanding what billions of passengers look for, where they look
-						for it and, ultimately, provide it, in the least confusing way
-						possible. Avoiding confusion goes hand in hand with one key element:
-						coherence. As the most effective wayfinding and navigational systems
-						in the world have proved, the higher the coherence among all the
-						different media involved is, the clearer and more usable the network
-						is. Besides coherence, scalability is of the utter importance to
-						ensure the easiest adaptability to future developments of the
-						infrastructure. A coherent, scalable, aesthetically challenging
-						concept is what we are offering here. Acting beforehand, while the
-						whole system is still being built and designed will dramatically
-						reduce the future need of a system-wide overhaul, to bring all the
-						single segments of it to the same communicative level. Failing in
-						doing so, raises the risk of ending up with a labyrinth of
-						mismatched signage and overlapping communication styles with no real
-						pattern or logic. Furthermore, with the ever growing international
-						popularity of graphic design standards, corporate identity, and
-						public awareness of ‘good design’, it becomes more and more clear
-						that an underground network needs a fresh visual identity and a more
-						effective navigational system. Our proposal uses a single strategy
-						to reach both goals: adopting a single but distinctive language
-						across all the different media (maps, posters, physical signage,
-						architecture, collaterals) makes it easier for travellers to find
-						their destination while creating a distinctive and iconic look,
-						similar to those making the great metropolitan networks of the world
-						stand out.
-					</p>
+					<p className="pt3"></p>
 				</Par>
-				<ThreeImg
-					image1="https://source.unsplash.com/random/400x350/?design"
-					image2="https://source.unsplash.com/random/400x350/?city"
-					image3="https://source.unsplash.com/random/400x350/?company"
-				/>
-				<Par>
-					My final project at university has been the redesign of a poem
-					collection by Aldo Palazzeschi, which was published in 1930; resulting
-					a quite successful effort to combine poetry and photography, in a
-					visual book. Beyond those two major aspects, I tried in the years to
-					channel my hobbies and passions into facets of my professional
-					spectrum, be it photography, wayfinding, music production, industrial,
-					web, or exhibit design. Architecture had a strong impact on my design
-					taste, and has been part of my life ever since; many years ago I
-					started a blog, trying to collect everything I liked, ranging from
-					design to civil engineering. In these years, since 2009, I started my
-					own design consultancy, named DisciplineDesign, based between Milan
-					and London. The motto is ‘Design support, from the spoon to the city’,
-					quoting Ernesto Nathan Rogers.
-				</Par>
-				<TwoImg
-					image1="https://source.unsplash.com/random/400x400/?design"
-					image2="https://source.unsplash.com/random/400x400/?city"
-				/>
 			</Raster>
 			<Footer />
 		</main>

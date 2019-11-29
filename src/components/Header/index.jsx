@@ -18,15 +18,15 @@ export function Header(props) {
 					<span className="navicon" />
 				</div>
 				<ul className="fw5 fw4-m menu">
-					<li className="f3-m pt3-m tr-m pr4-m">
+					<li className="f3-m pt3-m tr pr3-m">
 						<NavLink exact to="/case-studies">
 							Case Studies
 						</NavLink>
 					</li>
-					<li className="f3-m pt3-m tr-m pr4-m">
+					<li className="f3-m pt3-m tr pr3-m">
 						<NavLink to="/about">About</NavLink>
 					</li>
-					<li className="f3-m pt3-m tr-m pr4-m">
+					<li className="f3-m pt3-m tr pr3-m">
 						<a
 							href="https://www.instagram.com/discipline.design"
 							target="_blank"
@@ -35,12 +35,12 @@ export function Header(props) {
 							Photos
 						</a>
 					</li>
-					<li className="pt3-m pb2-m tr-m pr4-m">
+					<li className="pt3-m pb2-m tr pr3-m">
 						<a href="mailto:info@discipline.design?subject=Enquiry">
 							<span className="helvetica  f3-m f5 fw4 fw5-m">@</span>
 						</a>
 					</li>
-					<li className="pb3-m pt2-m tr-m pr4-m">
+					<li className="pb3-m pt2-m tr pr3-m">
 						<a
 							href="https://www.linkedin.com/in/scapintobias"
 							target="_blank"
