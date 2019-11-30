@@ -46,6 +46,8 @@ export function Enovia() {
 					months, I had to get back to my freelance clients, and this kept me
 					from starting this project for quite some time. I only had the
 					possibility to start the research well into April.
+					<Br /> Perhaps another constraint to add is the fact the only persona
+					of this project is actually me. Not the simplest task to handle
 					<p className="helvetica fw7 pt3">Research</p>
 				</Par>
 			</Raster>
