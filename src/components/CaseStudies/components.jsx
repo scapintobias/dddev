@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import CN from "classnames";
 
 export const Raster = ({children}) => (
 	<div className="justify-center flex flex-column ml3-l pr3-l ml3-m pr3-m pb5 min-vh-100">
@@ -79,11 +80,24 @@ export const Br = () => (
 	</span>
 );
 
-export const More = ({image1, image2, image3, title1, title2, title3, link1, link2, link3}) => (
- <section className="flex pt4">
-<div className="w-33"><Link to={link1}><img src={image1} alt="img"><p>{title1}</p></Link></div>
-<div className="w-34 pr2 pl2"><Link to={link2}><img src={image2} alt="img"><p>{title2}</p></Link></div>
-<div className="w-33"><Link to={link3}><img src={image3} alt="img"><p>{title3}</p></Link></div>
-</section>
-
-)
+export const More = ({title1, title2, title3, link1, link2, link3}) => (
+	<section>
+		<div className="flex flex-column-m justify-center">
+			<Link to={link1}>
+				<div className="helvetica  mb2-m fw7 ph5 ph3-m tc v-mid f3 hover-orange bg-animate hover-bg-black-10 b--navy navy ba pv6 pv5-m">
+					{title1}
+				</div>
+			</Link>
+			<Link to={link2}>
+				<div className="mr2 ml2 mr0-m ml0-m helvetica mb2-m ph5 ph3-m fw7 tc v-mid f3 hover-orange bg-animate hover-bg-black-10 b--navy navy ba pv6 pv5-m">
+					{title2}
+				</div>
+			</Link>
+			<Link to={link3}>
+				<div className="helvetica mb2-m fw7 ph5 ph3-m tc v-mid f3 hover-orange bg-animate hover-bg-black-10 b--navy navy ba pv6 pv5-m">
+					{title3}
+				</div>
+			</Link>
+		</div>
+	</section>
+);

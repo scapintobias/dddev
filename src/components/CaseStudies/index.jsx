@@ -9,7 +9,8 @@ import {
 	ThreeImg,
 	TwoImg,
 	ParImg,
-	Br
+	Br,
+	More
 } from "./components.jsx";
 import {Footer} from "../footer.jsx";
 export function Enovia() {
@@ -94,8 +95,15 @@ export function Enovia() {
 					If you want to know more in detail what I did in the projects I was
 					involved in, you can peak at the specific files.
 				</Par>
+				<More
+					link1="./"
+					title1="Blimp"
+					link2="#"
+					title2="Blimp"
+					link3="#"
+					title3="Blimp"
+				/>
 			</Raster>
-			<Footer />
 		</main>
 	);
 }
