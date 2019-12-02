@@ -30,25 +30,69 @@ export function Enovia() {
 					expertise gained in the last two semesters, focused primarily on UX
 					and Product design. Many of my colleagues accepted almost any offer
 					they were given—indeed not considering ux-related offers only—just to
-					put in the hours. I decided to approach this differently. This piece
-					is not mistakenly included among the ‘case studies’, because—as you
-					will gather soon—I approached my research for an internship as I would
-					with any other project. I therefore started defining the brief.
-					<p className="helvetica fw7 pt3">Brief</p>I wanted to land an
-					internship which was longer than the mandatory 250 hours (spoiler: at
-					the end the hours were exactly one thousand) extremely UX focused, in
-					a corporate environment but with some start-up ingredients. The
-					company should have been in the tech industry, and I should have had
-					complete and indiscriminate access to engineers of all sorts. Yes, I
-					like to set the bar quite high, but I guess is the only way of
-					achieving something. <p className="helvetica fw7 pt3">Constraints</p>{" "}
-					Having been completely absorbed by university in the last couple
-					months, I had to get back to my freelance clients, and this kept me
-					from starting this project for quite some time. I only had the
-					possibility to start the research well into April.
-					<Br /> Perhaps another constraint to add is the fact the only persona
-					of this project is actually me. Not the simplest task to handle
-					<p className="helvetica fw7 pt3">Research</p>
+					put in the hours. I decided to approach this differently.
+					<Br />I wanted to land an internship which was longer than the
+					mandatory 250 hours (spoiler: at the end the hours were exactly one
+					thousand) extremely UX focused, in a corporate environment but with
+					some start-up ingredients. The company should have been in the tech
+					industry, and I should have had complete and indiscriminate access to
+					engineers of all sorts.
+					<Br />
+					Yes, I like to set the bar quite high, but I guess is the only way of
+					achieving something.
+					<p className="helvetica fw7 pt3">The catch</p>I started looking into
+					all the incubators distributed well around the city, but no one seemed
+					to have an in-house design team, or being even vaguely design driven,
+					so I moved on. One afternoon I was giving the last chance to my
+					university’s career service, and I stumbled into this open position
+					for a UX/UI internship at e-Novia, The Enterprises Factory. Sounded
+					impressive. I then packed up my portfolio, and sent the application.
+					<Br />
+					The interviews went through quite smoothly, and just days from the end
+					of May, I met the team and started the journey.
+					<p className="helvetica fw7 pt3">The company</p>
+					e-Novia is indeed design driven. Anything that happens, comes from the
+					joined design studios, industrial and UX/UI, a team of ten designers
+					who respond to the needs of the 14 startups the company is growing. I
+					had two senior colleagues whom I was very honoured to be mentored by,
+					helping me learn all the blurred lines UX design is made of, and I
+					responded directly to an energetic CDO, always very concerned about
+					the team working well together, growth paths and whatnot. I almost
+					instantly felt at home, something very difficult in this kind of big
+					tech industries.
+					<Br />
+					Previously I said I wanted “complete and indiscriminate access to
+					engineers of all sorts”. Well. Now I was surrounded by nearly 90
+					between software developers and engineers of the most various sort:
+					computer, electronics, automation, mechanic, whatnot. I was in awe.
+					Moreover, as time went by, and my learning curve turned into a
+					plateau, I became more and more reliable, obtaining the respect and
+					trust of each one of them, and that’s the best takeaway I can think
+					of, when reminiscing about this experience.
+					<p className="helvetica fw7 pt3">My role</p>
+					Considered I was actually the last one arrived at the company, and I
+					was covering just an internship position, I have never been treated
+					like one. I was part of the team, had the same responsibilities of the
+					others, the same opportunities to raise my voice and convey opinions,
+					which were always listened to and pondered on. From a confidence point
+					of view, that has been a huge boost from the very beginning.
+					<Br />I mainly focused on collaborative mobility, SaaS and augmented
+					reality, with the startups Yape, Blimp and Weart, developing a wide
+					range of hard and soft skills, from brainstorming and early-sketches
+					of ideas, wireframing, defining the experience, low and high fidelity
+					mockups, user testing and whatnot, to the polished finished interfaces
+					delivered to the developers for implementation and following
+					iterations.
+					<Br />
+					Having spent my teen age learning how to move through different
+					programming languages, I’m maybe not be a master of any, but I have
+					enough valuable knowledge to have a productive conversation with
+					developers, and even when designing, I always keep in mind the
+					boundaries of code, discussing even when we might be able to push them
+					without too much of an effort, to achieve something new.
+					<Br />
+					If you want to know more in detail what I did in the projects I was
+					involved in, you can peak at the specific files.
 				</Par>
 			</Raster>
 			<Footer />

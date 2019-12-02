@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 export const Raster = ({children}) => (
 	<div className="justify-center flex flex-column ml3-l pr3-l ml3-m pr3-m pb5 min-vh-100">
@@ -77,3 +78,12 @@ export const Br = () => (
 		<br></br>
 	</span>
 );
+
+export const More = ({image1, image2, image3, title1, title2, title3, link1, link2, link3}) => (
+ <section className="flex pt4">
+<div className="w-33"><Link to={link1}><img src={image1} alt="img"><p>{title1}</p></Link></div>
+<div className="w-34 pr2 pl2"><Link to={link2}><img src={image2} alt="img"><p>{title2}</p></Link></div>
+<div className="w-33"><Link to={link3}><img src={image3} alt="img"><p>{title3}</p></Link></div>
+</section>
+
+)
