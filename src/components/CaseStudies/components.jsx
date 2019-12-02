@@ -82,7 +82,7 @@ export const Br = () => (
 
 export const More = ({title1, title2, title3, link1, link2, link3}) => (
 	<section>
-		<div className="flex flex-column-m justify-center">
+		<div className="flex mt5 flex-column-m justify-center">
 			<Link to={link1}>
 				<div className="helvetica  mb2-m fw7 ph5 ph3-m tc v-mid f3 hover-orange bg-animate hover-bg-black-10 b--navy navy ba pv6 pv5-m">
 					{title1}
