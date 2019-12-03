@@ -8,7 +8,13 @@ import "./type.css";
 import {useRouter} from "./hooks/useRouter";
 import {Header} from "./components/Header";
 import {Tab} from "./components/Work";
-import {Enovia, DisciplineDesign, metrodelima} from "./components/CaseStudies";
+import {
+	Enovia,
+	DisciplineDesign,
+	Blimp,
+	Weart,
+	Yape
+} from "./components/CaseStudies";
 import {Home, Project, Projects, About} from "./pages";
 
 function ScrollToTop({children}) {
@@ -69,11 +75,9 @@ function PageContent() {
 					exact
 					component={DisciplineDesign}
 				/>
-				<Route
-					path="/case-studies/metro-de-lima"
-					exact
-					component={metrodelima}
-				/>
+				<Route path="/case-studies/weart" exact component={Weart} />
+				<Route path="/case-studies/blimp" exact component={Blimp} />
+				<Route path="/case-studies/yape" exact component={Yape} />
 			</Switch>
 		</animated.div>
 	));

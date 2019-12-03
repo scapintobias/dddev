@@ -13,6 +13,62 @@ import {
 	More
 } from "./components.jsx";
 import {Footer} from "../footer.jsx";
+
+export function Weart() {
+	return (
+		<main>
+			<Raster>
+				<Date place="Milan" time="MAY—NOV—2018" />
+				<Title
+					title="Weart"
+					subtitle="The enterprise factory"
+					description="A sourceful experience."
+					line2="Where I learned to play as a team member, to pitch my idea to the CEO, and—vital—when to shut up."
+				/>
+			</Raster>
+		</main>
+	);
+}
+export function Yape() {
+	return (
+		<main>
+			<Raster>
+				<Date place="Milan" time="MAY—NOV—2018" />
+				<Title
+					title="Yape"
+					subtitle="The enterprise factory"
+					description="A sourceful experience."
+					line2="Where I learned to play as a team member, to pitch my idea to the CEO, and—vital—when to shut up."
+				/>
+			</Raster>
+		</main>
+	);
+}
+export function Blimp() {
+	return (
+		<main>
+			<Raster>
+				<Date place="Milan" time="MAY—NOV—2018" />
+				<Title
+					title="Blimp"
+					subtitle="The enterprise factory"
+					description="A sourceful experience."
+					line2="Where I learned to play as a team member, to pitch my idea to the CEO, and—vital—when to shut up."
+				/>
+				<Par>
+					When my MS courses finished on January 2018, everybody was just
+					missing the mandatory internship. In order to graduate, Politecnico
+					wanted everybody to do a 250-hours internship, to summarise all the
+					expertise gained in the last two semesters, focused primarily on UX
+					and Product design. Many of my colleagues accepted almost any offer
+					they were given—indeed not considering ux-related offers only—just to
+					put in the hours. I decided to approach this differently.
+				</Par>
+			</Raster>
+		</main>
+	);
+}
+
 export function Enovia() {
 	return (
 		<main>
@@ -51,6 +107,7 @@ export function Enovia() {
 					<Br />
 					The interviews went through quite smoothly, and just days from the end
 					of May, I met the team and started the journey.
+					<hr className="navy mt4"></hr>
 					<p className="helvetica fw7 pt3">The company</p>
 					e-Novia is indeed design driven. Anything that happens, comes from the
 					joined design studios, industrial and UX/UI, a team of ten designers
@@ -70,6 +127,7 @@ export function Enovia() {
 					plateau, I became more and more reliable, obtaining the respect and
 					trust of each one of them, and that’s the best takeaway I can think
 					of, when reminiscing about this experience.
+					<hr className="navy mt4"></hr>
 					<p className="helvetica fw7 pt3">My role</p>
 					Considered I was actually the last one arrived at the company, and I
 					was covering just an internship position, I have never been treated
@@ -96,12 +154,15 @@ export function Enovia() {
 					involved in, you can peak at the specific files.
 				</Par>
 				<More
-					link1="./"
-					title1="Blimp"
-					link2="#"
+					link1="./yape"
+					title1="Yape"
+					bgImagei="https://www.gelestatic.it/thimg/rnqyJLk1rTkNQzYkLmh3aHHRtkY=/fit-in/960x540/https%3A//www.lastampa.it/image/contentid/policy%3A1.36532592%3A1561987740/347a8858-95fe-11e9-885d-a4a5552cec84_6_Yape_REV01-kkiH-U11203768442353oqE-1024x576%40LaStampa.it.jpg%3Ff%3Ddetail_558%26h%3D720%26w%3D1280%26%24p%24f%24h%24w%3Da139b42"
+					link2="./blimp"
 					title2="Blimp"
-					link3="#"
-					title3="Blimp"
+					bgImageii="https://blimp.ai/wp-content/uploads/elementor/thumbs/Retail-Cover-oga04tvn5qeo66bcl3842b2ocjtdb22p3cdm3er5m0.jpg"
+					link3="./weart"
+					title3="Weart"
+					bgImageiii="http://weart.it/wp-content/uploads/2017/05/MG_0167-1024x683.jpg"
 				/>
 			</Raster>
 		</main>
@@ -119,7 +180,8 @@ export function DisciplineDesign() {
 					description="A life journey."
 					line2="The personal brand I founded, and how this website came to be."
 				/>
-				<SinImg oneimg="/img/dd_1.png" />
+				<ParImg oneimg="/img/dd_1.png" />
+				<ParImg oneimg="/img/dd_2.png" />
 				<Par>
 					I was born in the Venice’ countryside, in a family of architects and
 					designers. And that has been a strong starting point. Soon after
@@ -192,94 +254,6 @@ export function DisciplineDesign() {
 					image1="https://source.unsplash.com/random/400x400/?design"
 					image2="https://source.unsplash.com/random/400x400/?city"
 				/>
-			</Raster>
-			<Footer />
-		</main>
-	);
-}
-
-export function metrodelima() {
-	return (
-		<main>
-			<Raster>
-				<Date place="Italy/Perù" time="March-August 2019" />
-				<Title
-					title="Metro de Lima"
-					subtitle="Linea 2"
-					description="The ticket issue."
-					line2="After designing its wayfinding system earlier this year, we went back for the interface of the new ticket kiosks."
-				/>
-
-				<Par>
-					<p className="helvetica pt2 pb2 silver fw7">Preamble</p>
-					<p className="pb2">
-						I have always been fascinated about public transportation. Living in
-						Milan for a while gave me the possibility to peruse its iconic
-						wayfinding system, which later led the shaping of the MTA,
-						Washington DC and São Paolo signage systems. So I was very excited
-						when proposed with this project, back in March, which outcome you
-						can find{" "}
-						<a
-							className="helvetica link hover-orange fw7"
-							target="_blank"
-							href="http://anonima.design/archive/cat/34_lima.html"
-						>
-							here
-						</a>
-						<Br />
-						This time around, I was back with my Product Designer hat, in order
-						to develop an interface.
-					</p>
-					<hr className="navy"></hr>
-					<p className="helvetica pt2 pb2 silver fw7">Brief</p>
-					<p className="pb2">
-						The brief has been very clear from the beginning: develop the new
-						interface of the ticket kiosks, relying on the graphic standards we
-						designed in march.
-					</p>
-					<hr className="navy mt4"></hr>
-					<p className="helvetica pt2 pb2 silver fw7">Team</p>
-					Tobias, <i>Product Designer</i>—Samuel, <i>Architect, UI designer</i>
-					—Alexandra, <i>Software Developer</i>—Rodolfo,{" "}
-					<i>Industrial designer</i>.
-					<p className="helvetica pt2 pb2 silver fw7">Role</p>
-					<p className="pb2">
-						As a product designer I had various responsibilities: directing the
-						research effort and draw the necessary conclusions, overseeing the
-						production of the typographical system, in order to comply with
-						digital screen legibility, define the information architecture,
-						sketch the screens, and define the user experience of the ticket
-						kiosk. At the end of the first iteration, my duties encompassed the
-						planning for future developements, and assuring everyone was handed
-						off the appropriate documentation to develope all the solutions
-						within the designed system. Due to the political crysis in the late
-						summer of 2019, the project was stopped, as well as the developement
-						of the line.
-					</p>
-				</Par>
-				<SinImg oneimg="https://images.unsplash.com/photo-1496086278971-a39dad3a228f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" />
-				<Par>
-					<p className="helvetica pt2 pb2 silver fw7">Process</p>
-					<p className="pb2">
-						The first stage of the process consisted in a vast analysis of all
-						the available material of both the existing and the future lines, in
-						order to comprehend the vastness and complexity of the system, and
-						its actual wayfinding. The outcome of this research has shown vast
-						possibilities of improvement, from both a design and infrastructural
-						integration perspective, to solve the lack of scalability,
-						legibility, and consistency.<br></br>
-						<br></br> The second stage consisted in the evaluation of the
-						available channels to convey information through, which consist in:
-						map, station signage, train signage, etc.<br></br>
-						<br></br>The third stage consisted in the developement of a coherent
-						system, which takes advantage of the stations’ architecture, has a
-						inner modularity (hence using the pillars), and provides in a clear
-						way the few but essential informations (station name, train
-						direction, entries and exits)<br></br>
-						<br></br> The fourth stage, consisted in
-					</p>
-					<p className="pt3"></p>
-				</Par>
 			</Raster>
 			<Footer />
 		</main>
