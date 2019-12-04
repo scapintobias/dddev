@@ -2878,10 +2878,21 @@ code {
   padding-right: 2rem;
 }
 
+.ph45 {
+    padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .ph5 {
   padding-left: 4rem;
   padding-right: 4rem;
 }
+
+.ph55 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 
 .ph6 {
   padding-left: 8rem;

@@ -21,9 +21,20 @@ export function Weart() {
 				<Date place="Milan" time="MAY—NOV—2018" />
 				<Title
 					title="Weart"
-					subtitle="The enterprise factory"
+					subtitle="The enterprises factory"
 					description="A sourceful experience."
 					line2="Where I learned to play as a team member, to pitch my idea to the CEO, and—vital—when to shut up."
+				/>
+				<More
+					link1="./yape"
+					title1="Yape"
+					bgImagei="https://www.gelestatic.it/thimg/rnqyJLk1rTkNQzYkLmh3aHHRtkY=/fit-in/960x540/https%3A//www.lastampa.it/image/contentid/policy%3A1.36532592%3A1561987740/347a8858-95fe-11e9-885d-a4a5552cec84_6_Yape_REV01-kkiH-U11203768442353oqE-1024x576%40LaStampa.it.jpg%3Ff%3Ddetail_558%26h%3D720%26w%3D1280%26%24p%24f%24h%24w%3Da139b42"
+					link2="./blimp"
+					title2="Blimp"
+					bgImageii="https://blimp.ai/wp-content/uploads/elementor/thumbs/Retail-Cover-oga04tvn5qeo66bcl3842b2ocjtdb22p3cdm3er5m0.jpg"
+					link3="./weart"
+					title3="Weart"
+					bgImageiii="http://weart.it/wp-content/uploads/2017/05/MG_0167-1024x683.jpg"
 				/>
 			</Raster>
 		</main>
@@ -39,6 +50,20 @@ export function Yape() {
 					subtitle="The enterprise factory"
 					description="A sourceful experience."
 					line2="Where I learned to play as a team member, to pitch my idea to the CEO, and—vital—when to shut up."
+				/>
+				<More
+					link1="./enovia"
+					title1="e-Novia"
+					bgImagei="https://e-novia.it/wp-content/themes/wp-bootstrap-starter-child/images/visit-us.jpg"
+					className="hover-green white ph45"
+					link2="./blimp"
+					title2="Blimp"
+					bgImageii="https://blimp.ai/wp-content/uploads/elementor/thumbs/Retail-Cover-oga04tvn5qeo66bcl3842b2ocjtdb22p3cdm3er5m0.jpg"
+					classNamee="hover-light-blue white ph5"
+					link3="./weart"
+					title3="Weart"
+					bgImageiii="http://weart.it/wp-content/uploads/2017/05/MG_0167-1024x683.jpg"
+					classNameee="hover-yellow white ph5"
 				/>
 			</Raster>
 		</main>
@@ -64,6 +89,17 @@ export function Blimp() {
 					they were given—indeed not considering ux-related offers only—just to
 					put in the hours. I decided to approach this differently.
 				</Par>
+				<More
+					link1="./yape"
+					title1="Yape"
+					bgImagei="https://www.gelestatic.it/thimg/rnqyJLk1rTkNQzYkLmh3aHHRtkY=/fit-in/960x540/https%3A//www.lastampa.it/image/contentid/policy%3A1.36532592%3A1561987740/347a8858-95fe-11e9-885d-a4a5552cec84_6_Yape_REV01-kkiH-U11203768442353oqE-1024x576%40LaStampa.it.jpg%3Ff%3Ddetail_558%26h%3D720%26w%3D1280%26%24p%24f%24h%24w%3Da139b42"
+					link2="./blimp"
+					title2="Blimp"
+					bgImageii="https://blimp.ai/wp-content/uploads/elementor/thumbs/Retail-Cover-oga04tvn5qeo66bcl3842b2ocjtdb22p3cdm3er5m0.jpg"
+					link3="./weart"
+					title3="Weart"
+					bgImageiii="http://weart.it/wp-content/uploads/2017/05/MG_0167-1024x683.jpg"
+				/>
 			</Raster>
 		</main>
 	);
@@ -76,7 +112,7 @@ export function Enovia() {
 				<Date place="Milan" time="MAY—NOV—2018" />
 				<Title
 					title="e-Novia"
-					subtitle="The enterprise factory"
+					subtitle="The enterprises factory"
 					description="A sourceful experience."
 					line2="Where I learned to play as a team member, to pitch my idea to the CEO, and—vital—when to shut up."
 				/>
@@ -157,12 +193,15 @@ export function Enovia() {
 					link1="./yape"
 					title1="Yape"
 					bgImagei="https://www.gelestatic.it/thimg/rnqyJLk1rTkNQzYkLmh3aHHRtkY=/fit-in/960x540/https%3A//www.lastampa.it/image/contentid/policy%3A1.36532592%3A1561987740/347a8858-95fe-11e9-885d-a4a5552cec84_6_Yape_REV01-kkiH-U11203768442353oqE-1024x576%40LaStampa.it.jpg%3Ff%3Ddetail_558%26h%3D720%26w%3D1280%26%24p%24f%24h%24w%3Da139b42"
+					className="hover-orange white ph55"
 					link2="./blimp"
 					title2="Blimp"
 					bgImageii="https://blimp.ai/wp-content/uploads/elementor/thumbs/Retail-Cover-oga04tvn5qeo66bcl3842b2ocjtdb22p3cdm3er5m0.jpg"
+					classNamee="hover-light-blue white ph5"
 					link3="./weart"
 					title3="Weart"
 					bgImageiii="http://weart.it/wp-content/uploads/2017/05/MG_0167-1024x683.jpg"
+					classNameee="hover-yellow white ph5"
 				/>
 			</Raster>
 		</main>

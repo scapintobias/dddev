@@ -89,13 +89,19 @@ export const More = ({
 	link3,
 	bgImagei,
 	bgImageii,
-	bgImageiii
+	bgImageiii,
+	className,
+	classNamee,
+	classNameee
 }) => (
 	<section>
 		<div className="flex mt5 flex-column-m flex-column-l flex-column-ns justify-center">
 			<Link to={link1}>
 				<div
-					className="helvetica mb2-l mb2-ns mb2-m fw9 ph5 ph3-m tc v-mid f1 hover-orange bg-animate b--navy white ba pv6 cover bg-center pv5-m"
+					className={CN(
+						"helvetica mb2-l mb2-ns mb2-m fw7 tracked ph3-m tc v-mid f1 bg-animate b--navy ba pv6 cover bg-center pv5-m",
+						className
+					)}
 					style={{backgroundImage: `url(${bgImagei})`}}
 				>
 					{title1}
@@ -103,7 +109,10 @@ export const More = ({
 			</Link>
 			<Link to={link2}>
 				<div
-					className="mr2 ml2 mr0-l mr0-ns ml0-l ml0-ns mr0-m ml0-m helvetica mb2-l mb2-ns mb2-m ph5 ph3-m fw9 tc v-mid f1 hover-light-blue bg-animate hover-bg-black-10 b--navy white ba pv6 pv5-m cover bg-center"
+					className={CN(
+						"mr2 ml2 mr0-l mr0-ns ml0-l ml0-ns mr0-m ml0-m helvetica mb2-l mb2-ns mb2-m tracked ph3-m fw7 tc v-mid f1 bg-animate hover-bg-black-10 b--navy ba pv6 pv5-m cover bg-center",
+						classNamee
+					)}
 					style={{backgroundImage: `url(${bgImageii})`}}
 				>
 					{title2}
@@ -111,7 +120,10 @@ export const More = ({
 			</Link>
 			<Link to={link3}>
 				<div
-					className="helvetica mb2-m fw9 ph5 ph3-m tc v-mid f1 hover-yellow bg-animate b--navy white ba pv6 pv5-m cover bg-center"
+					className={CN(
+						"helvetica mb2-m fw7 tracked ph3-m tc v-mid f1 bg-animate b--navy ba pv6 pv5-m cover bg-center",
+						classNameee
+					)}
 					style={{backgroundImage: `url(${bgImageiii})`}}
 				>
 					{title3}
