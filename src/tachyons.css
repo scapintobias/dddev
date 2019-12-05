@@ -5,6 +5,7 @@ html {
 
 body {
   margin: 0;
+  color: #001b44;
 }
 
 h1 {
@@ -230,6 +231,7 @@ tr,
 ul {
   box-sizing: border-box;
 }
+
 
 .aspect-ratio {
   height: 0;
@@ -3378,8 +3380,8 @@ code {
 }
 
 .abc {
-  font-size: 24px;
-  line-height: 1.6;
+  font-size: 22px;
+  line-height: 1.5;
 }
 
 .f-7,
@@ -5672,7 +5674,13 @@ code {
   .bt-n-m {
     border-top: none;
   }
-
+ .brl-n-m {
+  border-right: none;
+  border-left: none;
+ }
+  .br-n-m {
+  border-right: none;
+ }
   .br-m {
     border-right-style: solid;
     border-right-width: 1px;

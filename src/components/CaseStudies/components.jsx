@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import CN from "classnames";
 
 export const Raster = ({children}) => (
-	<div className="justify-center flex flex-column ml3-l pr3-l ml3-m pr3-m pb5 min-vh-100">
+	<div className="justify-center flex flex-column ml3-l pr3-l ml3-m pr3-m pb2-m pb3-l pb4 min-vh-100">
 		<article className="sans-serif  dark-gray center">{children}</article>
 	</div>
 );
@@ -21,7 +21,7 @@ export const Date = ({place, time}) => (
 );
 
 export const Title = ({title, subtitle, description, line2}) => (
-	<header className="mw68 w-100-m w-100-l   mb3 mr3-m mauto justify-center helvetica lh-solid bb bw4 b--silver">
+	<header className="mw68 mw6-l w-100-m w-100-l   mb3 mr3-m mauto justify-center helvetica lh-solid bb bw4 b--silver">
 		<p className=" f-6 f-5-m fw7 tracked-tight navy pb2-m pb6">{title}</p>
 		<p className="fw6 f1 silver pb3 pb2-m fw6-m f2-m tracked">{subtitle}</p>
 		<p className="f2 minion fw5 fw6-m f25-m mb0 w-80 w-100-m navy pb4 pb4-m lh-solid">
@@ -42,8 +42,8 @@ export const HelTit = ({line1, line2, line3}) => (
 	</section>
 );
 export const Par = ({children}) => (
-	<section className="mw68 mauto navy">
-		<p className="minion fw5 abc pr3 mb3">{children}</p>
+	<section className="mw68 mw6-l mauto navy">
+		<p className="minion fw5 abc mb2">{children}</p>
 	</section>
 );
 
@@ -99,7 +99,7 @@ export const More = ({
 			<Link to={link1}>
 				<div
 					className={CN(
-						"helvetica mb2-m mb2-l fw7 tracked ph3-m f1 bg-animate b--navy ba w5 w-100-l h5 pt3 cover bg-center",
+						"helvetica mb2-m mb2-l fw7 tracked ph3-m f1 bg-animate w5 w-100-l w-100-m h5 pt3 cover bg-center",
 						className
 					)}
 					style={{backgroundImage: `url(${bgImagei})`}}
@@ -110,7 +110,7 @@ export const More = ({
 			<Link to={link2}>
 				<div
 					className={CN(
-						"helvetica mr2 ml2 mr0-m ml0-m mr0-l ml0-l mb2-m mb2-l tracked ph3-m fw7 f1 bg-animate hover-bg-black-10 b--navy ba w5 w-100-l h5 pt3 cover bg-center",
+						"helvetica mr2 ml2 mr0-m ml0-m mr0-l ml0-l mb2-m mb2-l tracked ph3-m fw7 f1 bg-animate hover-bg-black-10 w5 w-100-l w-100-m h5 pt3 cover bg-center",
 						classNamee
 					)}
 					style={{backgroundImage: `url(${bgImageii})`}}
@@ -121,7 +121,7 @@ export const More = ({
 			<Link to={link3}>
 				<div
 					className={CN(
-						"helvetica mb2-m fw7 tracked ph3-m f1 bg-animate b--navy ba w5 w-100-l h5 pt3 cover bg-center",
+						"helvetica mb2-m fw7 tracked ph3-m f1 bg-animate w5 w-100-l w-100-m h5 pt3 cover bg-center",
 						classNameee
 					)}
 					style={{backgroundImage: `url(${bgImageiii})`}}
