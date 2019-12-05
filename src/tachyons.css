@@ -2741,6 +2741,10 @@ code {
   padding-right: 4rem;
 }
 
+.pr55 {
+  padding-right: 6rem;
+}
+
 .pr6 {
   padding-right: 8rem;
 }
@@ -2838,14 +2842,26 @@ code {
   padding-bottom: 2rem;
 }
 
+.pv45 {
+  padding-top: 2.34rem;
+  padding-bottom: 2.34rem;
+}
+
 .pv5 {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
+
+
 .pv6 {
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+
+.pv65 {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
 }
 
 .pv7 {
@@ -7322,7 +7338,7 @@ code {
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 810px) {
   .aspect-ratio-l {
     height: 0;
     position: relative;
@@ -7446,6 +7462,10 @@ code {
 
   .bt-n-l {
     border-top: none;
+  }
+
+  .br-n-l {
+    border-right: none;
   }
 
   .br-l {
