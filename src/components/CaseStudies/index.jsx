@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 import {
 	Date,
 	Raster,
@@ -12,7 +12,7 @@ import {
 	Br,
 	More
 } from "./components.jsx";
-import {Footer} from "../footer.jsx";
+import {Collapsible} from "./accordion.jsx";
 
 export function Weart() {
 	return (
@@ -63,6 +63,76 @@ export function Yape() {
 					subtitle="Self-driving robot"
 					description="YAPE is a self-driving robot for last-mile delivery able to carry food and goods in record time & at low cost, whilst simultaneously avoiding traffic and producing zero emissions."
 				/>
+				<Par>
+					My journey with Yape has been widely unique.
+					<Br />
+					I arrived at the company partly unaware of what all the startups
+					were actually doing, but Yape, it caught my eye almost instantly.
+					You cannot resist falling in love with it the first time you see
+					this funny contraption running around the company.
+					<Br />
+					I wasn’t involved since the very beginning, and the first task I
+					was given was the start-up’s corporate image, a work said to be
+					‘way overdue’ by both the Champion and the CDO, and, given I was
+					the only one on the team with previous experience, they thought I
+					had the chops to take it home.
+					<Br />
+					<Collapsible button="Read more about the logo">
+						As I said in the{" "}
+						<Link to="./enovia">
+							<span className="helvetica fw7 f4 link hover-animate hover-green">
+								e-Novia
+							</span>
+						</Link>{" "}
+						file, soon came out I had to convince a worryingly
+						uninterested CEO about what I had designed, and I took it as a
+						personal challenge.
+						<Br />
+						So I followed a well defined UX process for him to discover
+						the new corporate image, with the brief containing only few
+						words:
+						<Br />
+						<span className="helvetica orange">
+							“You have to design something visually powerful and
+							intellectually elegant, and you have to design and give a
+							presentation with the only purpose of him to like it at
+							first glance”.
+						</span>
+						<Br />I started researching, as I would with an app or a
+						website. And I soon found some key points where I could easily
+						strike and win.
+						<Br />
+						I took in account his age, what was the design when he was our
+						age, what were his personal interests, and what always put a
+						sparkle in his eyes.
+						<Br />
+						He really liked technology and technology advancements, and
+						revolution in the transport industry. I immediately thought I
+						had two aces up my sleeves. So I went back and forth to
+						reassure myself I was on the right path.
+						<Br />
+						What’s the biggest IT company ever existed, which was around
+						when he was our age? IBM.
+						<Br />
+						What’s the company Steve Jobs built after leaving Apple in
+						1985? NeXT.
+						<Br />
+						What’s the biggest impact communication design had on
+						transport? The MTA signage system in 1966 and The new
+						AmericanAirlines corporate image in 1967.
+						<Br />
+						What this weird combination of events have in common? The
+						designers.
+						<Br />
+						Paul Rand designed both the IBM and the NeXT logos, and
+						Massimo Vignelli the signage system and the AA corporate
+						image, and sometimes did some work for IBM too.
+						<Br />
+						When narrating the story to the CEO, I used these props to win
+						him over, and I succeeded.
+						<ParImg oneimg="https://www.startupitaliaopensummit.eu/wp-content/uploads/2019/11/Yape_logo.png" />
+					</Collapsible>
+				</Par>
 				<More
 					link1="./enovia"
 					title1="e-Novia"
@@ -244,102 +314,6 @@ export function Enovia() {
 					classNameee="hover-yellow white pl2"
 				/>
 			</Raster>
-		</main>
-	);
-}
-
-export function DisciplineDesign() {
-	return (
-		<main>
-			<Raster>
-				<Date place="Italy/UK" time="MAY 2008—Today" />
-				<Title
-					title="DD"
-					subtitle="A design story"
-					description="A life journey."
-					line2="The personal brand I founded, and how this website came to be."
-				/>
-				<ParImg oneimg="/img/dd_1.png" />
-				<ParImg oneimg="/img/dd_2.png" />
-				<Par>
-					I was born in the Venice’ countryside, in a family of architects
-					and designers. And that has been a strong starting point. Soon
-					after middle school, I met Maurizio and Armando Milani, fellow
-					designers of Massimo Vignelli, and that ensured me, my path had
-					to be in design either, I was, ad am, completely fond. The actual
-					rollercoaster really started when in 2008 the aforementioned
-					brothers had at hand a rebrand to do, for the cultural centre not
-					far from the school I was attending, and called me in, asking if
-					I wanted to join them for a closed workshop, with the purpose to
-					deliver the corporate image. I accepted. I have always been
-					taught by all-rounders, who perhaps didn’t intend to move that
-					part of their knowledge to the actual student, because from the
-					70s many things changed. I soon understood by myself I was to be
-					an all rounder too, I’m far too passionate about each and every
-					field of design not to be eager to showcase wide projects
-					including e.g. a lamp, the packaging, and the ad campaign with
-					photos, posters and catalogues to promote this idea machined into
-					something real. In high school I majored in printing, graphic
-					design and photography. This means I spent almost 30 hours a week
-					either in a dark room, developing film, in a printing lab,
-					learning how to screen-print, etch zinc, preparing and printing
-					offset plates by hand (no digital tools involved) or designing
-					books and corporate images. Completed this first deep dive into
-					design, I decided to move to London, where I had the possibility
-					to place in the real world all the skills I had been sharpening
-					in school labs.
-				</Par>
-				<SinImg oneimg="https://source.unsplash.com/random/800x800/?design" />
-				<Par>
-					When choosing which university course to undertake, I considered
-					many, but all in all, what I wanted was something as strong as
-					engineering, deep as architecture, and detailed as a
-					medium-format photograph. The match was Communication Design at
-					the Milan Polytechnic, which embodies each and every aspect of my
-					idea of design: disciplined, fast paced, and with very strong
-					foundations. This long-lasting learning journey, helped me
-					understand what exactly I can deem to be keen on, in the infinite
-					field of design. Since the first steps—and of course it still
-					hasn’t changed—I felt soundly bound to typography; it started I
-					guess when I was asked to draw freehand the whole Bodoni and Neue
-					Haas Grotesk alphabets, back in 2007, and that set off the basic
-					instinct to become really accurate in seizing the right font,
-					kerning and typographical grid for each and every task. Since I
-					spent a lot of time learning how to actually print, the fastest
-					turnaround was to step back, and understand how to design
-					something in order to shape precisely the final printed result;
-					so I approached designing books, catalogues, and anything that
-					could stand on paper. Never forgetting the digital world growing
-					around me, and trying to translate the rules drawn for printing,
-					into digital objects.
-				</Par>
-				<ThreeImg
-					image1="https://source.unsplash.com/random/400x350/?design"
-					image2="https://source.unsplash.com/random/400x350/?city"
-					image3="https://source.unsplash.com/random/400x350/?company"
-				/>
-				<Par>
-					My final project at university has been the redesign of a poem
-					collection by Aldo Palazzeschi, which was published in 1930;
-					resulting a quite successful effort to combine poetry and
-					photography, in a visual book. Beyond those two major aspects, I
-					tried in the years to channel my hobbies and passions into facets
-					of my professional spectrum, be it photography, wayfinding, music
-					production, industrial, web, or exhibit design. Architecture had
-					a strong impact on my design taste, and has been part of my life
-					ever since; many years ago I started a blog, trying to collect
-					everything I liked, ranging from design to civil engineering. In
-					these years, since 2009, I started my own design consultancy,
-					named DisciplineDesign, based between Milan and London. The motto
-					is ‘Design support, from the spoon to the city’, quoting Ernesto
-					Nathan Rogers.
-				</Par>
-				<TwoImg
-					image1="https://source.unsplash.com/random/400x400/?design"
-					image2="https://source.unsplash.com/random/400x400/?city"
-				/>
-			</Raster>
-			<Footer />
 		</main>
 	);
 }

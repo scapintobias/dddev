@@ -13,7 +13,6 @@
 		import "./App.css";
 		import "./tachyons.css";
 		import "./type.css";
-
 		import {
 			useRouter
 		} from "./hooks/useRouter";
