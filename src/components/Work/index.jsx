@@ -1,17 +1,23 @@
-import React from "react";
-import {Footer} from "../footer.jsx";
-import {Cell, CellText, Grid,} from "./components.jsx";
+		import React from "react";
+		import {
+			Footer
+		} from "../footer.jsx";
+		import {
+			Cell,
+			CellText,
+			Grid,
+		} from "./components.jsx";
 
-export function Tab() {
-	return (
-		<main>
+		export function Tab() {
+			return (
+				<main>
 			<Grid>
 				<CellText
 					link="/case-studies/eNovia"
 					subtitle="e-Novia"
 					description="A sourceful experience"
 					text="Where I learned how to drive drones, to pitch an idea to a CEO, and when to shut up."
-					className="hover-green bg-animate hover-bg-black-10 b--navy ba l mb0-l mb0-m fl w-60 w-100-m w-100-l pv65 pv3-l pv2-m brl-n-m"/>
+					className="hover-green bg-animate hover-bg-black-10 b--navy ba l mb0-l mb0-m fl w-60 w-100-m w-100-l pv65 pv6-l pt2-l pb2-l pv2-m brl-n-m"/>
 				<Cell
 					link="/case-studies/yape"
 					subtitle="Yape"
@@ -32,5 +38,5 @@ export function Tab() {
 
 			</Grid>
 		</main>
-	);
-}
+			);
+		}

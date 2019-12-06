@@ -1,9 +1,13 @@
-import React from "react";
-import {Link} from "react-router-dom";
-import TextLoop from "react-text-loop";
-import {Footer} from "../footer.jsx";
-const RandomCity = () => (
-	<span>
+		import React from "react";
+		import {
+			Link
+		} from "react-router-dom";
+		import TextLoop from "react-text-loop";
+		import {
+			Footer
+		} from "../footer.jsx";
+		const RandomCity = () => (
+			<span>
 		based in <br className="dn dib-m dib-ns dn-l"></br>
 		<TextLoop interval={700}>
 			<span>Germany</span>
@@ -21,10 +25,10 @@ const RandomCity = () => (
 			<span>Tahiti</span>
 		</TextLoop>
 	</span>
-);
+		);
 
-export const Homepage = props => (
-	<main>
+		export const Homepage = props => (
+			<main>
 		<section className="pt2 pb5 pl3 pr3 pl2-m pr2-m">
 			<div className="helvetica navy lh-title tracked-tight f-7 f-45-m fw6">
 				<span className="orange">Product</span> &{" "}
@@ -45,10 +49,10 @@ export const Homepage = props => (
 			<p className="pt2 pt2-m minion navy f-6 f2-m lh-title-s">
 				Whether interested in reading more{" "}
 				<b className="helvetica fw7 f-5 f25-m tracked-tight tracked-tight-m link navy hover-silver">
-					<a href="/about">about&nbsp;&nbsp;me</a>
+					<Link to="/about">about&nbsp;&nbsp;me</Link>
 				</b>
 				, it's just a click away.
 			</p>
 		</section>
 	</main>
-);
+		);
