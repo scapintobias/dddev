@@ -166,7 +166,7 @@
 			className
 		} ) => (
 
-			<a href={link} target="_blank" className="link">
+			<a href={link} target="_blank" className="link" rel="noopener noreferrer">
 				<div className={CN("mb2", className)}>
 					<div className="hover-orange">
 		<p className="pt2 fw6 helvetica">{author}</p>

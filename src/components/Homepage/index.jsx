@@ -3,9 +3,6 @@
 			Link
 		} from "react-router-dom";
 		import TextLoop from "react-text-loop";
-		import {
-			Footer
-		} from "../footer.jsx";
 		const RandomCity = () => (
 			<span>
 		based in <br className="dn dib-m dib-ns dn-l"></br>

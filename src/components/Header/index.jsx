@@ -28,7 +28,7 @@
 						</NavLink>
 					</li>
 					<li className="f4 pt3-m tr-m tr-l pr3-m">
-						<NavLink to="/NavLinkbout">About</NavLink>
+						<NavLink exact to="/about">About</NavLink>
 					</li>
 
 					<li className="pt3-m pb2-m tr-m tr-l pr3-m">

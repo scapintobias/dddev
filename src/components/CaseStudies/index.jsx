@@ -7,8 +7,6 @@
 			Raster,
 			Title,
 			Par,
-			SinImg,
-			ThreeImg,
 			TwoImg,
 			ParImg,
 			Br,
@@ -173,7 +171,8 @@
 							<p className="f3 navy i">Bound to the position of the drone in the environment</p>
 						</p>
 						<ul className="list indent">
-							<li>Define a visual representation of the data acquired by the LIDAR sensor</li>	          <li>Design a set of maps, to help positioning the drone in the urban environment</li>
+							<li>Define a visual representation of the data acquired by the LIDAR sensor</li>
+							<li>Design a set of maps, to help positioning the drone in the urban environment</li>
 						</ul>
 						<ParImg oneimg="/img/lidar.jpg" />
 						<p className="helvetica fw6 f2 tracked pt3">The research areas</p>

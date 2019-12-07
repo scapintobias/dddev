@@ -1,10 +1,19 @@
-import React from "react";
-import { Footer } from '../components/footer.jsx';
-import { Link } from "react-router-dom";
-import { Raster, HelTit, Par, SinImg, ThreeImg, TwoImg, ParImg } from '../components/CaseStudies/components.jsx';
-import { Audio } from '../components/Audio/audioplayer.jsx';
-export function About() {
-  return <main>
+		import React from "react";
+		import {
+			Link
+		} from "react-router-dom";
+		import {
+			Raster,
+			HelTit,
+			Par,
+			TwoImg,
+			ParImg
+		} from '../components/CaseStudies/components.jsx';
+		import {
+			Audio
+		} from '../components/Audio/audioplayer.jsx';
+		export function About() {
+			return <main>
     <Raster>
 
       <HelTit
@@ -18,6 +27,5 @@ export function About() {
         </Par>
     </Raster >
 
-  </main >
-    ;
-}
+  </main >;
+		}

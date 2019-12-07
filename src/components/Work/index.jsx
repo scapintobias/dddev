@@ -1,8 +1,5 @@
 		import React from "react";
 		import {
-			Footer
-		} from "../footer.jsx";
-		import {
 			Cell,
 			CellText,
 			Grid,
