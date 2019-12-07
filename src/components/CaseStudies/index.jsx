@@ -1,22 +1,27 @@
-import React from "react";
-import {Link} from "react-router-dom";
-import {
-	Date,
-	Raster,
-	Title,
-	Par,
-	SinImg,
-	ThreeImg,
-	TwoImg,
-	ParImg,
-	Br,
-	More
-} from "./components.jsx";
-import {Collapsible} from "./accordion.jsx";
+		import React from "react";
+		import {
+			Link
+		} from "react-router-dom";
+		import {
+			Date,
+			Raster,
+			Title,
+			Par,
+			SinImg,
+			ThreeImg,
+			TwoImg,
+			ParImg,
+			Br,
+			More,
+			Biblio
+		} from "./components.jsx";
+		import {
+			Collapsible
+		} from "./accordion.jsx";
 
-export function Weart() {
-	return (
-		<main>
+		export function Weart() {
+			return (
+				<main>
 			<Raster>
 				<Date place="e-Novia" time="SEPT-NOV—2018" />
 				<Title
@@ -51,33 +56,34 @@ export function Weart() {
 				/>
 			</Raster>
 		</main>
-	);
-}
-export function Yape() {
-	return (
-		<main>
+			);
+		}
+		export function Yape() {
+			return (
+				<main>
 			<Raster>
 				<Date place="e-Novia" time="MAY—NOV—2018" />
 				<Title
 					title="Yape"
 					subtitle="Self-driving robot"
-					description="YAPE is a self-driving robot for last-mile delivery able to carry food and goods in record time & at low cost, whilst simultaneously avoiding traffic and producing zero emissions."
+					description="Case Study on a teleoperation interface"
+					line2="Yape is now a self-driving robot, but to reach these capabilities, it had to go through a long process of research in many different fields.
+"
 				/>
 				<Par>
+					<span className="i orange f3 fw6">Here I will share what I did during the period I joined the team.<br></br> Many things will have to be redacted, following NDAs.</span>
+					<Br />
 					My journey with Yape has been widely unique.
 					<Br />
 					I arrived at the company partly unaware of what all the startups
-					were actually doing, but Yape, it caught my eye almost instantly.
+					were actually doing, but Yape...it caught my eye almost instantly.
 					You cannot resist falling in love with it the first time you see
 					this funny contraption running around the company.
 					<Br />
-					I wasn’t involved since the very beginning, and the first task I
-					was given was the start-up’s corporate image, a work said to be
-					‘way overdue’ by both the Champion and the CDO, and, given I was
-					the only one on the team with previous experience, they thought I
-					had the chops to take it home.
+					I wasn’t involved since the very start of my time at the company, and the first task I
+					was given was the start-up’s corporate image. But if you were here to read more about the actual interaction project, why haven't you skipped it already?
 					<Br />
-					<Collapsible button="Read more about the logo">
+					<Collapsible button="Read more about the corporate image">
 						As I said in the{" "}
 						<Link to="./enovia">
 							<span className="helvetica fw7 f4 link hover-animate hover-green">
@@ -93,10 +99,7 @@ export function Yape() {
 						words:
 						<Br />
 						<span className="helvetica orange">
-							“You have to design something visually powerful and
-							intellectually elegant, and you have to design and give a
-							presentation with the only purpose of him to like it at
-							first glance”.
+							“You have to design something visually powerful and intellectually elegant, and you have to give [the CEO] a presentation with the only purpose of him to like it at first glance”.
 						</span>
 						<Br />I started researching, as I would with an app or a
 						website. And I soon found some key points where I could easily
@@ -132,6 +135,111 @@ export function Yape() {
 						him over, and I succeeded.
 						<ParImg oneimg="https://www.startupitaliaopensummit.eu/wp-content/uploads/2019/11/Yape_logo.png" />
 					</Collapsible>
+						<p className="helvetica f1 fw6 tracked pt3">Driving a drone remotely</p>
+						<ParImg oneimg="https://e-novia.it/wp-content/uploads/2018/11/6_Yape_REV01.jpg" />
+						<p className="helvetica fw6 f2 tracked pt3">Structure and management</p>
+						When I arrived, the engineering team had already solved the majority of the mechanical issues, and implemented an alpha version of the guiding software, allowing to drive the drone by sight, with a standard joypad. The next step was to push the development forward, aiming at the completely remote driving of the drone, while the driver was comfortably sat in a control room, receiving as input data transmitted from the vehicle's sensors.
+						<Br />
+						It was therefore essential taking in consideration the filtered visual perception, and how to convey visually some digital aids we as humans usually perceive from the outer world with our senses.
+						<Br />
+						During the first step of the project, there had to be acquired some knowledge about ugvs (unmanned ground vehicles), both from a mechanical point of view: how the chassis is built, how the motors work, which are the physical limits of movement given by these motors; and an electronic point of view: the type of sensors mounted aboard, what kind of camera is available and what type of video is capable of detect, how and which data are transmitted from and to the vehicle by the control room, what are the features of the programming language used etc.
+						<Br />
+						This step has been very helpful in defining the limits of the research, and understanding how to integrate the interface design into this extremely complex system.
+						<ParImg oneimg="https://images.unsplash.com/photo-1501290741922-b56c0d0884af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3574&q=80" />
+						<p className="helvetica fw6 f2 tracked pt3">My role</p>
+						Although the drive-by-sight was completely functional, the only features already implemented for the remote control were the decoding of the visual feed from the camera, and an  horizontal white bar advancing as the drone accelerated, but with no indication of the actual speed or aids that helped you understand the indicator at a glance.
+						<Br />
+						The role of the designer has actually been, taking advantage of its specific knowledge of interaction and interface design, define which were the bare minimum requisites for a very fluid remote control, and which were the problems to solve for achieving this goal, outlining the research path, performing the research, analyse both that data, and the data the engineers had been gaining through their set of tests, and use it to deline the functionalities. Only at this point sketches would begin, long hours of meetings with the developers to understand if everything that was thought could be actually be built in code, and then the invision prototype could start to get a light UI coat, just in time to start the testing again, which last almost four months.
+						<p className="helvetica fw6 f2 tracked pt3">The research challenges</p>
+						After some amount of time trying to deline which were the upmost problems to undertake, they can be divided into three groups:
+						<Br />
+						<p className="orange f2 i">First group
+						<p className="f3 navy i">Bound to the perception of the driver</p></p>
+						<ul className="list indent">
+							<li>Resolve the perception of depth</li>
+							<li> Resolve the perception of the radius of curvature</li>
+							<li> Resolve the perception of the incline</li>
+							<li> Resolve the perception of acceleration </li>
+						</ul>
+						<p className="orange f2 i pt3">Second group
+							<p className= "f3 navy i">Bound to the actual driving</p>
+						</p>
+						<ul className="list indent">
+							<li>Design a reference system inside the viewport</li>
+							<li>Design a pointing device, to ease the direction of the vehicle</li>
+							<li>Calibrate the sensibility of the controller's commands</li>
+						</ul>
+						<p className="orange f2 i pt3">Third group
+							<p className="f3 navy i">Bound to the position of the drone in the environment</p>
+						</p>
+						<ul className="list indent">
+							<li>Define a visual representation of the data acquired by the LIDAR sensor</li>	          <li>Design a set of maps, to help positioning the drone in the urban environment</li>
+						</ul>
+						<ParImg oneimg="/img/lidar.jpg" />
+						<p className="helvetica fw6 f2 tracked pt3">The research areas</p>
+						Defined the challenges, the research field became more clear and delimited. It started searching about general robotics, human-machine interaction and human-machine interface, with a focus on service robots, I needed a strong base of knowledge to comprehend and position the results of the actual research, being able to evaluate if they improved our specific project, or were general considerations, difficult to apply in a situation with well-defined limits.
+						<p className="orange f2 i pt3">First group</p>
+						<p className="pl4">The key target of this phase were the human factors, cognitive psychology, which are the way humans perceive through the senses, and how these senses behave when they're filtered by a display, by which we look through the drone's eyes, looking for bearings useful in driving; everything to find graphic solutions providing for the lack of analog signals, making the drive flawless and immersive.</p>
+						<p className="orange f2 i pt3">Second group</p>
+						<p className="pl4">Analised the filtered perception in a broad sense, the second group brings us in the centre of our project. Thus, the target of the research was to find similar situations where other designers had to solve similar issues, even in antithetical fields, to find cues for new thoughts. Among other examples: HUDs in combat jet fighters, the DaVinci system for telesurgery, parking sensors, and control rooms in general.</p>
+						<p className="orange f2 i pt3">Third group</p>
+						<p className="pl4">I searched into the graphic outputs of the LIDAR sensors, to understand whether it was possible to take advantage of something already available, or if it was necessary considering designing something new from the ground up. Having worked on custom interactive maps already, I ought to find out—again—whether I could re-use those solutions or not.</p>
+						<TwoImg
+							image1="/img/davinci.jpeg"
+							className="w-60 w-100-l w-100-m"
+							image2="/img/f18hud.jpg"
+							classNamee="w-40 w-100-l w-100-m"
+						/>
+						<TwoImg
+							image1="/img/parkassist.jpg"
+							className="w-40 w-100-l w-100-m"
+							image2="/img/mastercontrol.jpg"
+							classNamee="w-60 w-100-l w-100-m"
+						/>
+						<TwoImg
+							image1="/img/croom.jpg"
+							className="w-50 w-100-l w-100-m"
+							image2="/img/map.png"
+							classNamee="w-50 w-100-l w-100-m"
+						/>
+					<Collapsible button="Research bibliography">
+						<Biblio
+							className="bb bt"
+							link="https://doi.org/10.1016/j.ergon.2006.06.013"
+							name="The Effects of Graphical Interface Design Characteristics on Human–Computer Interaction Task Efficiency."
+							author="R. Michalski, J. Grobelny and W. Karwowsk."
+							year="2006."
+							publication="International Journal of Industrial Ergonomics,"
+							pages="vol. 36, pp. 959–977,"
+						/>
+					<Biblio
+							className="bb"
+							link="http://ps-2.kev009.com/rs6000/redbook-cd/gg244107.pdf"
+							name="The library for system
+              solutions End User Interface reference."
+							author="International Business Machines."
+						/>
+						<Biblio
+							className="bb"
+							link="https://doi.org/10.1016/S0020-7373(81)80049-1"
+							name="The ZOG Approach to Man-Machine Communication."
+							author="O. Robertson, D. McCracken and A. Newell."
+							year="1996."
+							publication="International Journal of Human-Computer Studies, "
+							pages="vol. 51, pp. 279-306"
+						/>
+						<Biblio
+							className="bb"
+							link="https://ieeexplore.ieee.org/document/5335992"
+							name="Human-Machine Interface: Design Principles of Visual Information in Human-Machine Interface Design."
+							author="C. Gong."
+							year="2009."
+							publication="International Conference on Intelligent Human-Machine Systems and Cybernetics, Hangzhou, Zhejiang,"
+							pages="pp. 262-265."
+						/>
+					</Collapsible>
+
+
 				</Par>
 				<More
 					link1="./enovia"
@@ -149,11 +257,11 @@ export function Yape() {
 				/>
 			</Raster>
 		</main>
-	);
-}
-export function Blimp() {
-	return (
-		<main>
+			);
+		}
+		export function Blimp() {
+			return (
+				<main>
 			<Raster>
 				<Date place="e-Novia" time="JUL-OCT—2018" />
 				<Title
@@ -188,12 +296,12 @@ export function Blimp() {
 				/>
 			</Raster>
 		</main>
-	);
-}
+			);
+		}
 
-export function Enovia() {
-	return (
-		<main>
+		export function Enovia() {
+			return (
+				<main>
 			<Raster>
 				<Date place="Milan" time="MAY—NOV—2018" />
 				<Title
@@ -315,5 +423,5 @@ export function Enovia() {
 				/>
 			</Raster>
 		</main>
-	);
-}
+			);
+		}

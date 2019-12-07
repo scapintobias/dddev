@@ -2897,7 +2897,7 @@ code {
 }
 
 .ph45 {
-    padding-left: 3rem;
+  padding-left: 3rem;
   padding-right: 3rem;
 }
 
@@ -3413,6 +3413,10 @@ code {
 
 .f25 {
   font-size: 2rem;
+}
+
+.f27 {
+  font-size: 1.75rem;
 }
 
 .f3 {
@@ -5674,13 +5678,16 @@ code {
   .bt-n-m {
     border-top: none;
   }
- .brl-n-m {
-  border-right: none;
-  border-left: none;
- }
+
+  .brl-n-m {
+    border-right: none;
+    border-left: none;
+  }
+
   .br-n-m {
-  border-right: none;
- }
+    border-right: none;
+  }
+
   .br-m {
     border-right-style: solid;
     border-right-width: 1px;

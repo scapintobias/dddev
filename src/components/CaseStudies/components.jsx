@@ -37,7 +37,7 @@
 		className="mw68 mw6-l w-100-m w-100-l   mb3 mr3-m mauto justify-center helvetica lh-solid bb bw4 b--silver">
 		<p className=" f-6 f-5-m fw7 tracked-tight navy pb2-m pb6">{title}</p>
 		<p className="fw6 f1 silver pb3 pb2-m fw6-m f2-m tracked">{subtitle}</p>
-		<p className="f2 minion fw5 fw6-m f25-m mb0 w-80 w-100-m navy pb4 pb4-m lh-solid">
+		<p className="f2 minion i fw5 fw6-m f25-m mb0 w-80 w-100-m orange pb4 pb4-m lh-solid">
 			{description}
 		</p>
 		<p className="f2 minion fw5 fw6-m f25-m mb0 w-80 w-100-m navy pb4 pb2-m lh-solid">
@@ -81,26 +81,16 @@
 		<img src={oneimg} alt="img"></img>
 	</div>
 		);
-		export const ThreeImg = ( {
-			image1,
-			image2,
-			image3
-		} ) => (
-			<div
-		className="w-100 flex flex-row justify-center items-center-m items-center-l flex-column-l flex-column-m mauto pt4 pb4">
-		<img src={image1} alt="img" className="pa2"></img>
-		<img src={image2} alt="img" className="pa2"></img>
-		<img src={image3} alt="img" className="pa2"></img>
-	</div>
-		);
 
 		export const TwoImg = ( {
 			image1,
-			image2
+			image2,
+			className,
+			classNamee
 		} ) => (
-			<div className="w-100 flex flex-row justify-center items-center-m flex-column-m mauto pt4 pb4">
-		<img src={image1} alt="img" className="pa2"></img>
-		<img src={image2} alt="img" className="pa2"></img>
+			<div className="mw68 flex-row flex justify-center overflow-hidden flex-column-l flex-column-m mb3">
+		<img src={image1} alt="img" className={CN("mr3 mr0-m mr0-l mv2-m mv2-l", className)}></img>
+		<img src={image2} alt="img" className={CN("mv2-m mv2-l", classNamee)}></img>
 	</div>
 		);
 
@@ -165,3 +155,22 @@
 		</div>
 	</section>
 		);
+
+		export const Biblio = ( {
+			link,
+			name,
+			author,
+			year,
+			publication,
+			pages,
+			className
+		} ) => (
+
+			<a href={link} target="_blank" className="link">
+				<div className={CN("mb2", className)}>
+					<div className="hover-orange">
+		<p className="pt2 fw6 helvetica">{author}</p>
+		<p className="i f27">{name}</p>
+		<p>{publication} <span>{pages}</span> {year}</p></div></div>
+	</a>
+		)

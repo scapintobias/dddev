@@ -28,7 +28,7 @@
 						</NavLink>
 					</li>
 					<li className="f4 pt3-m tr-m tr-l pr3-m">
-						<NavLink to="/about">About</NavLink>
+						<NavLink to="/NavLinkbout">About</NavLink>
 					</li>
 
 					<li className="pt3-m pb2-m tr-m tr-l pr3-m">
@@ -37,8 +37,7 @@
 						</a>
 					</li>
 					<li className="f3-m pt2-m tr-m tr-l pr3-m">
-						<a
-							href="https://www.instagram.com/discipline.design"
+						<a href="https://www.instagram.com/discipline.design"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -65,8 +64,7 @@
 						</a>
 					</li>
 					<li className="pb3-m pt3-m tr-m tr-l pr3-m">
-						<a
-							href="https://www.linkedin.com/in/scapintobias"
+						<a href="https://www.linkedin.com/in/scapintobias"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
