@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@csstools/normalize.css": "^10.0.0",
+    "@u-wave/react-vimeo": "^0.8.1",
     "bootstrap": "^4.4.1",
     "classnames": "^2.2.6",
     "git": "^0.1.5",

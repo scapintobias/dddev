@@ -1,29 +1,23 @@
-		import React from 'react';
-		import {
-			Accordion,
-			AccordionItem,
-			AccordionItemHeading,
-			AccordionItemButton,
-			AccordionItemPanel,
-		} from 'react-accessible-accordion';
-		import './style.css';
+import React from 'react';
+import {Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel} from 'react-accessible-accordion';
+import './style.css';
 
-		export function Collapsible( props ) {
+export function Collapsible(props) {
 
-			return (
-				<Accordion allowZeroExpanded={true}>
-            <AccordionItem>
-                <AccordionItemHeading className="helvetica f4 navy">
-                    <AccordionItemButton>
-                        {props.button}
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                        {props.children}
-                    </p>
-                </AccordionItemPanel>
-            </AccordionItem>
-        </Accordion>
-			);
-		}
+	return (
+		<Accordion allowZeroExpanded={true}>
+			<AccordionItem>
+				<AccordionItemHeading className="helvetica f4 navy">
+					<AccordionItemButton>
+						{props.button}
+					</AccordionItemButton>
+				</AccordionItemHeading>
+				<AccordionItemPanel>
+					<div>
+						{props.children}
+					</div>
+				</AccordionItemPanel>
+			</AccordionItem>
+		</Accordion>
+	);
+}
