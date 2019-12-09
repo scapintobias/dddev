@@ -23,11 +23,11 @@
 			Tab
 		} from "./components/Work";
 		import {
-			Enovia,
-			Blimp,
-			Weart,
-			Yape
+			Enovia
 		} from "./components/CaseStudies";
+		import {
+			Yape
+		} from "./components/CaseStudies/yape.jsx";
 		import {
 			Home,
 			Project,
@@ -103,8 +103,6 @@
 				<Route path="/about/" component={About} />
 				<Route path="/case-studies/" exact component={Tab} />
 				<Route path="/case-studies/eNovia" exact component={Enovia} />
-				<Route path="/case-studies/weart" exact component={Weart} />
-				<Route path="/case-studies/blimp" exact component={Blimp} />
 				<Route path="/case-studies/yape" exact component={Yape} />
 			</Switch>
 		</animated.div>

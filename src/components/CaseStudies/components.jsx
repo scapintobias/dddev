@@ -61,9 +61,9 @@ export const SinImg = ({oneimg}) => (
 );
 
 export const TwoImg = ({image1, image2, className, classNamee}) => (
-	<div className="mw68 flex-row flex justify-center overflow-hidden flex-column-l flex-column-m mb3">
-		<img src={image1} alt="img" className={CN("mr3 mr0-m mr0-l mv2-m mv2-l", className)}></img>
-		<img src={image2} alt="img" className={CN("mv2-m mv2-l", classNamee)}></img>
+	<div className="mw68 flex-row flex justify-center overflow-hidden flex-column-m mb3">
+		<img src={image1} alt="img" className={CN("mr3 mr0-m", className)}></img>
+		<img src={image2} alt="img" className={CN(classNamee)}></img>
 	</div>
 );
 
@@ -71,8 +71,7 @@ export const Br = () => (<span>
 	<br></br>
 	<br></br>
 </span>);
-
-export const More = ({
+const Mor = ({
 	title1,
 	title2,
 	title3,
@@ -123,6 +122,29 @@ export const More = ({
 						backgroundImage: `url(${bgImageiii})`
 					}}>
 					{title3}
+				</div>
+			</Link>
+		</div>
+	</section>
+);
+export const More = ({
+	title1,
+	link1,
+	bgImagei,
+	className
+}) => (
+	<section>
+		<div className="flex mt5 flex-column-m flex-column-l justify-center">
+			<Link to={link1}>
+				<div
+					className={CN(
+						"helvetica mb2-m mb2-l fw7 tracked ph3-m f1 bg-animate w5 w-100-l w-100-m h5 pt3 cover bg-center",
+						className
+					)}
+					style={{
+						backgroundImage: `url(${bgImagei})`
+					}}>
+					{title1}
 				</div>
 			</Link>
 		</div>
