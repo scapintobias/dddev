@@ -3058,6 +3058,10 @@ code {
   margin-top: 0;
 }
 
+.mt05 {
+  margin-top: 0.095rem;
+}
+
 .mt1 {
   margin-top: 0.25rem;
 }
@@ -6645,6 +6649,11 @@ code {
     padding-right: 1rem;
   }
 
+  .pr35-m {
+    padding-right: 1.4rem;
+  }
+
+
   .pr4-m {
     padding-right: 2rem;
   }
@@ -8442,6 +8451,10 @@ code {
 
   .pr3-l {
     padding-right: 1rem;
+  }
+
+  .pr35-l {
+    padding-right: 1.4rem;
   }
 
   .pr4-l {
