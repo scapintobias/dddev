@@ -2,9 +2,9 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {
 	Raster,
-	HelTit,
+
 	Par,
-	TwoImg,
+
 	ParImg,
 	Br
 } from '../components/CaseStudies/components.jsx';

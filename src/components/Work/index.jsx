@@ -1,29 +1,31 @@
 		import React from "react";
 		import {
-			Cell,
-			CellText,
 			Grid,
+			Card,
 		} from "./components.jsx";
 
 		export function Tab() {
 			return (
 				<main>
-<Grid>
+					<Grid>
+						<Card
+							link="./case-studies/yape"
+							image="https://e-novia.it/wp-content/uploads/2018/11/6_Yape_REV01.jpg"
+							title="Yape"
+							subtitle="Case study"
+							description="When I learned how to drive land drones, researched into cognitive perception, telerobotics and fastlaps"
+							className="hover-light-blue bg-animate navy"
+							/>
+					<Card
+						link="./case-studies/enovia"
+						image="https://e-novia.it/wp-content/themes/wp-bootstrap-starter-child/images/visit-us.jpg"
+						title="e-Novia"
+						subtitle="A sourceful experience"
+						description="Where I learned to play as a team member, to pitch my idea to a CEO, and—vital—when to shut up."
+						className="hover-green bg-animate navy"
+						/>
 
-						<CellText
-							link="/case-studies/eNovia"
-							subtitle="e-Novia"
-							description="A sourceful experience"
-							text="Where I learned how to drive drones, to pitch an idea to a CEO, and–vital–when to shut up."
-							className="hover-green bg-animate hover-bg-black-10 b--navy bt bl bb fl w-50 w-100-m pv4 pv1-m brl-n-m mb3"/>
-						<CellText
-							link="/case-studies/yape"
-							subtitle="Yape"
-							description="Case study"
-							text="When I researched into human cognitive perception, telerobotics and fastlaps."
-							className="hover-light-blue bg-animate hover-bg-black-10 b--navy fl w-50 w-100-m pv4 pv1-m br bb bt bt-n-m brl-n-m bl br-l bb-l bb-m mb3"/>
-
-			</Grid>
+					</Grid>
 		</main>
 			);
 		}

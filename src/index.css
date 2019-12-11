@@ -98,22 +98,6 @@ h6 {
 	clear: both;
 }
 
-p,
-ul {
-	margin-bottom: 1rem;
-}
-
-.unfiled {
-	color: #666;
-	text-decoration: line-through;
-}
-
-.catalog {
-	padding-top: 4rem;
-	margin-left: 1rem;
-	margin-right: 1rem;
-}
-
 .footer {
 	align-items: flex-end;
 	color: #666;

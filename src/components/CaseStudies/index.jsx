@@ -1,26 +1,18 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import {
 	Date,
 	Raster,
 	Title,
 	Par,
-	TwoImg,
-	ParImg,
-	SinImg,
 	Br,
-	More,
-	Biblio
+	More
 } from "./components.jsx";
-import { Yape } from "./yape.jsx";
-import Vimeo from '@u-wave/react-vimeo';
-import {Collapsible} from "./accordion.jsx";
 
 export function Enovia() {
 	return (
 		<main>
 			<Raster>
-				<Date place="Milan" time="MAY—NOV—2018"/>
+				<Date place="Milan" time="MAY—NOV—2018" position="Product Design Intern"/>
 				<Title
 					title="e-Novia"
 					subtitle="The enterprises factory"
@@ -96,15 +88,7 @@ export function Enovia() {
 					link1="./yape"
 					title1="Yape"
 					bgImagei="https://www.gelestatic.it/thimg/rnqyJLk1rTkNQzYkLmh3aHHRtkY=/fit-in/960x540/https%3A//www.lastampa.it/image/contentid/policy%3A1.36532592%3A1561987740/347a8858-95fe-11e9-885d-a4a5552cec84_6_Yape_REV01-kkiH-U11203768442353oqE-1024x576%40LaStampa.it.jpg%3Ff%3Ddetail_558%26h%3D720%26w%3D1280%26%24p%24f%24h%24w%3Da139b42"
-					className="hover-gold tl white pl2"
-					link2="./blimp"
-					title2="Blimp"
-					bgImageii="https://blimp.ai/wp-content/uploads/elementor/thumbs/Retail-Cover-oga04tvn5qeo66bcl3842b2ocjtdb22p3cdm3er5m0.jpg"
-					classNamee="hover-light-purple white pl2"
-					link3="./weart"
-					title3="Weart"
-					bgImageiii="http://weart.it/wp-content/uploads/2017/05/MG_0167-1024x683.jpg"
-					classNameee="hover-yellow white pl2"/>
+					className="gold"/>
 			</Raster>
 		</main>
 	);

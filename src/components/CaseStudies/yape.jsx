@@ -7,7 +7,6 @@ import {
 	Par,
 	TwoImg,
 	ParImg,
-	SinImg,
 	Br,
 	More,
 	Biblio
@@ -19,11 +18,11 @@ export function Yape() {
 	return (
 		<main>
 			<Raster>
-				<Date place="e-Novia" time="MAY—NOV—2018"/>
+				<Date place="e-Novia S.P.A." time="JUN—NOV—2018" position="Product Designer Intern"/>
 				<Title
 					title="Yape"
 					subtitle="Remote-driving robot"
-					description="Case Study on teleoperation interaction"
+					description="Case Study on teleoperation user experience"
 					line2="Yape is now a self-driving robot, but to reach these capabilities, it had to go through a long process of research and developement in many different fields.
 "/>
 				<Par>
@@ -349,7 +348,7 @@ export function Yape() {
 					link1="./enovia"
 					title1="e-Novia"
 					bgImagei="https://e-novia.it/wp-content/themes/wp-bootstrap-starter-child/images/visit-us.jpg"
-					className="hover-green white pl2 center"/>
+					className="green"/>
 			</Raster>
 
 		</main>

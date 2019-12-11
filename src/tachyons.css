@@ -293,9 +293,6 @@ ul {
   z-index: 100;
 }
 
-img {
-  max-width: 100%;
-}
 
 .cover {
   background-size: cover !important;
@@ -1383,6 +1380,10 @@ code {
 
 .mw5 {
   max-width: 16rem;
+}
+
+.mw55 {
+	max-width: 20rem;
 }
 
 .mw6 {
@@ -6813,6 +6814,10 @@ code {
     padding-left: 16rem;
     padding-right: 16rem;
   }
+
+  .mauto-m {
+  margin: auto;
+}
 
   .ma0-m {
     margin: 0;

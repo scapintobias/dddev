@@ -8,22 +8,31 @@
 		export const Grid = ( {
 			children
 		} ) => (
-			<div className="fill-viewport mw68 mw-100-m mw-100-l pr3 pl3 pl3-l pr3-l pl3-m pr3-m flex-m flex-l flex-wrap-l flex-column-m mauto mt4 mt3-l mt3-m mb3">
+			<div className="flex justify-center fill-viewport flex-wrap flex-column-m">
 		{children}
 	</div>
 		);
 
-		export const Cell = ( {
+		export const Card = ( {
 			link,
+			image,
+			title,
 			subtitle,
 			description,
 			className
 		} ) => (
-			<Link to={link} className={CN("flex justify-center", className)}>
-		<div className="w-90 tc">
-			<h1 className="helvetica tracked f2 b lh-leading pb3">{subtitle}</h1>
-			<p className="pb1 pt5 f3 i minion">{description}</p>
-		</div>
+			<Link to={link} className="mauto-m">
+				<article className={CN("br3 shadow-hover ba b--black-10 mh3 mv3 mw55", className)}>
+					<img src={image} className="obj-cover db br3 br--top h5 center" alt="img"/>
+					<div className="pa3">
+							<div className="f25 fw7 tracked helvetica pb2">{title}</div>
+							<div className="f3 minion orange i pb3">{subtitle}</div>
+						<div className="f4 lh-copy navy lh-leading minion">
+							{description}
+						</div>
+						<div className="helvetica fw6 f4 tr mt3">Read more</div>
+					</div>
+				</article>
 	</Link>
 		);
 

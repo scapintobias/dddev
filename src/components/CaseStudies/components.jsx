@@ -8,30 +8,31 @@ export const Raster = ({children}) => (
 	</div>
 );
 
-export const Date = ({place, time}) => (
+export const Date = ({place, time, position}) => (
 	<section className="mw68 w-100-l helvetica mauto pb4 pb2-m pt3 pt2-m">
 		<div className="fw6 f4 navy">
-			<p>
+			<div>
 				{place}
 				<br></br>
 				<time className="silver">{time}</time>
-			</p>
+				<br></br>
+				<p className="orange">{position}</p>
+			</div>
 		</div>
 	</section>
 );
 
 export const Title = ({title, subtitle, description, line2}) => (
-	<header
-		className="mw68 mw6-l w-100-m w-100-l   mb3 mr3-m mauto justify-center helvetica lh-solid bb bw4 b--silver">
-		<p className=" f-6 f-5-m fw7 tracked-tight navy pb2-m pb6">{title}</p>
+	<section className="mw68 w-100-m w-100-l mb3 mr3-m mauto justify-center helvetica lh-solid bb bw4 b--silver">
+		<p className="f-6 f-5-m fw7 tracked-tight navy pb2-m pb6">{title}</p>
 		<p className="fw6 f1 silver pb3 pb2-m fw6-m f2-m tracked">{subtitle}</p>
-		<p className="f2 minion i fw5 fw6-m f25-m mb0 w-80 w-100-m orange pb4 pb4-m lh-solid">
+		<p className="f2 minion i fw5 fw6-m f25-m mb0 w-90 w-100-m orange pb4 pb4-m lh-solid">
 			{description}
 		</p>
-		<p className="f2 minion fw5 fw6-m f25-m mb0 w-80 w-100-m navy pb4 pb2-m lh-solid">
+		<p className="f2 minion fw5 fw6-m f25-m mb0 w-90 w-100-m navy pb4 pb2-m lh-solid">
 			{line2}
 		</p>
-	</header>
+	</section>
 );
 export const HelTit = ({line1, line2, line3}) => (
 	<section className="mw68 w-100-m w-100-l mauto">
@@ -71,83 +72,27 @@ export const Br = () => (<span>
 	<br></br>
 	<br></br>
 </span>);
-const Mor = ({
-	title1,
-	title2,
-	title3,
-	link1,
-	link2,
-	link3,
-	bgImagei,
-	bgImageii,
-	bgImageiii,
-	className,
-	classNamee,
-	classNameee
-}) => (
-	<section>
-		<div className="flex mt5 flex-column-m flex-column-l justify-center">
-			<Link to={link1}>
-				<div
-					className={CN(
-						"helvetica mb2-m mb2-l fw7 tracked ph3-m f1 bg-animate w5 w-100-l w-100-m h5 pt3 cover bg-center",
-						className
-					)}
-					style={{
-						backgroundImage: `url(${bgImagei})`
-					}}>
-					{title1}
-				</div>
-			</Link>
-			<Link to={link2}>
-				<div
-					className={CN(
-						"helvetica mr2 ml2 mr0-m ml0-m mr0-l ml0-l mb2-m mb2-l tracked ph3-m fw7 f1 bg-animate hover-bg-bla" +
-								"ck-10 w5 w-100-l w-100-m h5 pt3 cover bg-center",
-						classNamee
-					)}
-					style={{
-						backgroundImage: `url(${bgImageii})`
-					}}>
-					{title2}
-				</div>
-			</Link>
-			<Link to={link3}>
-				<div
-					className={CN(
-						"helvetica mb2-m fw7 tracked ph3-m f1 bg-animate w5 w-100-l w-100-m h5 pt3 cover bg-center",
-						classNameee
-					)}
-					style={{
-						backgroundImage: `url(${bgImageiii})`
-					}}>
-					{title3}
-				</div>
-			</Link>
-		</div>
-	</section>
-);
+
 export const More = ({
 	title1,
 	link1,
 	bgImagei,
 	className
 }) => (
-	<section>
-		<div className="flex mt5 flex-column-m flex-column-l justify-center">
-			<Link to={link1}>
+	<section className="flex mt5 flex-column-m flex-column-l justify-center">
+			<Link to={link1} className="br3 ph3-m hide-child shadow-hover mb2-m mb2-l">
 				<div
 					className={CN(
-						"helvetica mb2-m mb2-l fw7 tracked ph3-m f1 bg-animate w5 w-100-l w-100-m h5 pt3 cover bg-center",
+						"br3 bg-animate w5 w-100-l w-100-m h5 cover bg-center",
 						className
 					)}
 					style={{
 						backgroundImage: `url(${bgImagei})`
 					}}>
-					{title1}
+					<p className="f1 child helvetica fw7 absolute bottom-1 right-1 pb2 tracked">{title1}</p>
+
 				</div>
 			</Link>
-		</div>
 	</section>
 );
 
