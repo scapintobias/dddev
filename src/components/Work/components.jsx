@@ -8,9 +8,9 @@
 		export const Grid = ( {
 			children
 		} ) => (
-			<div className="flex justify-center fill-viewport flex-wrap flex-column-m">
+			<section className="flex justify-center flex-wrap fill-viewport flex-column-m mb3">
 		{children}
-	</div>
+	</section>
 		);
 
 		export const Card = ( {
@@ -22,7 +22,7 @@
 			className
 		} ) => (
 			<Link to={link} className="mauto-m">
-				<article className={CN("br3 shadow-hover ba b--black-10 mh3 mv3 mw55", className)}>
+				<article className={CN("br3 shadow-hover ba b--black-10 mh2 mv2 mw55", className)}>
 					<img src={image} className="obj-cover db br3 br--top h5 center" alt="img"/>
 					<div className="pa3">
 							<div className="f25 fw7 tracked helvetica pb2">{title}</div>

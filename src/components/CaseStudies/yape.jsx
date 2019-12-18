@@ -8,6 +8,7 @@ import {
 	TwoImg,
 	ParImg,
 	Br,
+	ProJ,
 	More,
 	Biblio
 } from "./components.jsx";
@@ -35,7 +36,7 @@ export function Yape() {
 					I wasn’t involved since the very start of my time at the company, and the first task I was given was
 					the start-up’s corporate image. But if you were here to read more about the actual interaction
 					project, why haven't you skipped it already?
-					<Br/>
+
 					<Collapsible button="Read more about the corporate image">
 						As I said in the{" "}
 						<Link to="./enovia">
@@ -120,7 +121,11 @@ export function Yape() {
 					anticipation of the handoff. Then, while the developers were implementing the first mvp, test sets
 					were customised and later performed, and after few months of almost daily iterations the product
 					would be considered finished and the milestone achieved.
-					<p className="helvetica fw6 f2 tracked pt3">The research challenges</p>
+				</Par></Raster>
+				<hr className="w-100 navy"></hr>
+				<Raster><Par>
+					<p className="helvetica fw6 f2 tracked pt3">Research</p>
+					<Collapsible button="The research challenges">
 					After some amount of time trying to deline which were the upmost problems to undertake, they can be
 					divided into three groups:
 					<Br/>
@@ -152,8 +157,8 @@ export function Yape() {
 						<li>Define a visual representation of the data acquired by the LIDAR sensor</li>
 						<li>Design a set of maps, to help positioning the drone in the urban environment</li>
 					</ul>
-					<ParImg oneimg="/img/lidar.jpg"/>
-					<p className="helvetica fw6 f2 tracked pt3">The research areas</p>
+					<ParImg oneimg="/img/lidar.jpg"/></Collapsible>
+					<Collapsible button="The research areas">
 					Defined the challenges, the research field became more clear and delimited. It started searching
 					about general robotics, human-machine interaction and human-machine interface, with a focus on
 					service robots, I needed a strong base of knowledge to comprehend and position the results of the
@@ -172,7 +177,7 @@ export function Yape() {
 						thoughts. Among other examples: HUDs in combat jet fighters, the DaVinci system for telesurgery,
 						parking sensors, and control rooms in general.</p>
 					<p className="orange f2 i pt3">Third group</p>
-					<p className="pl4 mb4">I searched into the graphic outputs of the LIDAR sensors, to understand whether it was possible to take advantage of something already available, or if it was necessary designing something new from the ground up.</p>
+					<p className="pl4 mb4">I searched into the graphic outputs of the LIDAR sensors, to understand whether it was possible to take advantage of something already available, or if it was necessary designing something new from the ground up.</p></Collapsible>
 					<TwoImg
 						image1="/img/davinci.jpeg"
 						className="w-60 w-100-l w-100-m h5 mb3-m h-auto-m"
@@ -335,20 +340,35 @@ export function Yape() {
 					Closing this milestone helped the company secure a new set of investors, and collabs all over the
 					world.
 					<Biblio
-						className="bb bt mt3 w-50"
+						className="mt3 link hover-red"
 						link="https://gigalife.vodafone.com/il-postino-5g-yape-robot-postman-delivery/"
 						author="Japan Post"/>
 					<Biblio
-						className="bb w-50"
+						className="w-50"
 						link="http://www.airport-world.com/news/general-news/7353-new-robot-on-duty-at-frankfurt-airport.html"
 						author="Frankfurt Airport"/>
+					<p className="helvetica fw6 f2 tracked pt3">What I learnt</p>
+					<p className="helvetica fw6 f2 tracked pt3">What could have been done better</p>
 				</Par>
+				<ProJ>
 
+
+				<More
+					link1="./newsee"
+					title1="Newsee"
+					bgImagei="https://www.historic-newspapers.co.uk/app/uploads/2019/07/Original-newspapers-1.jpg"
+					className="blue"/>
+				<More
+					link1="./vw"
+					title1=""
+					bgImagei="https://cdn.motor1.com/images/mgl/2RQQg/s4/volkswagen-new-logo.jpg"
+					className="white"/>
 				<More
 					link1="./enovia"
 					title1="e-Novia"
 					bgImagei="https://e-novia.it/wp-content/themes/wp-bootstrap-starter-child/images/visit-us.jpg"
 					className="green"/>
+				</ProJ>
 			</Raster>
 
 		</main>

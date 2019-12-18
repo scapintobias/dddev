@@ -5,6 +5,7 @@ import {
 	Title,
 	Par,
 	Br,
+	ProJ,
 	More
 } from "./components.jsx";
 
@@ -12,13 +13,14 @@ export function Enovia() {
 	return (
 		<main>
 			<Raster>
+				<Par>
 				<Date place="Milan" time="MAY—NOV—2018" position="Product Design Intern"/>
 				<Title
 					title="e-Novia"
 					subtitle="The enterprises factory"
 					description="A sourceful experience."
 					line2="Where I learned to play as a team member, to pitch my idea to a CEO, and—vital—when to shut up."/>
-				<Par>
+
 					When the MS courses came to an end in the first quarter of 2018, everybody was just missing the
 					mandatory internship. In order to graduate, Politecnico wanted everybody to do a 250-hours
 					internship, to summarise all the expertise gained in the last two semesters, focused primarily on UX
@@ -84,11 +86,24 @@ export function Enovia() {
 					If you want to know more in detail what happened with the Yape corporate image, or what I did in the
 					project I was involved in, you can have a peak, or—if you prefer—dive down into the specific file:
 				</Par>
-				<More
-					link1="./yape"
-					title1="Yape"
-					bgImagei="https://www.gelestatic.it/thimg/rnqyJLk1rTkNQzYkLmh3aHHRtkY=/fit-in/960x540/https%3A//www.lastampa.it/image/contentid/policy%3A1.36532592%3A1561987740/347a8858-95fe-11e9-885d-a4a5552cec84_6_Yape_REV01-kkiH-U11203768442353oqE-1024x576%40LaStampa.it.jpg%3Ff%3Ddetail_558%26h%3D720%26w%3D1280%26%24p%24f%24h%24w%3Da139b42"
-					className="gold"/>
+				<ProJ>
+					<More
+						link1="./newsee"
+						title1="Newsee"
+						bgImagei="https://www.historic-newspapers.co.uk/app/uploads/2019/07/Original-newspapers-1.jpg"
+						className="blue"/>
+					<More
+						link1="./vw"
+						title1=""
+						bgImagei="https://cdn.motor1.com/images/mgl/2RQQg/s4/volkswagen-new-logo.jpg"
+						className="white"/>
+					<More
+						link1="./yape"
+						title1="Yape"
+						bgImagei="https://www.gelestatic.it/thimg/rnqyJLk1rTkNQzYkLmh3aHHRtkY=/fit-in/960x540/https%3A//www.lastampa.it/image/contentid/policy%3A1.36532592%3A1561987740/347a8858-95fe-11e9-885d-a4a5552cec84_6_Yape_REV01-kkiH-U11203768442353oqE-1024x576%40LaStampa.it.jpg%3Ff%3Ddetail_558%26h%3D720%26w%3D1280%26%24p%24f%24h%24w%3Da139b42"
+						className="gold"/>
+				</ProJ>
+
 			</Raster>
 		</main>
 	);

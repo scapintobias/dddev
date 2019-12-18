@@ -29,6 +29,12 @@
 			Yape
 		} from "./components/CaseStudies/yape.jsx";
 		import {
+			Vw
+		} from "./components/CaseStudies/vw.jsx";
+		import {
+			newsee
+		} from "./components/CaseStudies/newsee.jsx";
+		import {
 			Home,
 			Project,
 			Projects,
@@ -104,6 +110,8 @@
 				<Route path="/case-studies/" exact component={Tab} />
 				<Route path="/case-studies/eNovia" exact component={Enovia} />
 				<Route path="/case-studies/yape" exact component={Yape} />
+				<Route path="/case-studies/vw" exact component={Vw} />
+				<Route path="/case-studies/newsee" exact component={newsee} />
 			</Switch>
 		</animated.div>
 			) );

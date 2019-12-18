@@ -73,14 +73,20 @@ export const Br = () => (<span>
 	<br></br>
 </span>);
 
+export const ProJ = ({children}) => (
+	<section className="mt4 justify-center flex flex-column-m flex-column-l">
+		{children}
+	</section>
+);
+
 export const More = ({
 	title1,
 	link1,
 	bgImagei,
 	className
 }) => (
-	<section className="flex mt5 flex-column-m flex-column-l justify-center">
-			<Link to={link1} className="br3 ph3-m hide-child shadow-hover mb2-m mb2-l">
+	<section className="flex mr3 mr0-l mr0-m mt2-l mt2-m">
+			<Link to={link1} className="link w5 w-100-l w-100-m br3 ph3-m shadow-hover mb2-m mb2-l">
 				<div
 					className={CN(
 						"br3 bg-animate w5 w-100-l w-100-m h5 cover bg-center",
@@ -89,7 +95,7 @@ export const More = ({
 					style={{
 						backgroundImage: `url(${bgImagei})`
 					}}>
-					<p className="f1 child helvetica fw7 absolute bottom-1 right-1 pb2 tracked">{title1}</p>
+					<p className="f1 helvetica fw7 absolute bottom-1 right-1 pb2 pr3-m tracked">{title1}</p>
 
 				</div>
 			</Link>
