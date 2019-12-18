@@ -17,21 +17,21 @@ export function Header(props) {
 		<span className="navicon"/>
 	</div>
 	<ul className="fw5 menu">
-		<li className="f4 pt3-m tr-m tr-l pr35-m pt3-l pr35-l">
+		<li className="f4 pt3-m tr-m tr-t pr35-m">
 			<NavLink exact to="/case-studies">
 				Case Studies
 			</NavLink>
 		</li>
-		<li className="f4 pt3-m tr-m tr-l pr35-m pt3-l pr35-l">
+		<li className="f4 pt3-m tr-m tr-t pr35-m">
 			<NavLink exact to="/about">About</NavLink>
 		</li>
 
-		<li className="pt3-m pb2-m tr-m tr-l pr35-m pt3-m pr3-m pt3-l pr35-l">
+		<li className="pt3-m pb2-m tr-m tr-t pr35-m pt3-m pr3-m">
 			<a href="mailto:info@discipline.design?subject=Enquiry">
 				<span className="helvetica f4">@</span>
 			</a>
 		</li>
-		<li className="f3-m pt2-m tr-m tr-l pr35-m mt05 pt3-l pr35-l">
+		<li className="f3-m pt2-m tr-m tr-t pr35-m mt05">
 			<a id="insta" href="https://www.instagram.com/discipline.design" target="_blank" rel="noopener noreferrer">
 				<svg
 					x="0px"
@@ -58,7 +58,7 @@ export function Header(props) {
 				</svg>
 			</a>
 		</li>
-		<li className="pb3-m pb3-l pt3-m tr-m tr-l pr35-m pt3-l pr35-l">
+		<li className="pb3-m pb3-l pt3-m tr-m tr-t pr35-m">
 			<a href="https://www.linkedin.com/in/scapintobias" target="_blank" rel="noopener noreferrer">
 				<span className="futurab f3 pb1 tracked">in</span>
 			</a>

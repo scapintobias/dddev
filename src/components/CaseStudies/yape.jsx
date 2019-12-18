@@ -1,12 +1,10 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {
-	Date,
-	Raster,
 	Title,
-	Par,
 	TwoImg,
 	ParImg,
+	Img,
 	Br,
 	ProJ,
 	More,
@@ -14,15 +12,18 @@ import {
 } from "./components.jsx";
 import Vimeo from '@u-wave/react-vimeo';
 import {Collapsible} from "./accordion.jsx";
+import {Par, ParT} from "./article.jsx";
 
 export function Yape() {
 	return (
 		<main>
-			<Raster>
-				<Date place="e-Novia S.P.A." time="JUN—NOV—2018" position="Product Designer Intern"/>
+
 				<Title
+					place="e-Novia S.P.A."
+					time="JUN—NOV—2018"
+					position="Product Designer Intern"
 					title="Yape"
-					subtitle="Remote-driving robot"
+					subtitle="Autonomous vehicle"
 					description="Case Study on teleoperation user experience"
 					line2="Yape is now a self-driving robot, but to reach these capabilities, it had to go through a long process of research and developement in many different fields.
 "/>
@@ -79,13 +80,21 @@ export function Yape() {
 						When narrating the story to the CEO, I used these props to win him over, and I succeeded.
 						<ParImg oneimg="https://www.startupitaliaopensummit.eu/wp-content/uploads/2019/11/Yape_logo.png"/>
 					</Collapsible>
-					<p className="helvetica f1 fw6 tracked pt3">Driving a drone remotely</p>
-					<ParImg oneimg="https://e-novia.it/wp-content/uploads/2018/11/6_Yape_REV01.jpg"/>
-					<p className="helvetica fw6 f2 tracked pt3">Team</p>
+				</Par>
+				<Img oneimg="https://e-novia.it/wp-content/uploads/2018/11/6_Yape_REV01.jpg"/>
+				<ParT
+					title="Driving a drone remotely"
+				/>
+				<Par
+					title="Team"
+				>
 					The team was composed by me, the product designer, a senior industrial designer who supervised my
 					work, and the team of engineers of Yape s.r.l.; when the interface was almost entirely finished and
 					implemented I was joined by another intern, when we focused on a delivery app.
-					<p className="helvetica fw6 f2 tracked pt3">Structure and management</p>
+				</Par>
+				<Par
+					title="Structure and management"
+				>
 					When I arrived, the engineering team had already solved the majority of the mechanical issues, and
 					implemented an alpha version of the guiding software, allowing to drive the drone by sight, with a
 					standard joypad. The next step was to push the development forward, aiming at the completely remote
@@ -104,8 +113,10 @@ export function Yape() {
 					<Br/>
 					This step has been very helpful in defining the limits of the research, and understanding how to
 					integrate the interface design into this extremely complex system.
-
-					<p className="helvetica fw6 f2 tracked pt3">My role</p>
+				</Par>
+				<Par
+					title="My role"
+				>
 					Although the drive-by-sight was completely functional, the only features already implemented for the
 					remote control were the decoding of the visual feed from the camera, and an horizontal white bar
 					advancing as the drone accelerated, but with no indication of the actual speed or aids that helped
@@ -121,14 +132,14 @@ export function Yape() {
 					anticipation of the handoff. Then, while the developers were implementing the first mvp, test sets
 					were customised and later performed, and after few months of almost daily iterations the product
 					would be considered finished and the milestone achieved.
-				</Par></Raster>
+				</Par>
 				<hr className="w-100 navy"></hr>
-				<Raster><Par>
-					<p className="helvetica fw6 f2 tracked pt3">Research</p>
-					<Collapsible button="The research challenges">
+				<ParT title="Research" />
+				<Par title="Challenges">
 					After some amount of time trying to deline which were the upmost problems to undertake, they can be
 					divided into three groups:
-					<Br/>
+
+
 					<div className="orange f2 i">First group
 						<p className="f3 navy i">Bound to the perception of the driver</p>
 					</div>
@@ -157,8 +168,11 @@ export function Yape() {
 						<li>Define a visual representation of the data acquired by the LIDAR sensor</li>
 						<li>Design a set of maps, to help positioning the drone in the urban environment</li>
 					</ul>
-					<ParImg oneimg="/img/lidar.jpg"/></Collapsible>
-					<Collapsible button="The research areas">
+				</Par>
+				<Img oneimg="/img/lidar.jpg"/>
+				<Par
+					title="The research areas"
+				>
 					Defined the challenges, the research field became more clear and delimited. It started searching
 					about general robotics, human-machine interaction and human-machine interface, with a focus on
 					service robots, I needed a strong base of knowledge to comprehend and position the results of the
@@ -177,7 +191,7 @@ export function Yape() {
 						thoughts. Among other examples: HUDs in combat jet fighters, the DaVinci system for telesurgery,
 						parking sensors, and control rooms in general.</p>
 					<p className="orange f2 i pt3">Third group</p>
-					<p className="pl4 mb4">I searched into the graphic outputs of the LIDAR sensors, to understand whether it was possible to take advantage of something already available, or if it was necessary designing something new from the ground up.</p></Collapsible>
+					<p className="pl4 mb4">I searched into the graphic outputs of the LIDAR sensors, to understand whether it was possible to take advantage of something already available, or if it was necessary designing something new from the ground up.</p>
 					<TwoImg
 						image1="/img/davinci.jpeg"
 						className="w-60 w-100-l w-100-m h5 mb3-m h-auto-m"
@@ -277,8 +291,12 @@ export function Yape() {
 							year="2009."
 							publication="International Conference on Intelligent Human-Machine Systems and Cybernetics, Hangzhou, Zhejiang,"
 							pages="pp. 262-265."/></Collapsible>
-					<p className="helvetica fw6 f2 tracked pt3">Solutions</p>
-					<p className="orange f2 i">Driving reference system</p>
+						</Par>
+						<hr className="w-100 navy"></hr>
+						<Par
+							title="Solutions"
+							subtitle="Driving reference system"
+						>
 					The main interface whom we interact with is the webcam's stream situated on the front side of the
 					vehicle. It has the advantage of a very high compression ratio, which doesn't indeed interfere a lot
 					with the bandwidth; however with notable disadvantages: the signal's quality is not stable, and the
@@ -315,8 +333,12 @@ export function Yape() {
 						indicators. One responsible for showing the speed of the vehicle, divided over three levels (comparable to the gears in cars with an automatic transmission), and the other in
 						charge of indicating the level of pressure the driver places on the joystick. However, an
 						indication in km/h on the second screen is always present.</p>
+					</Par>
 
-					<p className="orange f2 i">Perception of depth and position of the vehicle</p>
+					<Par
+						subtitle="Perception of depth and position of the vehicle"
+					>
+					<hr className="w-100 navy"></hr>
 					To solve the perception of depth, starting from the concepts found in the research, an integrated
 					indicator cannot be used, as can be for speed, but the combination of several visual solutions is
 					necessary, partly exploiting the interactivity of the direction indicators, and partly relying on
@@ -332,11 +354,17 @@ export function Yape() {
 						styles, and its precision due to the support on the Openstreetmap software. Roads and pedestrian paths can have a really high contrast ratio with the buildings, so that visibility is
 						quite high even when the map is particularly small, or a glance is given during driving
 						operations, where concentration must remain to the camera flow and lidars, to avoid any sudden obstacles.</p>
-					<p className="helvetica fw6 f2 tracked pt3">Interface</p>
-					<ParImg oneimg="/img/primaryl.jpg"/>
+					</Par>
+					<ParT
+						title="Interface"
+					/>
+					<Img oneimg="/img/primaryl.jpg"/>
 
-					<Vimeo video="https://vimeo.com/378123669" width="680px" responsive className="mt3"/>
-					<p className="helvetica fw6 f2 tracked pt3">Outcome</p>
+					<Vimeo video="https://vimeo.com/378123669" width="680px" responsive className="ma3"/>
+					<ParT
+						title="Outcome"
+					/>
+				<Par>
 					Closing this milestone helped the company secure a new set of investors, and collabs all over the
 					world.
 					<Biblio
@@ -347,12 +375,11 @@ export function Yape() {
 						className="w-50"
 						link="http://www.airport-world.com/news/general-news/7353-new-robot-on-duty-at-frankfurt-airport.html"
 						author="Frankfurt Airport"/>
-					<p className="helvetica fw6 f2 tracked pt3">What I learnt</p>
-					<p className="helvetica fw6 f2 tracked pt3">What could have been done better</p>
 				</Par>
+				<Par title="What I learnt" />
+				<Par title="What we could do better" />
+
 				<ProJ>
-
-
 				<More
 					link1="./newsee"
 					title1="Newsee"
@@ -369,8 +396,6 @@ export function Yape() {
 					bgImagei="https://e-novia.it/wp-content/themes/wp-bootstrap-starter-child/images/visit-us.jpg"
 					className="green"/>
 				</ProJ>
-			</Raster>
-
 		</main>
 	);
 }

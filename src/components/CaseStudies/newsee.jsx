@@ -1,12 +1,11 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {
-	Date,
-	Raster,
+
 	Title,
-	Par,
 	TwoImg,
 	ParImg,
+	Img,
 	Br,
 	ProJ,
 	More,
@@ -14,27 +13,29 @@ import {
 } from "./components.jsx";
 import Vimeo from '@u-wave/react-vimeo';
 import {Collapsible} from "./accordion.jsx";
-
+import {Par} from "./article.jsx";
 export function newsee() {
 	return (
 		<main>
-			<Raster>
-				<Date place="Berlin" time="AUG-2019" position="Product Designer"/>
 				<Title
+					place="Berlin"
+					time="AUG-2019"
+					position="Product Designer"
 					title="Newsee"
 					subtitle="Headlines streamlined"
 					description="A UX case Study"
 					line2="An Android app that gathers the most important headline news of the day in the most simplistic way."/>
-				<Par>
-					<div className="orange f2 i">Here's a thought</div>
+				<Par subtitle="Here's a thought">
 					Spending a vast amount of time riding the tube around the city, resulted in many hours spent in front of the screen, a lot of power-banks, and a huge amount of news divoured. I have a soft spot for current events, and I couldn't eat more. Hence—professional deformation—I started to notice all the issues, and figured I wasn't the only one. So, the process started again.
-					<div className="helvetica fw6 f2 tracked pt3">Challenge</div>
-					The world and our country are going through some crazy times and that's a fact I indeed cannot control, but I think I should be able to control my own news reading experience.
-					<div className="helvetica fw6 f2 tracked pt3">Goal</div>
-					Design an app with a minimalistic interface, in which I can carefully choose the topics (maybe when I wake up I don't want to be buried by shootings headlines) and the amount of data&battery it consumes, avoiding images and whatnot.
-					<ParImg
-						oneimg="/img/newsee_1.png" />
 				</Par>
+				<Par title="Challenge">
+					The world and our country are going through some crazy times and that's a fact I indeed cannot control, but I think I should be able to control my own news reading experience.
+				</Par>
+				<Par title="Goal">
+					Design an app with a minimalistic interface, in which I can carefully choose the topics (maybe when I wake up I don't want to be buried by shootings headlines) and the amount of data&battery it consumes, avoiding images and whatnot.
+
+				</Par>
+				<Img oneimg="/img/newsee_1.png" />
 				<ProJ>
 					<More
 						link1="./vw"
@@ -52,7 +53,7 @@ export function newsee() {
 						bgImagei="https://e-novia.it/wp-content/themes/wp-bootstrap-starter-child/images/visit-us.jpg"
 						className="green"/>
 				</ProJ>
-			</Raster>
+
 
 		</main>
 	);

@@ -2,37 +2,30 @@ import React from "react";
 import {Link} from "react-router-dom";
 import CN from "classnames";
 
-export const Raster = ({children}) => (
-	<div className="justify-center flex flex-column ml3-l pr3-l ml3-m pr3-m pb2-m pb3-l pb4 min-vh-100">
-		<article className="sans-serif  dark-gray center">{children}</article>
-	</div>
-);
-
-export const Date = ({place, time, position}) => (
-	<section className="mw68 w-100-l helvetica mauto pb4 pb2-m pt3 pt2-m">
-		<div className="fw6 f4 navy">
-			<div>
-				{place}
-				<br></br>
-				<time className="silver">{time}</time>
-				<br></br>
-				<p className="orange">{position}</p>
-			</div>
+export const Title = ({place, time, position, title, subtitle, description, line2}) => (
+<section className="flex pb2 bb flex-column-m">
+<section className="flex flex-column justify-between helvetica lh-solid ph3 w-50 w-100-m br bn-m">
+		<div className="pb2 fw6 helvetica f4">
+			<p className="navy">{place}</p>
+			<p className="silver">{time}</p>
+			<p className="orange">{position}</p>
 		</div>
+			<div className="pv4 f-6 f-5-t f-5-m fw9 tracked-tight navy">
+			{title}</div>
+		<div className="fw6 f1 silver pb2-m bb-m f15-l f2-t f2-m tracked">
+			{subtitle}</div>
 	</section>
-);
+	<section className="lh-solid w-50 w-100-m pl3 pr3 pt2-m flex flex-column-reverse ">
 
-export const Title = ({title, subtitle, description, line2}) => (
-	<section className="mw68 w-100-m w-100-l mb3 mr3-m mauto justify-center helvetica lh-solid bb bw4 b--silver">
-		<p className="f-6 f-5-m fw7 tracked-tight navy pb2-m pb6">{title}</p>
-		<p className="fw6 f1 silver pb3 pb2-m fw6-m f2-m tracked">{subtitle}</p>
-		<p className="f2 minion i fw5 fw6-m f25-m mb0 w-90 w-100-m orange pb4 pb4-m lh-solid">
-			{description}
-		</p>
-		<p className="f2 minion fw5 fw6-m f25-m mb0 w-90 w-100-m navy pb4 pb2-m lh-solid">
+		<div className="f2 minion fw5 f25-m navy">
 			{line2}
-		</p>
+		</div>
+	<div className="pb2 f2 minion i fw5 f25-m orange">
+			{description}</div>
+
+
 	</section>
+</section>
 );
 export const HelTit = ({line1, line2, line3}) => (
 	<section className="mw68 w-100-m w-100-l mauto">
@@ -43,26 +36,25 @@ export const HelTit = ({line1, line2, line3}) => (
 		</div>
 	</section>
 );
-export const Par = ({children}) => (
-	<section className="mw68 mw6-l mauto navy">
-		<div className="minion fw5 abc mb2">{children}</div>
-	</section>
-);
 
 export const ParImg = ({oneimg, className}) => (
-	<div className={CN("mw68 mauto mt4", className)}>
+	<div className={CN("mt4", className)}>
 		<img src={oneimg} alt="img"></img>
 	</div>
 );
 
-export const SinImg = ({oneimg}) => (
-	<div className="mw800 mauto pl3 pl0-m pr0-m pr3 pb4">
+export const Img = ({oneimg}) => (
+	<div className="mw800 mauto ph3 ph0-m">
 		<img src={oneimg} alt="img"></img>
 	</div>
 );
-
+export const LImg = ({oneimg, className}) => (
+	<div className={CN("ma3 w-third fl fn-t fn-l fn-m", className)}>
+		<img src={oneimg} alt="img"></img>
+	</div>
+);
 export const TwoImg = ({image1, image2, className, classNamee}) => (
-	<div className="mw68 flex-row flex justify-center overflow-hidden flex-column-m mb3">
+	<div className="flex-row flex justify-center overflow-hidden flex-column-m mb3">
 		<img src={image1} alt="img" className={CN("mr3 mr0-m", className)}></img>
 		<img src={image2} alt="img" className={CN(classNamee)}></img>
 	</div>
@@ -74,7 +66,7 @@ export const Br = () => (<span>
 </span>);
 
 export const ProJ = ({children}) => (
-	<section className="mt4 justify-center flex flex-column-m flex-column-l">
+	<section className="mv4 justify-center flex flex-column-m flex-column-t flex-column-l">
 		{children}
 	</section>
 );
@@ -85,11 +77,11 @@ export const More = ({
 	bgImagei,
 	className
 }) => (
-	<section className="flex mr3 mr0-l mr0-m mt2-l mt2-m">
-			<Link to={link1} className="link w5 w-100-l w-100-m br3 ph3-m shadow-hover mb2-m mb2-l">
+	<section className="flex mh3 mt2-l mt2-m">
+			<Link to={link1} className="link w5 w-100-l w-100-t w-100-m br3  ph2-m shadow-hover mb3-m mb3-l mb3-t">
 				<div
 					className={CN(
-						"br3 bg-animate w5 w-100-l w-100-m h5 cover bg-center",
+						"br3 bg-animate w5 w-100-l w-100-m w-100-t h5 cover bg-center",
 						className
 					)}
 					style={{

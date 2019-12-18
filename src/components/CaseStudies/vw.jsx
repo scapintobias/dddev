@@ -1,10 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {
-	Date,
-	Raster,
 	Title,
-	Par,
 	TwoImg,
 	ParImg,
 	Br,
@@ -14,19 +11,26 @@ import {
 } from "./components.jsx";
 import Vimeo from '@u-wave/react-vimeo';
 import {Collapsible} from "./accordion.jsx";
+import {Par} from "./article.jsx";
 
 export function Vw() {
 	return (
 		<main>
-			<Raster>
-				<Date place="Berlin" time="APR-19" position="Product Designer"/>
 				<Title
-					title="VW Das Auto"
-					subtitle="iPad app to control your car"
+					place="Berlin"
+					time="APR-19"
+					position="Product Designer"
+					title="VW"
+					subtitle="Das Auto"
 					description="A UX case Study"
 					line2="A new dashboard, enabling car owners to get information about their car, and help keeping track of maintanance."/>
-				<Par>
-
+				<Par
+					title="Driving a drone remotely"
+					subtitle="while smoking sigars"
+					>
+					The team was composed by me, the product designer, a senior industrial designer who supervised my
+					work, and the team of engineers of Yape s.r.l.; when the interface was almost entirely finished and
+					implemented I was joined by another intern, when we focused on a delivery app.
 				</Par>
 				<ProJ>
 					<More
@@ -45,7 +49,7 @@ export function Vw() {
 						bgImagei="https://e-novia.it/wp-content/themes/wp-bootstrap-starter-child/images/visit-us.jpg"
 						className="green"/>
 				</ProJ>
-			</Raster>
+
 
 		</main>
 	);

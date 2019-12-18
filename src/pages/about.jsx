@@ -1,21 +1,17 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {
-	Raster,
-
-	Par,
-
-	ParImg,
+	LImg,
 	Br
 } from '../components/CaseStudies/components.jsx';
+import {Par} from "../components/CaseStudies/article.jsx";
 // import {Audio} from '../components/Audio/audioplayer.jsx';
 export function About() {
 	return <main>
-		<Raster>
-			<ParImg
-				className="mb3"
-				oneimg="https://scontent-mxp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p750x750/24177547_2121312854755632_1242094414470316032_n.jpg?_nc_ht=scontent-mxp1-1.cdninstagram.com&_nc_cat=100&oh=36c2a808a0af19cfce972c0d60613f16&oe=5E75C661"/>
-			<Par>
+
+			<Par
+				image="https://scontent-mxp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p750x750/24177547_2121312854755632_1242094414470316032_n.jpg?_nc_ht=scontent-mxp1-1.cdninstagram.com&_nc_cat=100&oh=36c2a808a0af19cfce972c0d60613f16&oe=5E75C661"
+				>
 				I was born in the Venice’ countryside, in a family of carpenters, architects and designers. And that
 				has been a strong starting point.
 				<Br />
@@ -47,7 +43,7 @@ export function About() {
 				</Link>
 				file.
 			</Par>
-		</Raster >
+
 
 	</main >;
 }
