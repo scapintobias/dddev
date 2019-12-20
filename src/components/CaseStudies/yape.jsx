@@ -27,6 +27,7 @@ export function Yape() {
 					description="Case Study on teleoperation user experience"
 					line2="Yape is now a self-driving robot, but to reach these capabilities, it had to go through a long process of research and developement in many different fields.
 "/>
+				<Img oneimg="https://e-novia.it/wp-content/uploads/2018/11/6_Yape_REV01.jpg"/>
 				<Par>
 					My journey with Yape has been widely unique.
 					<Br/>
@@ -81,7 +82,7 @@ export function Yape() {
 						<ParImg oneimg="https://www.startupitaliaopensummit.eu/wp-content/uploads/2019/11/Yape_logo.png"/>
 					</Collapsible>
 				</Par>
-				<Img oneimg="https://e-novia.it/wp-content/uploads/2018/11/6_Yape_REV01.jpg"/>
+
 				<ParT
 					title="Driving a drone remotely"
 				/>
@@ -133,7 +134,6 @@ export function Yape() {
 					were customised and later performed, and after few months of almost daily iterations the product
 					would be considered finished and the milestone achieved.
 				</Par>
-				<hr className="w-100 navy"></hr>
 				<ParT title="Research" />
 				<Par title="Challenges">
 					After some amount of time trying to deline which were the upmost problems to undertake, they can be

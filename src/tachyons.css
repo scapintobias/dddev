@@ -2688,6 +2688,10 @@ code {
 	padding: 16rem;
 }
 
+.pl-title {
+	padding-left: 40vw ;
+}
+
 .pl0 {
 	padding-left: 0;
 }
@@ -6605,7 +6609,9 @@ code {
 	.pa7-m {
 		padding: 16rem;
 	}
-
+	.pl-title {
+		padding-left: 3vw ;
+	}
 	.pl0-m {
 		padding-left: 0;
 	}
@@ -8417,6 +8423,10 @@ code {
 		padding: 16rem;
 	}
 
+	.pl-title {
+		padding-left: 27vw ;
+	}
+
 	.pl0-l {
 		padding-left: 0;
 	}
@@ -10214,6 +10224,10 @@ code {
 
 	.pa7-t {
 		padding: 16rem;
+	}
+
+	.pl-title {
+		padding-left: 30vw ;
 	}
 
 	.pl0-t {

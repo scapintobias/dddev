@@ -9,10 +9,14 @@ export const Par = ({title, subtitle, image, children}) => (
 
 
 
-		<div className="minion navy pr3 pr0-m fw5 w-50 w-80-l w-70-t w-100-m abc">{children}</div>
+		<div className="minion navy pr3 pr0-m fw5 w-50 w-80-l w-70-t w-100-m abc">
+			{children}</div>
 	</section>
 );
 
 export const ParT = ({title}) => (
-<div className="ma3 helvetica navy pb3 f1 fw7 tracked lh-title">{title}</div>
+<section>
+<hr className="w-100 navy pv0 mb2"></hr>
+<div className="helvetica navy pl-title pb5 pr3 f-4 fw7 tracked lh-title">{title}</div>
+</section>
 );
