@@ -25,12 +25,10 @@ export function Vw() {
 					description="A UX case Study"
 					line2="A new dashboard, enabling car owners to get information about their car, and help keeping track of maintanance."/>
 				<Par
-					title="Driving a drone remotely"
-					subtitle="while smoking sigars"
-					>
-					The team was composed by me, the product designer, a senior industrial designer who supervised my
-					work, and the team of engineers of Yape s.r.l.; when the interface was almost entirely finished and
-					implemented I was joined by another intern, when we focused on a delivery app.
+					title="VW"
+					subtitle="Driving drones">
+					When I was sophomore in high school, I met Maurizio and Armando Milani, fellow designers of Massimo Vignelli, who had at hand a rebrand to do, for the cultural centre not far from the art school I was attending, so they set up a workshop, with the purpose for the students to deliver the corporate image. When I was sophomore in high school, I met Maurizio and Armando Milani, fellow designers of Massimo Vignelli, who had at hand a rebrand to do, for the cultural centre not far from the art school I was attending, so they set up a workshop, with the purpose for the students to deliver the corporate image. When I was sophomore in high school, I met Maurizio and Armando Milani, fellow designers of Massimo Vignelli, who had at hand a rebrand to do, for the cultural centre not far from the art school I was attending, so they set up a workshop, with the purpose for the students to deliver the corporate image. When I was sophomore in high school, I met Maurizio and Armando Milani, fellow designers of Massimo Vignelli, who had at hand a rebrand to do, for the cultural centre not far from the art school I was attending, so they set up a workshop, with the purpose for the students to deliver the corporate image. When I was sophomore in high school, I met Maurizio and Armando Milani, fellow designers of Massimo Vignelli, who had at hand a rebrand to do, for the cultural centre not far from the art school I was attending, so they set up a workshop, with the purpose for the students to deliver the corporate image. When I was sophomore in high school, I met Maurizio and Armando Milani, fellow designers of Massimo Vignelli, who had at hand a rebrand to do, for the cultural centre not far from the art school I was attending, so they set up a workshop, with the purpose for the students to deliver the corporate image.
+
 				</Par>
 				<ProJ>
 					<More

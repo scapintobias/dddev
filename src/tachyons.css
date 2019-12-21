@@ -2800,6 +2800,9 @@ code {
 	padding-top: 0.25rem;
 }
 
+.pt15 {
+	padding-top: 0.31rem;
+}
 .pt2 {
 	padding-top: 0.5rem;
 }
@@ -3783,7 +3786,7 @@ code {
 	background: #fff url("data:image/gif; base64, R0lGODdhEAAQAPEAAADw/wDx/xXy /////ywAAAAAEAAQAAACIZyPKckYDQFsb6ZqD85jZ2+BkwiRFKehhqQCQgDHcgwEBQA7") repeat 0 0;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1500px) {
+@media screen and (min-width: 1024px) and (max-width: 1350px) {
 	.aspect-ratio-ns {
 		height: 0;
 		position: relative;

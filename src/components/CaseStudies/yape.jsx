@@ -12,7 +12,7 @@ import {
 } from "./components.jsx";
 import Vimeo from '@u-wave/react-vimeo';
 import {Collapsible} from "./accordion.jsx";
-import {Par, ParT} from "./article.jsx";
+import {Par, Sec} from "./article.jsx";
 
 export function Yape() {
 	return (
@@ -28,7 +28,9 @@ export function Yape() {
 					line2="Yape is now a self-driving robot, but to reach these capabilities, it had to go through a long process of research and developement in many different fields.
 "/>
 				<Img oneimg="https://e-novia.it/wp-content/uploads/2018/11/6_Yape_REV01.jpg"/>
+
 				<Par>
+					<Sec title="Driving a drone remotely"/>
 					My journey with Yape has been widely unique.
 					<Br/>
 					I arrived at the company partly unaware of what all the startups were actually doing, but Yape...it
@@ -83,19 +85,13 @@ export function Yape() {
 					</Collapsible>
 				</Par>
 
-				<ParT
-					title="Driving a drone remotely"
-				/>
-				<Par
-					title="Team"
-				>
+
+				<Par subtitle="Team">
 					The team was composed by me, the product designer, a senior industrial designer who supervised my
 					work, and the team of engineers of Yape s.r.l.; when the interface was almost entirely finished and
 					implemented I was joined by another intern, when we focused on a delivery app.
 				</Par>
-				<Par
-					title="Structure and management"
-				>
+				<Par subtitle="Structure and management">
 					When I arrived, the engineering team had already solved the majority of the mechanical issues, and
 					implemented an alpha version of the guiding software, allowing to drive the drone by sight, with a
 					standard joypad. The next step was to push the development forward, aiming at the completely remote
@@ -115,9 +111,7 @@ export function Yape() {
 					This step has been very helpful in defining the limits of the research, and understanding how to
 					integrate the interface design into this extremely complex system.
 				</Par>
-				<Par
-					title="My role"
-				>
+				<Par subtitle="My role">
 					Although the drive-by-sight was completely functional, the only features already implemented for the
 					remote control were the decoding of the visual feed from the camera, and an horizontal white bar
 					advancing as the drone accelerated, but with no indication of the actual speed or aids that helped
@@ -134,8 +128,10 @@ export function Yape() {
 					were customised and later performed, and after few months of almost daily iterations the product
 					would be considered finished and the milestone achieved.
 				</Par>
-				<ParT title="Research" />
-				<Par title="Challenges">
+
+				<Par><Sec title="Research" /></Par>
+				<Par subtitle="Challenges">
+
 					After some amount of time trying to deline which were the upmost problems to undertake, they can be
 					divided into three groups:
 
@@ -293,8 +289,8 @@ export function Yape() {
 							pages="pp. 262-265."/></Collapsible>
 						</Par>
 						<hr className="w-100 navy"></hr>
+						<Par><Sec title="Solutions" /></Par>
 						<Par
-							title="Solutions"
 							subtitle="Driving reference system"
 						>
 					The main interface whom we interact with is the webcam's stream situated on the front side of the
@@ -338,7 +334,6 @@ export function Yape() {
 					<Par
 						subtitle="Perception of depth and position of the vehicle"
 					>
-					<hr className="w-100 navy"></hr>
 					To solve the perception of depth, starting from the concepts found in the research, an integrated
 					indicator cannot be used, as can be for speed, but the combination of several visual solutions is
 					necessary, partly exploiting the interactivity of the direction indicators, and partly relying on
@@ -355,15 +350,11 @@ export function Yape() {
 						quite high even when the map is particularly small, or a glance is given during driving
 						operations, where concentration must remain to the camera flow and lidars, to avoid any sudden obstacles.</p>
 					</Par>
-					<ParT
-						title="Interface"
-					/>
 					<Img oneimg="/img/primaryl.jpg"/>
 
 					<Vimeo video="https://vimeo.com/378123669" width="680px" responsive className="ma3"/>
-					<ParT
-						title="Outcome"
-					/>
+
+				<Par><Sec title="Outcome"/></Par>
 				<Par>
 					Closing this milestone helped the company secure a new set of investors, and collabs all over the
 					world.
@@ -376,9 +367,6 @@ export function Yape() {
 						link="http://www.airport-world.com/news/general-news/7353-new-robot-on-duty-at-frankfurt-airport.html"
 						author="Frankfurt Airport"/>
 				</Par>
-				<Par title="What I learnt" />
-				<Par title="What we could do better" />
-
 				<ProJ>
 				<More
 					link1="./newsee"

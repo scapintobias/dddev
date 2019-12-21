@@ -4,8 +4,7 @@
 		} from "react-router-dom";
 		import TextLoop from "react-text-loop";
 		const RandomCity = () => (
-			<span>
-		based in <br className="dn dib-m dib-ns dn-l"></br>
+			<span><br className="dn di-ns di-m di-l dn-t"></br>
 		<TextLoop interval={700}>
 			<span>Germany</span>
 			<span>Australia</span>
@@ -29,7 +28,7 @@
 		<section className="pt2 pb5 pl3 pr3 pl2-m pr2-m">
 			<div className="helvetica navy lh-title tracked-tight f-7 f-45-m fw6">
 				<span className="orange">Product</span> &{" "}
-				<span className="orange">Interaction</span> Designer <RandomCity />.
+				<span className="orange">Interaction</span> Designer <span>based{" "}in</span>{" "}<RandomCity />.
 			</div>
 			<p className="pt7 pt6-m minion navy f-6 f2-m lh-title-s">
 				My name is{" "}

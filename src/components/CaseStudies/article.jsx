@@ -1,22 +1,22 @@
 import React from "react";
+import CN from "classnames";
+export const Par = ({subtitle, image, children}) => (
 
-export const Par = ({title, subtitle, image, children}) => (
-	<section className="mauto ma3-m pv3 pv2-m mw9 flex flex-row flex-column-m">
-
-      <div className="helvetica navy ph3 ph0-m f2 f35-t tr tl-l tl-t tl-m w-40 w-30-l w-30-t w-100-m fw6 tracked lh-solid lh-solid-m">{title}
-      <div className="minion orange f2 f3-t fw2 i pr3 pb3-l pb3-t pb0-m lh-solid lh-solid-m">{subtitle}</div>
-		<img src={image} className="w-100"/></div>
-
-
-
-		<div className="minion navy pr3 pr0-m fw5 w-50 w-80-l w-70-t w-100-m abc">
-			{children}</div>
+	<section className="flex justify-center flex-column-l flex-column-t flex-column-m mv4 mh3-m mh4-t mh5-l">
+	  <div className="w-25 w-100-m w-100-l w-100-t pb4 pr4 pt15 lh-title">
+	    <div className="f3 mid-gray tr tl-l tl-t tl-m">
+	      {subtitle}
+		</div>
+		<img src={image} className="w-100 ma3-m ma3-t ma3-l"/></div>
+	<section className="w-50 w-100-m w-100-l w-100-t abc minion lh-copy">
+	      {children}
 	</section>
+</section>
+
 );
 
-export const ParT = ({title}) => (
-<section>
-<hr className="w-100 navy pv0 mb2"></hr>
-<div className="helvetica navy pl-title pb5 pr3 f-4 fw7 tracked lh-title">{title}</div>
-</section>
+export const Sec = ({title}) => (
+
+<div className="helvetica f-4 fw9 tracked pb5 lh-title">{title}</div>
+
 );
