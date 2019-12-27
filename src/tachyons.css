@@ -2801,7 +2801,7 @@ code {
 }
 
 .pt15 {
-	padding-top: 0.31rem;
+	padding-top: 0.22rem;
 }
 .pt2 {
 	padding-top: 0.5rem;
@@ -3391,10 +3391,6 @@ code {
 	text-transform: none;
 }
 
-.abc {
-	font-size: 22px;
-	line-height: 1.5;
-}
 
 .f-7,
 .f-title {

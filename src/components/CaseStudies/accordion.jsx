@@ -5,9 +5,9 @@ import './style.css';
 export function Collapsible(props) {
 
 	return (
-		<Accordion allowZeroExpanded={true} className="mv3">
+		<Accordion allowZeroExpanded={true} className="mv3 ">
 			<AccordionItem>
-				<AccordionItemHeading className="helvetica f4 navy">
+				<AccordionItemHeading className="helvetica  f4 navy">
 					<AccordionItemButton>
 						{props.button}
 					</AccordionItemButton>

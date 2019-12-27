@@ -27,15 +27,7 @@ export const Title = ({place, time, position, title, subtitle, description, line
 	</section>
 </section>
 );
-export const HelTit = ({line1, line2, line3}) => (
-	<section className="mw68 w-100-m w-100-l mauto">
-		<div className="helvetica navy f1-m fw6-m fw6-l f-5-l f-5 pt2 fw6 tracked lh-title">
-			<p>{line1}</p>
-			<p className="pt4">{line2}</p>
-			<p className="pt5 f3 fw5 silver">{line3}</p>
-		</div>
-	</section>
-);
+
 
 export const ParImg = ({oneimg, className}) => (
 	<div className={CN("mt4", className)}>
