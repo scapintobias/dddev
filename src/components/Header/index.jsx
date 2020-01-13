@@ -63,6 +63,6 @@ export function Header(props) {
 				<span className="futurab f3 pb1 tracked">in</span>
 			</a>
 		</li>
-	</ul> < /header> < div className = "header-clearfix" / > < />
+	</ul> </header> < div className = "header-clearfix" / > </>
 			);
 		}

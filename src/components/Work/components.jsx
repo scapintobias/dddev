@@ -25,7 +25,7 @@ export const Card = ( {
 			<article className={CN( "bg-white br3 shadow-hover ba b--black-10 mh3 mv3 mw55", className )}>
 				<img src={image} className="obj-cover db br3 br--top h5 center" alt="img" />
 				<div className="pa3">
-					<div className="f25 fw7 tracked helvetica pb2">{title}</div>
+					<div className="f25 fw7 tracked helvetica pb3">{title}</div>
 					<div className="f3 minion orange i pb3">{subtitle}</div>
 					<div className="f4 lh-copy navy lh-leading minion">
 						{description}

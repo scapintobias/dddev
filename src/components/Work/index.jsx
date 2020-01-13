@@ -14,7 +14,7 @@ export function Tab() {
 					link="./work/musicvenues"
 					image="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-1.2.1&auto=format&fit=crop&w=3750&q=80"
 					title="Music Venues"
-					subtitle="Case study"
+					subtitle="Product Design"
 					description="A digital product that enables the final user to have a wider range of information when buying a ticket."
 					className="hover-light-purple link bg-animate navy"
 				/>
@@ -23,16 +23,16 @@ export function Tab() {
 					link="./work/yape"
 					image="https://e-novia.it/wp-content/uploads/2018/11/6_Yape_REV01.jpg"
 					title="Yape"
-					subtitle="Case study"
+					subtitle="UX Research"
 					description="When I learned how to drive land drones, researched into cognitive perception, telerobotics and fastlaps"
 					className="hover-light-blue link bg-animate navy"
 				/>
-				
+
 
 			</Grid>
 			<div className="silver helvetica f1 fw7 tracked mt4 pt3 bt pb3 pl4 pl3-m lh-title">Articles</div>
 			<Grid>
-			<Card
+				<Card
 					link="./work/enovia"
 					image="https://e-novia.it/wp-content/themes/wp-bootstrap-starter-child/images/visit-us.jpg"
 					title="e-Novia"
