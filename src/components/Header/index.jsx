@@ -18,8 +18,8 @@ export function Header(props) {
 	</div>
 	<ul className="fw5 menu">
 		<li className="f4 pt3-m tr-m tr-t pr35-m">
-			<NavLink exact to="/case-studies">
-				Case Studies
+			<NavLink exact to="/work">
+				Work
 			</NavLink>
 		</li>
 		<li className="f4 pt3-m tr-m tr-t pr35-m">

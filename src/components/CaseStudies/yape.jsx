@@ -35,7 +35,7 @@ export function Yape() {
 				line2="In 2018 Yape transformed into a remotely-driven drone. This is the story of how I made a positive difference in the process." />
 
 			<Img oneimg="https://e-novia.it/wp-content/uploads/2018/11/6_Yape_REV01.jpg" />
-			<p className="mr3 mb2 minion gray tr f7">To comply with my confidentiality agreement I have omitted and appropriated confidential information. These designs are a reinterpretation of the original.</p>
+			<p className="mr3 mb2 ml3  minion gray tr tl-t tl-m f7">To comply with my confidentiality agreement I have omitted and appropriated confidential information. These designs are a reinterpretation of the original.</p>
 
 			<Par>
 				<Sec title="My Role" />
@@ -46,7 +46,11 @@ export function Yape() {
 					<Br></Br>
 				The Milestone was achieved shortly after.
 			</Par>
+			<Par>
+				<Sec title="The challenge" />
 
+
+			</Par>
 			<ProJ>
 				<More
 					link1="./newsee"

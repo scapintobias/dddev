@@ -37,7 +37,7 @@
 				</b>
 				. I design useful and enjoyable experiences with a love for deep user research, typography and elegant design. Please feel free to check out my{" "}
 				<span className="helvetica fw7 tracked-tight f-5 f25-m tracked-tight-m link navy hover-orange">
-					<Link to="/case-studies">case&nbsp;&nbsp;studies</Link>
+					<Link to="/case-studies">work</Link>
 				</span>
 				.
 			</p>

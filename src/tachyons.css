@@ -1257,6 +1257,22 @@ code {
 	height: 16rem;
 }
 
+.h6 {
+	height: 24rem;
+}
+
+.h7 {
+	height: 32rem;
+}
+
+.h8 {
+	height: 40rem;
+}
+
+.h9 {
+	height: 48rem;
+}
+
 .h-25 {
 	height: 25%;
 }
@@ -2689,7 +2705,7 @@ code {
 }
 
 .pl-title {
-	padding-left: 40vw ;
+	padding-left: 40vw;
 }
 
 .pl0 {
@@ -2803,6 +2819,7 @@ code {
 .pt15 {
 	padding-top: 0.22rem;
 }
+
 .pt2 {
 	padding-top: 0.5rem;
 }
@@ -3919,7 +3936,7 @@ code {
 		border-left-width: 1px;
 	}
 
-   .bln-ns {
+	.bln-ns {
 		border-left: none;
 		border-left-width: 0;
 	}
@@ -6323,7 +6340,7 @@ code {
 	}
 
 	.tracked-m {
-   letter-spacing: -0.06rem;
+		letter-spacing: -0.06rem;
 	}
 
 	.tracked-tight-m {
@@ -6608,9 +6625,11 @@ code {
 	.pa7-m {
 		padding: 16rem;
 	}
+
 	.pl-title {
-		padding-left: 3vw ;
+		padding-left: 3vw;
 	}
+
 	.pl0-m {
 		padding-left: 0;
 	}
@@ -6825,8 +6844,8 @@ code {
 	}
 
 	.mauto-m {
-	margin: auto;
-}
+		margin: auto;
+	}
 
 	.ma0-m {
 		margin: 0;
@@ -7257,8 +7276,7 @@ code {
 		font-size: 6rem;
 	}
 
-	.f-45-m
- {
+	.f-45-m {
 		font-size: 4.45rem;
 	}
 
@@ -7266,10 +7284,11 @@ code {
 	.f-subheadline-m {
 		font-size: 5rem;
 	}
-   .f-35-m
- {
+
+	.f-35-m {
 		font-size: 3.5rem;
 	}
+
 	.f1-m {
 		font-size: 3rem;
 	}
@@ -8423,7 +8442,7 @@ code {
 	}
 
 	.pl-title {
-		padding-left: 27vw ;
+		padding-left: 27vw;
 	}
 
 	.pl0-l {
@@ -9070,8 +9089,7 @@ code {
 		font-size: 5rem;
 	}
 
-   .f-4-l
-   {
+	.f-4-l {
 		font-size: 4rem;
 	}
 
@@ -9079,9 +9097,10 @@ code {
 		font-size: 3rem;
 	}
 
-   .f15-l {
-      font-size: 2.65rem;
-   }
+	.f15-l {
+		font-size: 2.65rem;
+	}
+
 	.f2-l {
 		font-size: 2.25rem;
 	}
@@ -9182,6 +9201,7 @@ code {
 		vertical-align: bottom;
 	}
 }
+
 @media screen and (min-width: 600px) and (max-width: 834px) {
 	.aspect-ratio-t {
 		height: 0;
@@ -10226,7 +10246,7 @@ code {
 	}
 
 	.pl-title {
-		padding-left: 30vw ;
+		padding-left: 30vw;
 	}
 
 	.pl0-t {
@@ -10879,7 +10899,7 @@ code {
 		font-size: 3rem;
 	}
 
-   .f15-t {
+	.f15-t {
 		font-size: 2.65rem;
 	}
 
@@ -10887,7 +10907,7 @@ code {
 		font-size: 2.25rem;
 	}
 
-   .f35-t {
+	.f35-t {
 		font-size: 2rem;
 	}
 
