@@ -30,8 +30,10 @@ import {
 	About,
 } from "./pages";
 
-import { Drone, Company, Music } from "./pages/work";
-
+import { Yape, Yapesrl } from "./components/CaseStudies/yape";
+import { Enovia } from "./components/CaseStudies/enovia";
+import { Venues } from "./components/CaseStudies/musicvenues";
+import { Test } from "./components/CaseStudies/test";
 function ScrollToTop( {
 	children
 } ) {
@@ -99,9 +101,11 @@ function PageContent() {
 					<Route path="/projects/:type/:year/:slug" component={Project} />
 					<Route path="/about/" component={About} />
 					<Route path="/work/" exact component={Tab} />
-					<Route path="/work/eNovia" exact component={Company} />
-					<Route path="/work/yape" exact component={Drone} />
-					<Route path="/work/musicvenues" exact component={Music} />
+					<Route path="/work/eNovia" exact component={Enovia} />
+					<Route path="/work/yape" exact component={Yape} />
+					<Route path="/work/musicvenues" exact component={Venues} />
+					<Route path="/work/yapesrl" exact component={Yapesrl} />
+					<Route path="/work/test" exact component={Test} />
 				</Switch>
 			</animated.div>
 		) );

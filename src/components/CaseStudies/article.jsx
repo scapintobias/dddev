@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import CN from "classnames";
 export const Par = ( { className, children } ) => (
 
@@ -27,3 +27,28 @@ export const Quote = ( { quote } ) => (
 	<div className="navy i minion i f27 lh-solid pl4 bl bw2">{quote}</div>
 
 );
+
+export const Reveal = ( { button, title, text } ) => {
+	const [isHidden, setHidden] = useState( true );
+	const hiddenDetails = isHidden ? "hidden" : "visible";
+
+	function visibilitySwitch() {
+		setHidden( !isHidden );
+	}
+
+	return (
+		<main>
+			<div className="w5">
+				<button className="f4 link dim br2 ph3 pv2 ma3 dib white bg-navy" onClick={visibilitySwitch}>
+					{button}
+				</button>
+			</div>
+			<div style={{ visibility: hiddenDetails }}>
+				<Par>
+					<Sec title={title} />
+					{text}
+				</Par>
+			</div>
+		</main>
+	);
+}

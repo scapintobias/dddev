@@ -3495,15 +3495,12 @@ code {
 	overflow-y: scroll;
 }
 
-.center {
-	margin-left: auto;
-}
-
 .center,
 .mr-auto {
 	margin-right: auto;
 }
 
+.center,
 .ml-auto {
 	margin-left: auto;
 }
@@ -3797,6 +3794,16 @@ code {
 
 .debug-grid-16-solid {
 	background: #fff url("data:image/gif; base64, R0lGODdhEAAQAPEAAADw/wDx/xXy /////ywAAAAAEAAQAAACIZyPKckYDQFsb6ZqD85jZ2+BkwiRFKehhqQCQgDHcgwEBQA7") repeat 0 0;
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+
+	.justify-between-vl {
+
+		justify-content: space-between;
+
+	}
+
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1350px) {

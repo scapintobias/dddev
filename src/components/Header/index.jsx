@@ -8,7 +8,7 @@ import "./style.css";
 
 export function Header(props) {
 	const [expanded, toggleExpanded,] = useExpanded(".header .menu-icon");
-	return (<> < header className = {
+	return (<> <header className = {
 		CN("header helvetica", {expanded})
 	} > <NavLink to="/" className="logo helvetica">
 		DisciplineDesign
