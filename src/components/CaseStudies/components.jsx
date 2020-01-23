@@ -116,7 +116,7 @@ export const Biblio = ( {
 	);
 
 export const Invision = ( { prototype } ) => (
-	<section className="flex justify-center ma3">
-		<iframe width="438" height="930" src={prototype} frameborder="0" allowfullscreen />
-	</section>
+		<div className="tso-m">
+		<iframe width="438" height="930" src={prototype} frameBorder="0" allowFullScreen /></div>
+	
 );

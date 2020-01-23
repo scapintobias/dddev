@@ -1,8 +1,8 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import {slugify} from "../../utils";
-import {getAllProjects, projectTypes} from "../../projectsProvider";
+import { slugify } from "../../utils";
+import { getAllProjects, projectTypes } from "../../projectsProvider";
 
 import "./style.css";
 
@@ -11,11 +11,11 @@ const projects = getAllProjects();
 export const ProjectList = props => (
 	<ul className="projects-list">
 		{projects
-			.filter(project => (props.type ? project.type === props.type : true))
-			.map((project, key) => (
+			.filter( project => ( props.type ? project.type === props.type : true ) )
+			.map( ( project, key ) => (
 				<Link
 					key={key}
-					to={`/projects/${slugify(project.type)}/${project.year}/${slugify(
+					to={`/archive/${slugify( project.type )}/${project.year}/${slugify(
 						project.title
 					)}`}
 				>
@@ -29,6 +29,6 @@ export const ProjectList = props => (
 						<span className="year">{project.year}</span>
 					</li>
 				</Link>
-			))}
+			) )}
 	</ul>
 );

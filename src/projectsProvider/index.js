@@ -9,21 +9,21 @@ export function getAllProjects() {
   return projects;
 }
 
-export function getProjectByUrlParams(type, year, slug) {
+export function getProjectByUrlParams( type, year, slug ) {
   return projects.find(
     project =>
-    slugify(project.title) === slug &&
-    project.year === Number(year) &&
-    slugify(project.type) === type
+    slugify( project.title ) === slug &&
+    project.year === Number( year ) &&
+    slugify( project.type ) === type
   );
 }
 
-export function getPrevAndNextProjects({
+export function getPrevAndNextProjects( {
   title,
   year,
   type
-}) {
-  if (!title) return {
+} ) {
+  if ( !title ) return {
     prev: null,
     next: null
   };
@@ -34,21 +34,21 @@ export function getPrevAndNextProjects({
   );
   let prev = index - 1,
     next = index + 1;
-  const currentType = window.sessionStorage.getItem("currentType") || "";
+  const currentType = window.sessionStorage.getItem( "currentType" ) || "";
 
-  if (currentType) {
+  if ( currentType ) {
     prev = -1;
     next = projects.length;
     // Find the previous of given type
-    for (let i = index - 1; i >= 0; i--) {
-      if (projects[i].type === currentType) {
+    for ( let i = index - 1; i >= 0; i-- ) {
+      if ( projects[ i ].type === currentType ) {
         prev = i;
         break;
       }
     }
     // Find the next of given type
-    for (let i = index + 1; i < projects.length; i++) {
-      if (projects[i].type === currentType) {
+    for ( let i = index + 1; i < projects.length; i++ ) {
+      if ( projects[ i ].type === currentType ) {
         next = i;
         break;
       }
@@ -56,8 +56,8 @@ export function getPrevAndNextProjects({
   }
 
   return {
-    prev: prev >= 0 ? projects[prev] : null,
-    next: next < projects.length - 1 ? projects[next] : null
+    prev: prev >= 0 ? projects[ prev ] : null,
+    next: next < projects.length - 1 ? projects[ next ] : null
   };
 }
 

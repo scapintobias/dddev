@@ -1,12 +1,16 @@
 .projects-list {
 	list-decoration: none;
-	padding: 0 1rem;
+	padding: 0 1rem 1rem;
 }
 
 .projects-list a {
 	width: 100%;
 	cursor: pointer;
 	display: block;
+}
+
+.projects-list a:hover {
+	color: #ef5418;
 }
 
 .projects-list li {

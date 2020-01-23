@@ -21,7 +21,10 @@ export function Header(props) {
 			<NavLink exact to="/work">
 				Work
 			</NavLink>
-		</li>
+			</li>
+			<li className="f4 pt3-m tr-m tr-t pr35-m">
+				<NavLink exact to="/archive">Archive</NavLink>
+			</li>
 		<li className="f4 pt3-m tr-m tr-t pr35-m">
 			<NavLink exact to="/about">About</NavLink>
 		</li>

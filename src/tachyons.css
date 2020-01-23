@@ -540,7 +540,7 @@ ul {
 }
 
 .b--light-yellow {
-	border-color: #fb a9;
+	border-color: #fba9;
 }
 
 .b--purple {
@@ -1174,6 +1174,11 @@ code {
 	font-family: garamond-premier-pro-display, serif;
 }
 
+.bodoni {
+	font-family: ltc-bodoni-175, serif;
+}
+
+
 .i {
 	font-style: italic;
 }
@@ -1444,6 +1449,22 @@ code {
 
 .w5 {
 	width: 16rem;
+}
+
+.w6 {
+	width: 24rem;
+}
+
+.w7 {
+	width: 32rem;
+}
+
+.w8 {
+	width: 40rem;
+}
+
+.w9 {
+	width: 48rem;
 }
 
 .w-10 {
@@ -5589,7 +5610,23 @@ code {
 	}
 }
 
+@media and screen (max-width:768px) {
+	.tso-m {
+		width: 300px;
+		height: 500px;
+	}
+
+	.tso-m>iframe {
+		transform: scale(0.5);
+		position: relative;
+		top: -200px;
+		left: -20%;
+	}
+}
+
 @media screen and (min-width: 300px) and (max-width: 600px) {
+
+
 	.aspect-ratio-m {
 		height: 0;
 		position: relative;

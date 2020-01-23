@@ -96,9 +96,9 @@ function PageContent() {
 			<animated.div className="fill-viewport" key={key} style={props}>
 				<Switch location={item}>
 					<Route path="/" exact component={Home} />
-					<Route path="/projects" exact component={Projects} />
-					<Route path="/projects/:type" exact component={Projects} />
-					<Route path="/projects/:type/:year/:slug" component={Project} />
+					<Route path="/archive" exact component={Projects} />
+					<Route path="/archive/:type" exact component={Projects} />
+					<Route path="/archive/:type/:year/:slug" component={Project} />
 					<Route path="/about/" component={About} />
 					<Route path="/work/" exact component={Tab} />
 					<Route path="/work/eNovia" exact component={Enovia} />

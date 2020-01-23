@@ -37,7 +37,7 @@ export function Venues() {
 				<Br />
 				<span className="orange">What if there was a more immersive experience?</span>
 				<Br />
-				All of us are music app users, either Apple Music or Spotify, and both of these services give you suggestions about the music you could like, based on what you're listening. I wondered if this could apply to concerts too—yes there are the usual headliners, but <span className="orange">what if</span> the local band plays a genre close to your likings, and is performing tomorrow just two blocks away?<br></br> And <span className="orange">what if</span> you can directly listen to their newest release directly from the ticket page? Marvelous.
+				All of us are music app users, either Apple Music or Spotify, and both of these services give you suggestions about the music you could like, based on what you're listening. I wondered if this could apply to concerts too—yes there are the usual headliners, but <span className="orange">what if</span> the local band plays a genre close to your likings, and is performing tomorrow just two blocks away?<br></br> And <span className="orange">what if</span> you can listen to their newest release directly from the ticket page? Marvelous.
 
 
 
@@ -73,11 +73,11 @@ export function Venues() {
 
 				<Sub title="Iterations" />
 				<Sub title="Results" />
-
+				<Invision prototype="//invis.io/KFVIU5AXVJM" />
 
 			</Par>
-			<Invision prototype="//invis.io/KFVIU5AXVJM" />
 			
+
 
 		</main>
 	);

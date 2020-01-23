@@ -28,33 +28,33 @@ export const ProjectFilters = props => {
 								</NavLink>
 							</li>
 							<li>
-								<NavLink to="/projects/ux">UX/UI</NavLink>
+								<NavLink to="/archive/ux">UX/UI</NavLink>
 							</li>
 							<li>
-								<NavLink to="/projects/photography">Photography</NavLink>
+								<NavLink to="/archive/photography">Photography</NavLink>
 							</li>
 							<li>
-								<NavLink to="/projects/wayfinding">Wayfinding</NavLink>
+								<NavLink to="/archive/wayfinding">Wayfinding</NavLink>
 							</li>
 							<li>
-								<NavLink to="/projects/corporate">Corporate</NavLink>
+								<NavLink to="/archive/corporate">Corporate</NavLink>
 							</li>
 						</ul>
 						<ul>
 							<li>
-								<NavLink to="/projects/poster">Posters</NavLink>
+								<NavLink to="/archive/poster">Posters</NavLink>
 							</li>
 							<li>
-								<NavLink to="/projects/print">Print</NavLink>
+								<NavLink to="/archive/print">Print</NavLink>
 							</li>
 							<li>
-								<NavLink to="/projects/pack">Packaging</NavLink>
+								<NavLink to="/archive/pack">Packaging</NavLink>
 							</li>
 							<li>
-								<NavLink to="/projects/exhibit">Exhibit</NavLink>
+								<NavLink to="/archive/exhibit">Exhibit</NavLink>
 							</li>
 							<li>
-								<NavLink to="/projects/event">Events</NavLink>
+								<NavLink to="/archive/event">Events</NavLink>
 							</li>
 						</ul>
 					</section>
