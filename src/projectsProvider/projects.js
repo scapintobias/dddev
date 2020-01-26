@@ -57,9 +57,23 @@ const createProject = ( title, subtitle, type, year, content ) => ( {
 
 export const projects = [
   createProject(
+    "Metro de Lima",
+    "Subway system",
+    "wayfinding",
+    2019,
+    Pantone()
+  ),
+  createProject(
     "Heatwave",
     "Solutions",
     "ux",
+    2018,
+    Heatwave()
+  ),
+  createProject(
+    "Ducati 1260 Multistrada",
+    "Ducati Link App",
+    "video",
     2018,
     Heatwave()
   ),
@@ -70,13 +84,7 @@ export const projects = [
     2018,
     Pantone()
   ),
-  createProject(
-    "Pharma",
-    "Packaging innovation",
-    "pack",
-    2017,
-    Heatwave()
-  ),
+
   createProject(
     "Mourn",
     "9/11",
@@ -112,13 +120,7 @@ export const projects = [
     2016,
     Pantone()
   ),
-  createProject(
-    "Parole Prigioniere",
-    "Expo 2015",
-    "exhibit",
-    2015,
-    Heatwave()
-  ),
+
   createProject(
     "Parole Prigioniere",
     "Expo 2015",
@@ -140,20 +142,7 @@ export const projects = [
     2015,
     Pantone()
   ),
-  createProject(
-    "Lockton",
-    "Analitics Facility",
-    "corporate",
-    2014,
-    Heatwave()
-  ),
-  createProject(
-    "Young Frankenstein",
-    "A movie in stills / Booklet",
-    "print",
-    2015,
-    Pantone()
-  ),
+
   createProject(
     "Corte d’Arte",
     "Gallery",
@@ -167,6 +156,13 @@ export const projects = [
     "logo",
     2013,
     Pantone()
+  ),
+  createProject(
+    "Migrants",
+    "Untold story",
+    "print",
+    2013,
+    Heatwave()
   ),
   createProject(
     "A century in prime numbers",
@@ -207,16 +203,10 @@ export const projects = [
     "Fearless",
     "We loved Helvetica, then Akzidenz happened",
     "poster",
-    2013,
+    2011,
     Pantone()
   ),
-  createProject(
-    "Hospital",
-    "San Tommaso dei Battuti",
-    "wayfinding",
-    2011,
-    Heatwave()
-  ),
+
   createProject(
     "Villa Manin",
     "di Passariano",
@@ -224,13 +214,7 @@ export const projects = [
     2011,
     Pantone()
   ),
-  createProject(
-    "Demenego",
-    "Optycs",
-    "logo",
-    2011,
-    Heatwave()
-  ),
+
   createProject(
     "SAF",
     "Transport",
@@ -245,13 +229,7 @@ export const projects = [
     2011,
     Heatwave()
   ),
-  createProject(
-    "Breakthrough",
-    "University",
-    "corporate",
-    2010,
-    Pantone()
-  ),
+
   createProject(
     "DP",
     "Energy",
@@ -293,5 +271,5 @@ export const projects = [
     "corporate",
     2008,
     Pantone()
-  )
+  ),
 ];

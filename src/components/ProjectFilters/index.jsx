@@ -48,7 +48,7 @@ export const ProjectFilters = props => {
 								<NavLink to="/archive/print">Print</NavLink>
 							</li>
 							<li>
-								<NavLink to="/archive/pack">Packaging</NavLink>
+								<NavLink to="/archive/video">Video</NavLink>
 							</li>
 							<li>
 								<NavLink to="/archive/exhibit">Exhibit</NavLink>

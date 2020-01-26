@@ -33,9 +33,3 @@ export function Pantone() {
 			/>
 		</main> )
 };
-/*
-createImage( "", "Meow" ),
-	desc(),
-	imgLtR( "", "Meow",
-		"", "Our Headline", " ", " Our Bodoni", "Commissioned by Bert Di Pamphilis of WTC and designed by Tom Carnase under the direction of Massimo Vignelli. The goal of this 1989 Bodoni revival was to match the proportions of Helvetica." )
-)*/

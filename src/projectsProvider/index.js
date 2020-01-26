@@ -59,7 +59,7 @@ export function getPrevAndNextProjects( {
 
   return {
     prev: prev >= 0 ? projects[ prev ] : null,
-    next: next < projects.length - 1 ? projects[ next ] : null
+    next: next < projects.length ? projects[ next ] : null
   };
 }
 
@@ -70,7 +70,7 @@ export const projectTypes = {
   corporate: "Corporate Image",
   logo: "Logo",
   poster: "Posters",
-  pack: "Packaging",
+  video: "Video",
   exhibit: "Exhibit",
   photography: "Photography",
   print: "Print"
