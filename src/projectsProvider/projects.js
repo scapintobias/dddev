@@ -1,3 +1,8 @@
+import {
+  Heatwave,
+  Pantone
+} from './content'
+
 const createProject = ( title, subtitle, type, year, content ) => ( {
   title,
   subtitle,
@@ -6,33 +11,49 @@ const createProject = ( title, subtitle, type, year, content ) => ( {
   content
 } );
 
-const createImage = ( src, alt ) => ( {
-  src,
-  alt
-} );
-const desc = text => ( {} );
-const createContent = (
-  headingImage,
-  desc,
-  imagesLeft,
-  textRight,
-  imagesBottom,
-  imagesGrid = null
-) => ( {
-  imagesGrid,
-  headingImage,
-  desc,
-  imagesLeft,
-  textRight,
-  imagesBottom
-} );
 
-const create4ImageGrid = ( img1, img2, img3, img4 ) => ( {
-  img1,
-  img2,
-  img3,
-  img4
-} );
+// const createImage = ( src, alt ) => ( {
+//   src,
+//   alt
+// } );
+
+// const imgLtR = ( src, alt, par1, tit1, par2, tit2, par3 ) => ( {
+//     src,
+//     alt,
+//     par1,
+//     tit1,
+//     par2,
+//     tit2,
+//     par3
+//   }
+
+// );
+
+// const desc = ( children ) => ( {
+//   children
+// } );
+
+// const createContent = (
+//   headingImage,
+//   desc,
+//   imgLtR,
+//   imagesBottom,
+//   imagesGrid = null
+// ) => ( {
+//   imagesGrid,
+//   headingImage,
+//   desc,
+//   imgLtR,
+//   imagesBottom
+// } );
+
+// const create4ImageGrid = ( img1, img2, img3, img4 ) => ( {
+//   img1,
+//   img2,
+//   img3,
+//   img4
+// } );
+
 
 export const projects = [
   createProject(
@@ -40,892 +61,237 @@ export const projects = [
     "Solutions",
     "ux",
     2018,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ]
-    )
+    Heatwave()
   ),
   createProject(
     "Pantone",
     "Cocktail solutions",
     "event",
     2018,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ]
-    )
+    Pantone()
   ),
   createProject(
     "Pharma",
     "Packaging innovation",
     "pack",
     2017,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Heatwave()
   ),
   createProject(
     "Mourn",
     "9/11",
     "poster",
     2016,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Pantone()
   ),
   createProject(
     "Ideascudo",
     "Gruppo Creamoda",
     "logo",
     2016,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Heatwave()
   ),
   createProject(
     "Tokio 2020",
     "Olympics",
     "logo",
     2016,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Pantone()
   ),
   createProject(
     "Syneco",
     "Oil",
     "corporate",
     2016,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Heatwave()
   ),
   createProject(
     "Joseph Müller-Brockmann",
     "Timeline",
     "poster",
     2016,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Pantone()
   ),
   createProject(
     "Parole Prigioniere",
     "Expo 2015",
     "exhibit",
     2015,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Heatwave()
   ),
   createProject(
     "Parole Prigioniere",
     "Expo 2015",
     "photography",
     2015,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Pantone()
   ),
   createProject(
     "Borromeo5",
     "Restaurant",
     "corporate",
     2015,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Heatwave()
   ),
   createProject(
     "Corte d’Arte",
     "Sbacon",
     "exhibit",
     2015,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Pantone()
   ),
   createProject(
     "Lockton",
     "Analitics Facility",
     "corporate",
     2014,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Heatwave()
   ),
   createProject(
     "Young Frankenstein",
     "A movie in stills / Booklet",
     "print",
     2015,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Pantone()
   ),
   createProject(
     "Corte d’Arte",
     "Gallery",
     "corporate",
     2014,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Heatwave()
   ),
   createProject(
     "Expo",
     "Milano 2015",
     "logo",
     2013,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Pantone()
   ),
   createProject(
     "A century in prime numbers",
     "A handful of papers / Book",
     "print",
     2013,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Heatwave()
   ),
   createProject(
     "Achille Castiglioni",
     "Archive",
     "corporate",
     2013,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Pantone()
   ),
   createProject(
     "Nociva",
     "Album Launch",
     "photography",
     2013,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Heatwave()
   ),
   createProject(
     "SteelTears",
     "Just an illusion / Booklet",
     "print",
     2012,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Pantone()
   ),
   createProject(
     "Rankin Paulston",
     "Design Studio",
     "corporate",
     2011,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Heatwave()
   ),
   createProject(
     "Fearless",
     "We loved Helvetica, then Akzidenz happened",
     "poster",
     2013,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Pantone()
   ),
   createProject(
     "Hospital",
     "San Tommaso dei Battuti",
     "wayfinding",
     2011,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Heatwave()
   ),
   createProject(
     "Villa Manin",
     "di Passariano",
     "poster",
     2011,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Pantone()
   ),
   createProject(
     "Demenego",
     "Optycs",
     "logo",
     2011,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Heatwave()
   ),
   createProject(
     "SAF",
     "Transport",
     "corporate",
     2011,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Pantone()
   ),
   createProject(
     "Villa Manin",
     "di Passariano",
     "corporate",
     2011,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Heatwave()
   ),
   createProject(
     "Breakthrough",
     "University",
     "corporate",
     2010,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Pantone()
   ),
   createProject(
     "DP",
     "Energy",
     "corporate",
     2010,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Heatwave()
   ),
   createProject(
     "Richmond",
     "Helath Clinic",
     "logo",
     2010,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Pantone()
   ),
   createProject(
     "Hospital",
     "San Tommaso dei Battuti",
     "corporate",
     2009,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Heatwave()
   ),
   createProject(
     "A",
     "Single letter / Font",
     "print",
     2009,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Pantone()
   ),
   createProject(
     "Abstract",
     "Just a few lines",
     "poster",
     2009,
-    createContent(
-      createImage( "https://placekitten.com/1500/1000", "Meow" ),
-      "blabla blqa la glad gdg",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      "blagrsigneri geog eojfg oefjg owj gowgj ",
-      [
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      ],
-      create4ImageGrid(
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" ),
-        createImage( "https://placekitten.com/500/300", "Meow" ),
-        createImage( "https://placekitten.com/400/300", "Meow" )
-      )
-    )
+    Heatwave()
   ),
   createProject(
     "Craf Aldo Moro",
     "With Armando & Maurizio Milani",
     "corporate",
     2008,
-    createContent(
-      createImage(
-        "https://placekitten.com/1500/1000",
-        "logo"
-      ),
-      "This logo and Corporate Image have been developed during a workshop with Armando Milani giving some fundamental theoric lessons, and his brother Maurizio focusing on the production compartment. The very limited group of people granted me the possibility to design it four-handedly in a very close collaboration with him. Funnily enough, this workshop should have been participated by Massimo Vignelli too, but for personal reason had to decline. Many people feel ashamed showing their first projects. I could dig more into the archives and find lots of logos from the 2006-2008 period, but they wouldn't be as meaningful as this. And the reason is quite clear. Before meeting with Armando and Maurizio, I had a very fond appreciacion of everything design-related, but I was skeptical about turning into the core business of my profession. So this, rather than the first project at all, is the first project I designed with DisciplineDesign in mind, and a reminder of a spectacular encounter, where my career started to shape."
-
-    )
+    Pantone()
   )
 ];

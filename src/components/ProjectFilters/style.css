@@ -1,10 +1,6 @@
-#controls-container-clearfix {
-	width: 100%;
-	height: 54px;
-}
+
 #controls-container {
-	position: fixed;
-	z-index: 2;
+	z-index: 15;
 	box-sizing: border-box;
 	width: 100%;
 	padding: 1rem;
@@ -21,13 +17,14 @@
 	will-change: max-height;
 }
 #controls-container .wrapper.expanded {
-	max-height: 160px;
+	max-height: 200px;
 }
 #controls {
 	line-height: 2;
 	width: 100%;
 	margin-top: .5rem;
 	columns: 2;
+	z-index: 15;
 }
 #controls ul {
 	display: flex;

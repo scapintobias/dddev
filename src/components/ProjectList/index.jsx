@@ -21,12 +21,12 @@ export const ProjectList = props => (
 				>
 					<li>
 						<span className="title">
-							<b>{project.title}</b>
+							<span className="helvetica fw6 f5-m f4">{project.title}</span>
 							<br />
-							{project.subtitle}
+							<span className="helvetica f4 f5-m fw3">{project.subtitle}</span>
 						</span>
-						<span className="type">{projectTypes[project.type]}</span>
-						<span className="year">{project.year}</span>
+						<span className="type f4 f6-m fw2">{projectTypes[project.type]}</span>
+						<span className="year f4 f6-m fw1">{project.year}</span>
 					</li>
 				</Link>
 			) )}

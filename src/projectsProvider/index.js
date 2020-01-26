@@ -5,6 +5,8 @@ import {
   projects
 } from "./projects";
 
+
+
 export function getAllProjects() {
   return projects;
 }

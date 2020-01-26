@@ -39,7 +39,7 @@ export function About() {
 			in february 2017, starting a whole new chapter. I gained my degree in april 2019 with a thesis on
 			'User Experience design for land-drones remote driving', theme arose from my work experience during
 			this time, which you can find writings about in the
-				<Link className="helvetica fw7 f3 link hover-green" to="/case-studies/eNovia">{" "}
+				<Link className="helvetica fw7 f3 link hover-green" to="/work/eNovia">{" "}
 				e-Novia{" "}
 			</Link>
 			file.
