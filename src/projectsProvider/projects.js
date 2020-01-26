@@ -1,6 +1,11 @@
 import {
   Heatwave,
-  Pantone
+  Pantone,
+  Craf,
+  Abstract,
+  A,
+  Hospital,
+  Richmond
 } from './content'
 
 const createProject = ( title, subtitle, type, year, content ) => ( {
@@ -11,50 +16,6 @@ const createProject = ( title, subtitle, type, year, content ) => ( {
   content
 } );
 
-
-// const createImage = ( src, alt ) => ( {
-//   src,
-//   alt
-// } );
-
-// const imgLtR = ( src, alt, par1, tit1, par2, tit2, par3 ) => ( {
-//     src,
-//     alt,
-//     par1,
-//     tit1,
-//     par2,
-//     tit2,
-//     par3
-//   }
-
-// );
-
-// const desc = ( children ) => ( {
-//   children
-// } );
-
-// const createContent = (
-//   headingImage,
-//   desc,
-//   imgLtR,
-//   imagesBottom,
-//   imagesGrid = null
-// ) => ( {
-//   imagesGrid,
-//   headingImage,
-//   desc,
-//   imgLtR,
-//   imagesBottom
-// } );
-
-// const create4ImageGrid = ( img1, img2, img3, img4 ) => ( {
-//   img1,
-//   img2,
-//   img3,
-//   img4
-// } );
-
-
 export const projects = [
   createProject(
     "Metro de Lima",
@@ -64,9 +25,9 @@ export const projects = [
     Pantone()
   ),
   createProject(
-    "Heatwave",
-    "Solutions",
-    "ux",
+    "Mental Coach",
+    "Corporate",
+    "photography",
     2018,
     Heatwave()
   ),
@@ -84,7 +45,13 @@ export const projects = [
     2018,
     Pantone()
   ),
-
+  createProject(
+    "Junior Enterprise",
+    "Corporate",
+    "photography",
+    2017,
+    Pantone()
+  ),
   createProject(
     "Mourn",
     "9/11",
@@ -120,7 +87,13 @@ export const projects = [
     2016,
     Pantone()
   ),
-
+  createProject(
+    "Electoral campaign",
+    "Superheroes",
+    "photography",
+    2015,
+    Pantone()
+  ),
   createProject(
     "Parole Prigioniere",
     "Expo 2015",
@@ -242,34 +215,34 @@ export const projects = [
     "Helath Clinic",
     "logo",
     2010,
-    Pantone()
+    Richmond()
   ),
   createProject(
     "Hospital",
     "San Tommaso dei Battuti",
     "corporate",
     2009,
-    Heatwave()
+    Hospital()
   ),
   createProject(
     "A",
     "Single letter / Font",
     "print",
     2009,
-    Pantone()
+    A()
   ),
   createProject(
     "Abstract",
     "Just a few lines",
     "poster",
     2009,
-    Heatwave()
+    Abstract()
   ),
   createProject(
     "Craf Aldo Moro",
     "With Armando & Maurizio Milani",
     "corporate",
     2008,
-    Pantone()
+    Craf()
   ),
 ];

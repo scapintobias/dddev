@@ -1,0 +1,32 @@
+.gridp {
+	margin: 1rem;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+@media (min-width: 10px) {
+	.gridp {
+		grid-template-columns: repeat(2, 2fr);
+		grid-gap: 1rem;
+	}
+}
+
+@media (min-width: 300px) {
+	.gridp {
+		grid-template-columns: repeat(2, 2fr);
+		grid-gap: 1rem;
+	}
+}
+
+@media (min-width: 900px) {
+	.gridp {
+		grid-template-columns: repeat(4, 4fr);
+		grid-gap: 1rem;
+	}
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 1rem;
+}
