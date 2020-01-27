@@ -5,7 +5,14 @@ import {
   Abstract,
   A,
   Hospital,
-  Richmond
+  Richmond,
+  Dp,
+  Manin,
+  Fearless,
+  Saf,
+  ManinP,
+  Rankin,
+  Castiglioni
 } from './content'
 
 const createProject = ( title, subtitle, type, year, content ) => ( {
@@ -149,35 +156,22 @@ export const projects = [
     "Archive",
     "corporate",
     2013,
-    Pantone()
+    Castiglioni()
   ),
-  createProject(
-    "Nociva",
-    "Album Launch",
-    "photography",
-    2013,
-    Heatwave()
-  ),
-  createProject(
-    "SteelTears",
-    "Just an illusion / Booklet",
-    "print",
-    2012,
-    Pantone()
-  ),
+
   createProject(
     "Rankin Paulston",
     "Design Studio",
     "corporate",
     2011,
-    Heatwave()
+    Rankin()
   ),
   createProject(
     "Fearless",
     "We loved Helvetica, then Akzidenz happened",
     "poster",
     2011,
-    Pantone()
+    Fearless()
   ),
 
   createProject(
@@ -185,7 +179,7 @@ export const projects = [
     "di Passariano",
     "poster",
     2011,
-    Pantone()
+    ManinP()
   ),
 
   createProject(
@@ -193,14 +187,14 @@ export const projects = [
     "Transport",
     "corporate",
     2011,
-    Pantone()
+    Saf()
   ),
   createProject(
     "Villa Manin",
     "di Passariano",
     "corporate",
     2011,
-    Heatwave()
+    Manin()
   ),
 
   createProject(
@@ -208,7 +202,7 @@ export const projects = [
     "Energy",
     "corporate",
     2010,
-    Heatwave()
+    Dp()
   ),
   createProject(
     "Richmond",

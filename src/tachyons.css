@@ -1599,6 +1599,12 @@ code {
 	position: fixed;
 }
 
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 1rem;
+}
+
 .o-100 {
 	opacity: 1;
 }
@@ -2709,6 +2715,10 @@ code {
 	padding: 1rem;
 }
 
+.pa35 {
+	padding: 1.5rem;
+}
+
 .pa4 {
 	padding: 2rem;
 }
@@ -2935,6 +2945,11 @@ code {
 .ph3 {
 	padding-left: 1rem;
 	padding-right: 1rem;
+}
+
+.ph35 {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 }
 
 .ph4 {

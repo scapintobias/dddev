@@ -1,15 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-	Par,
-	Sec, Sub, ParImg, Iltr, Img, Br, TwoImg
+	Main, Par, Sec, Sub, ParImg, Iltr, Img, Br, TwoImg, Head, Tit, P, Rf, FourImg
 } from "./components.jsx";
 import "./style.css"
 
 
 export function Heatwave() {
 	return (
-		<main>
+		<Main>
 			<Img oneimg="http://anonima.design/archive/img/numeriprimi/primi_1.png" />
 			<Iltr
 				img="http://anonima.design/archive/img/numeriprimi/primi_4.png"
@@ -17,11 +16,11 @@ export function Heatwave() {
 				tit="Our Headline"
 				par1="Originally drawn by Walter Haettenschweiler in 1954, derived from an assignment by Ernst Keller at Kunstgewerbeschule Zürich, and made as an improvement over Commercial - Grotesk( Haas, 1940 ).No lowercase.[Swiss Type Design ] Included in Lettera vol.1, an alphabet source book edited by Alex Stocker and Armin Haab.Also known simply as Schmalfette ( Bold Condensed).No official digital version is available, therefore  for the purpose of the project the entire typeface has been redesigned from scratch based on the original drawings, and it 's not commercially available."
 			/>
-		</main> )
+		</Main> )
 };
 export function Pantone() {
 	return (
-		<main>
+		<Main>
 			<div className="gridp">
 				<img src="/archive/pantone/cocktails/A.png" alt='cocktail' />
 				<img src="/archive/pantone/cocktails/B.png" alt='cocktail' />
@@ -38,59 +37,164 @@ export function Pantone() {
 			</Par>
 			<Img oneimg="/archive/pantone/pantone_2.png" />
 			<Img oneimg="/archive/pantone/tram.png" />
-		</main> )
+		</Main> )
 };
 
+export function Castiglioni() {
+	return (
+		<Main>
+			<Par>
+				<Sec title="ACF" />
+				The Achille Castiglioni Foundation was set up in 2012 at the initiative of Achille’s heirs. It sets out to foster the work carried out in the studio museum located on Piazza Castello 27, evidence of the cultural, artistic and professional work of Achille Castiglioni. The Foundation is in charge of managing and using preserve, communicate and exhibit, objects related to the work carried dissemination activities and organises cally, its facilities are meant to effectively talents.	
+			</Par>
+			<Img oneimg="/archive/castiglioni/castiglioni_1.png" />
+			<Img oneimg="/archive/castiglioni/castiglioni_2.png" />
+			<Img oneimg="/archive/castiglioni/castiglioni_3.png" />
+			<Img oneimg="/archive/castiglioni/castiglioni_4.png" />
+			<Img oneimg="/archive/castiglioni/castiglioni_5.png" />
+
+		</Main> )
+};
+
+export function Rankin() {
+	return (
+		<Main>
+			<Img oneimg="/archive/rankin/rankin_1.png" />
+			<Iltr img="/archive/rankin/rankin_2.png">
+				<Head head="Specimens of the font involved for composing the logo and the rest of the Corporate Image." />
+				<Tit tit="Our Bodoni" />
+				<P>Commissioned by Bert Di Pamphilis of WTC and designed by Tom Carnase under the direction of Massimo Vignelli. The goal of this 1989 Bodoni revival was to match the proportions of Neue Haas Grotesk.</P>
+			</Iltr>
+			<Par><Sec title="Color palette" /></Par>
+			<Img oneimg="/archive/rankin/rankin_3.png" />
+			<Img oneimg="/archive/rankin/rankin_4.png" className="mt6"/>
+		</Main > )
+};
+export function Fearless() {
+	return (
+		<Main>
+			<Img oneimg="/archive/fearless/fearless_1.png" />
+			<Img oneimg="/archive/fearless/fearless_5.png" />
+			<Img oneimg="/archive/fearless/fearless_2.png" />
+			<Img oneimg="/archive/fearless/fearless_3.png" />
+			<Img oneimg="/archive/fearless/fearless_4.png" />
+
+		</Main> )
+};
+
+export function ManinP() {
+	return (
+		<Main>
+			<FourImg
+				image1="/archive/manin/capa.png"
+				image2="/archive/manin/ciuha.png"
+				image3="/archive/manin/tiepolo.png"
+				image4="/archive/manin/munch.png"
+			/>
+			<Img oneimg="/archive/manin/manin_7.png"
+			className="mb2"
+			/>
+			<TwoImg
+				image1="/archive/manin/manin_8.png"
+				image2="/archive/manin/manin_9.png"
+			/>
+		</Main> )
+};
+
+export function Saf() {
+	return (
+		<Main>
+			<Img oneimg="/archive/saf/saf_1.png" />
+			<Iltr img="/archive/saf/saf_2.png">
+				<Head head="Specimens of the font involved for composing the logo and the rest of the Corporate Image." />
+				<Tit tit="Akzidenz Grotesk" />
+				<P>First issued by Berthold in 1898 as Accidenz-Grotesk. Many loosely related styles from various sources were incorporated into the family. Further extended and homogenized by G.G. Lange from the late 1950s on. Lange regards <a href="https://www.bertholdtypes.com/font/royal-grotesk/proplus/" target="_blank" className="link hover-orange">Royal-Grotesk</a> the key source and credits it to Ferdinand Theinhardt, but that is disputed, see Eckehart Schumacher-Gebler’s article in <a href="http://www.tinograss.de/albums/schriftgestalten/" target="_blank" className="link hover-orange">Tino Graß: Schriftgestalten</a> and <a href="http://kupferschrift.de/cms/2012/04/ag/" target="_blank" className="link hover-orange">Indra Kupferschmid’s blog post</a>. Distributed in the US and UK as
+                  <a href="https://books.google.it/books?id=AHq-uK6F-PUC&pg=PA10&lpg=PA10&dq=standard+akzidenz-grotesk&source=bl&ots=bh1Bcz8Dbh&sig=QyUqvslwf-PYb_B4upWJKxOTmRk&hl=en&sa=X&ei=s67EUqCXKcP4oATmlYCoDg&redir_esc=y#v=onepage&q=standard%20akzidenz-grotesk&f=false" target="_blank" className="link hover-orange">Standard</a> and commonly used in the 1950s–60s.</P>
+			</Iltr>
+			<Img oneimg="/archive/saf/saf_5.png" className="w-50 w-100-m center" />
+			<Img oneimg="/archive/saf/saf_3.png" className="pa0 ph3 pt3" />
+			<Img oneimg="/archive/saf/saf_4.png" />
+		</Main> )
+};
+
+
+export function Manin() {
+	return (
+		<Main>
+			<Img oneimg="/archive/manin/manin_1.png" />
+			<Iltr img="/archive/manin/manin_2.png">
+				<Head head="Specimens of the font involved for composing the logo and the rest of the Corporate Image." />
+				<Tit tit="Neue Haas Grotesk" />
+				<P>The first weights of Neue Haas Grotesk were designed in 1957-1958 by Max Miedinger for the Haas’sche Schriftgiesserei in Switzerland, with art direction by the company’s principal, Eduard Hoffmann. Neue Haas Grotesk was to be the answer to the British and German grotesques that had become hugely popular thanks to the success of functionalist Swiss typography. The typeface was soon revised and released as Helvetica by Linotype AG.</P>
+				<Tit tit="Our Bodoni" />
+				<P>Commissioned by Bert Di Pamphilis of WTC and designed by Tom Carnase under the direction of Massimo Vignelli. The goal of this 1989 Bodoni revival was to match the proportions of Neue Haas Grotesk.</P>
+			</Iltr>
+			<Img oneimg="/archive/manin/manin_3.png" />
+			<Img oneimg="/archive/manin/manin_5.png" />
+		</Main> )
+};
+export function Dp() {
+	return (
+		<Main>
+			<Img oneimg="/archive/dp/dp_1.png" />
+			<Iltr img="/archive/dp/dp_2.png">
+				<Head head="Specimens of the font involved for composing the logo and the rest of the Corporate Image." />
+				<Tit tit="Gill Sans" />
+				<P>Gill Sans is a humanistic sans serif family that, while is considered by many to be quintessentially British in tone and concept, has been used in virtually every country and in nearly every application imaginable. Gill Sans has reached this level of near-ubiquity for one simple—and very good—reason: it is an exceptionally distinctive design with a potential range of use that is almost limitless.<Br />Gill Sans was designed by Eric Gill: a versatile, brilliant, and prolifically successful designer of the early part of the last century. One of the main reasons for the enduring success of his namesake design is that it is based on Roman character shapes and proportions, making it unlike virtually any other sans serif out there. Gill also worked his own warmth and humanity into his design, resulting in a typeface in which each weight retains a distinct personality of its own.</P>
+				<Tit tit="Century Expanded" />
+				<P>Theodore Low DeVinne, publisher of Century Magazine, commissioned Linn Boyd Benton to design a new typeface for the magazine. The result, in 1894, was a roman type called Century Roman; a large x-height gave Century Roman the appearance of being condensed. Benton’s son, Morris Fuller Benton, redrew Century Roman for American Type Founders in 1900 so it would meet the standards of the Typographical Union. Benton’s Century Expanded is only slightly wider, but was advertised by DeVinne as allowing for an expansion in the number of characters that could fit in a line, “the expansion is upward, enabling one to get much matter in a small space.” Century Expanded is useful for text settings of magazines, books, newsletters, and brochures.</P>
+			</Iltr>
+			<Img oneimg="/archive/dp/dp_4.png" />
+			<Img oneimg="/archive/dp/dp_3.png" />
+		</Main> )
+};
 
 export function Richmond() {
 	return (
-		<main>
+		<Main>
 			<Img oneimg="/archive/richmond.png"
 				className="w-50 w-100-m center"
 			/>
-		</main> )
+		</Main> )
 };
 export function Hospital() {
 	return (
-		<main>
-			<Img oneimg="/archive/stblogo/stb_1.png"
-			
-			/>
-			<Iltr
-				img="/archive/stblogo/stb_2.png"
-				par="Specimens of the font involved for composing the logo and the rest of the Corporate Image."
-				tit="Neue Haas Grotesk"
-				par1="AThe first weights of Neue Haas Grotesk were designed in 1957-1958 by Max Miedinger for the Haas’sche Schriftgiesserei in Switzerland, with art direction by the company’s principal, Eduard Hoffmann. Neue Haas Grotesk was to be the answer
-				to the British and German grotesques that had become hugely popular thanks to the success of functionalist Swiss typography. The typeface was soon revised and released as Helvetica by Linotype AG."
-				tit1="ITC Garamond"
-				par2="Drawn by Tony Stan, ITC Garamond was first released in 1975 in Book and Ultra weights only. These were intended as display faces to complement existing text designs from other foundries. (In fact, many of ITC’s interpretations of traditional typefaces began as display counterparts for existing text designs.) These first weights of ITC Garamond became so popular, however, that ITC released the Light and Bold weights and a suite of condensed faces in 1977. Now, the complete ITC Garamond family features sixteen members: four weights of roman
-				and italic in normal width and four weights of roman and italic in companion condensed versions. The family resemblance is there, but ITC Garamond’s unique provenance gives it an unmistakable, one-of-a-kind appeal."
-			/>
+		<Main>
+			<Img oneimg="/archive/stblogo/stb_1.png" />
+			<Iltr img="/archive/stblogo/stb_2.png">
+				<Head head="Specimens of the font involved for composing the logo and the rest of the Corporate Image." />
+				<Tit tit="Neue Haas Grotesk" />
+				<P>The first weights of Neue Haas Grotesk were designed in 1957-1958 by Max Miedinger for the Haas’sche Schriftgiesserei in Switzerland, with art direction by the company’s principal, Eduard Hoffmann. Neue Haas Grotesk was to be the answer
+				to the British and German grotesques that had become hugely popular thanks to the success of functionalist Swiss typography. The typeface was soon revised and released as Helvetica by Linotype AG.
+				</P>
+				<Tit tit="ITC Garamond" />
+				<P>Drawn by Tony Stan, ITC Garamond was first released in 1975 in Book and Ultra weights only. These were intended as display faces to complement existing text designs from other foundries. (In fact, many of ITC’s interpretations of traditional typefaces began as display counterparts for existing text designs.) These first weights of ITC Garamond became so popular, however, that ITC released the Light and Bold weights and a suite of condensed faces in 1977. Now, the complete ITC Garamond family features sixteen members: four weights of roman and italic in normal width and four weights of roman and italic in companion condensed versions. The family resemblance is there, but ITC Garamond’s unique provenance gives it an unmistakable, one-of-a-kind appeal.</P>
+			</Iltr>
 			<Img oneimg="/archive/stblogo/stb_3.png" />
 			<Img oneimg="/archive/stblogo/stb_4.png" />
-		</main> )
+		</Main> )
 };
 
 export function A() {
 	return (
-		<main>
+		<Main>
 			<Img oneimg="/archive/A.png"
 				className="w-60 w-100-l w-100-t w-100-m center"
 			/>
-		</main> )
+		</Main> )
 };
 export function Abstract() {
 	return (
-		<main>
+		<Main>
 			<Img oneimg="/archive/minimal.png"
 				className="w-60 w-100-l w-100-t w-100-m center"
 			/>
-		</main> )
+		</Main> )
 };
 
 export function Craf() {
 	return (
-		<main>
+		<Main>
 			<Img oneimg="/archive/craf/craf_1.png" />
 			<Par>
 				This logo and Corporate Image have been developed during a workshop with Armando Milani giving some fundamental theoric lessons, and his brother Maurizio focusing on the production compartment. The very limited group of people granted me the possibility to design it four-handedly in a very close collaboration with him. Funnily enough, this workshop should have been participated by Massimo Vignelli too, but for personal reason had to decline.
@@ -98,22 +202,21 @@ export function Craf() {
 				Many people feel ashamed showing their first projects. I could dig more into the archives and find lots of logos from the 2006-2008 period, but they wouldn't be as meaningful as this. And the reason is quite clear. Before meeting with Armando and Maurizio, I had a very fond appreciacion of everything design-related, but I was skeptical about turning into the core business of my profession. So this, rather than the first project at all, is the first project I designed with DisciplineDesign in mind, and a remainder of a spectacular encounter, where my career started to shape.
 
 			</Par>
-			<Iltr
-				img="/archive/craf/craf_fonts.png"
-				par="Specimens of the font involved for composing the logo and the rest of the Corporate Image."
-				tit="Permanent Headline"
-				par1="A bold, highly compressed sans-serif typeface in the neo-grotesque style. It was designed by Karlgeorg Hoefer for the type foundry Ludwig & Mayer in Frankfurt am Main. It was released from 1964 and later issued by a range of companies in phototypesetting and digital versions."
-				link="http://www.klingspor-museum.de/KlingsporKuenstler/Schriftdesigner/Hoefer/KGHoefer.pdf"
-				number="1"
-				tit1="Rotis Sans"
-				par2="A typeface developed in 1988 by Otl Aicher, who explores an attempt at maximum legibility through a highly unified yet varied typeface family that ranges from full serif, glyphic, and sans-serif. The four basic Rotis variants are: Rotis Serif, Rotis Semi-Serif, Rotis Semi-Sans, Rotis-Sans. In this case we used Rotis semi-sans (semi-grotesque) — with zero serifs but with stroke width variation"
-			/>
+			<Iltr img="/archive/craf/craf_fonts.png">
+				<Head head="Specimens of the font involved for composing the logo and the rest of the Corporate Image." />
+				<Tit tit="Permanent Headline" />
+				<P>A bold, highly compressed sans-serif typeface in the neo-grotesque style. It was designed by Karlgeorg Hoefer for the type foundry Ludwig & Mayer in Frankfurt am Main. It was released from 1964 and later issued by a range of companies in phototypesetting and digital versions.
+				<Rf link="http://www.klingspor-museum.de/KlingsporKuenstler/Schriftdesigner/Hoefer/KGHoefer.pdf"
+						rf="1" /></P>
+				<Tit tit="Rotis Sans" />
+				<P>A typeface developed in 1988 by Otl Aicher, who explores an attempt at maximum legibility through a highly unified yet varied typeface family that ranges from full serif, glyphic, and sans-serif. The four basic Rotis variants are: Rotis Serif, Rotis Semi-Serif, Rotis Semi-Sans, Rotis-Sans. In this case we used Rotis semi-sans (semi-grotesque) — with zero serifs but with stroke width variation</P>
+			</Iltr>
 			<Img oneimg="/archive/craf/craf_2.png" />
 
 			<TwoImg
 				image1="/archive/craf/craf_4.png"
-				image2="/archive/craf/craf_6.png"
+				image2="/archive/craf/craf_5.png"
 			/>
 			<Img oneimg="/archive/craf/craf_7.png" />
-		</main> )
+		</Main> )
 };

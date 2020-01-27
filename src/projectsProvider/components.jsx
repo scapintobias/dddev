@@ -1,6 +1,9 @@
 import React from "react";
 import CN from "classnames";
 import "./style.css"
+export const Main = ( {children} ) => (
+	<main className="pb3">{children}</main>
+);
 export const Par = ( { className, children } ) => (
 
 	<section className="flex justify-center flex-column-l flex-column-t flex-column-m mv3 mh3-m mh4-t mh5-l">
@@ -36,32 +39,43 @@ export const ParImg = ( { oneimg } ) => (
 );
 
 export const Img = ( { oneimg, className } ) => (
-	<div className={CN( "pa3", className )}>
+	<div className={CN( "ph3 pt3", className )}>
 		<img src={oneimg} alt="img"></img>
 	</div>
 )
 
 export const TwoImg = ( { image1, image2, className, classNamee } ) => (
-	<div className="flex flex-column-m ma3">
-		<img src={image1} alt="img" className={CN( "mr3 mr0-m", className )}></img>
-		<img src={image2} alt="img" className={CN( classNamee )}></img>
+	<div className="flex-row flex-column-m flex justify-center ph35  ph3-m">
+		<img src={image1} alt="img" className="pr0-m pb3-m w-100-m pr2 w-50"></img>
+		<img src={image2} alt="img" className="pl2 pl0-m w-100-m w-50"></img>
 	</div>
 );
 
-export const Iltr = ( { img, par, tit, par1, link, number, tit1, par2 } ) => (
-	<section className="flex flex-column-m flex-column-t">
-		<div className="w-50 w-100-m w-100-t pa3"><img src={img} alt="alt" /></div>
-		<div className="flex flex-column w-40 w-100-t w-100-m position-relative">
+export const FourImg = ( { image1, image2, image3, image4 } ) => (
+	<div className="flex-row flex-column-m flex justify-center ph35 pt3 ph3-m">
+		<img src={image1} alt="img" className="pr0-m pb3-m w-100-m pr1 w-25"></img>
+		<img src={image2} alt="img" className="ph1 ph0-m pb3-m w-100-m w-25"></img>
+		<img src={image3} alt="img" className="ph0-m pb3-m w-100-m ph1 w-25"></img>
+		<img src={image4} alt="img" className="pl1 pl0-m w-100-m w-25"></img>
+	</div>
+);
 
-			<p className="f4 ph3 pt3 minion silver lh-solid">{par}</p>
-			<p className="f2 fw5 pa3 helvetica silver lh-solid">{tit}</p>
-			<p className="f3 ph3 minion silver lh-solid">{par1}
-				<a href={link} target="_blank"><sup>{number}</sup></a>
-			</p>
-			<p className="f2 fw5 pa3 helvetica silver lh-solid">{tit1}</p>
-			<p className="f3 ph3 pb3 minion silver lh-solid">{par2}</p>
-		</div>
-
+export const Head = ( { head } ) => (
+	<p className="f4 ph3 pt3 minion silver lh-solid">{head}</p>
+);
+export const Tit = ( { tit } ) => (
+	<p className="f2 fw5 pa3 helvetica silver lh-solid">{tit}</p>
+);
+export const P = ( { children } ) => (
+	<p className="f3 ph3 pb3 minion silver lh-solid">{children}</p>
+);
+export const Rf = ( { link, rf } ) => (
+	<a href={link} target="_blank" className="link hover-orange"><sup>{rf}</sup></a>
+);
+export const Iltr = ( { img, children } ) => (
+	<section className="flex justify-center flex-column-m flex-column-t overflow-visible">
+		<div className="w-40 w-100-m w-100-t pa3"><img src={img} alt="alt" /></div>
+		<div className="w-40 w-100-t w-100-m self-start db sticky">{children}</div>
 	</section>
 );
 
