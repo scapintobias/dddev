@@ -6,9 +6,9 @@ import CN from "classnames";
 import "./style.css";
 
 export const Grid = ( { children } ) => (
-		<section className="mw68 center">
-			{children}
-		</section>
+	<section className="mw68 center">
+		{children}
+	</section>
 );
 
 export const Card = ( {
