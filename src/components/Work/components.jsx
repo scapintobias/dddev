@@ -5,13 +5,11 @@ import {
 import CN from "classnames";
 import "./style.css";
 
-export const Grid = ( {
-	children
-} ) => (
-		<section className="flex flex-column justify-center">
+export const Grid = ( { children } ) => (
+		<section className="mw68 center">
 			{children}
 		</section>
-	);
+);
 
 export const Card = ( {
 	link,
@@ -21,7 +19,7 @@ export const Card = ( {
 	className
 } ) => (
 
-		<section className="mw68 pa3 ">
+		<section className="pt3 ph3">
 			<Link to={link}>
 				<div className='bw5 bt b--navy shadow-hover'>
 					<div className='ba'>
