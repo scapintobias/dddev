@@ -51,9 +51,12 @@ export const Pic = ( { img, className, imgClass } ) => (
 )
 
 export const TwoImg = ( { image1, image2, className, classNamee } ) => (
-	<div className="flex-row flex-column-m flex justify-center ph35  ph3-m">
-		<img src={image1} alt="img" className="pr0-m pb3-m w-100-m pr2 w-50"></img>
-		<img src={image2} alt="img" className="pl2 pl0-m w-100-m w-50"></img>
+	<div className="flex-row flex-column-m flex justify-center ph35 overflow-visible ph3-m">
+		<div className="pr0-m pb3-m w-100-m pr2 w-50">
+			<img src={image1} alt="img" ></img>
+		</div>
+		<div className="pl2 pl0-m w-100-m w-50"><img src={image2} alt="img" ></img>
+	</div>
 	</div>
 );
 
