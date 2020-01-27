@@ -9,13 +9,13 @@ export function Tab() {
 	return (
 		<main>
 			<Grid>
-				<Card
+				{/* <Card
 					link="./#"
 					title="Music Venues"
 					subtitle="Product Design"
 					description="A digital product that enables the final user to have a wider experience when buying a ticket."
 					className="hover-light-purple link bg-animate navy"
-				/>
+				/> */}
 
 				<Card
 					link="./work/yape"

@@ -8,21 +8,20 @@ import "./style.css";
 export const Grid = ( {
 	children
 } ) => (
-		<div className="pa3 flex flex-wrap flex-column-m flex-column-t">
+		<section className="flex flex-column justify-center">
 			{children}
-		</div>
+		</section>
 	);
 
 export const Card = ( {
 	link,
-	image,
 	title,
 	subtitle,
 	description,
 	className
 } ) => (
 
-		<section className="w-50 w-100-m w-100-t pa3 ">
+		<section className="mw68 pa3 ">
 			<Link to={link}>
 				<div className='bw5 bt b--navy shadow-hover'>
 					<div className='ba'>

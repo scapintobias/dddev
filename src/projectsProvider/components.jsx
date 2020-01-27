@@ -56,7 +56,7 @@ export const TwoImg = ( { image1, image2, className, classNamee } ) => (
 			<img src={image1} alt="img" ></img>
 		</div>
 		<div className="pl2 pl0-m w-100-m w-50"><img src={image2} alt="img" ></img>
-	</div>
+		</div>
 	</div>
 );
 
@@ -79,12 +79,12 @@ export const P = ( { children } ) => (
 	<p className="f3 ph3 pb3 minion silver lh-solid">{children}</p>
 );
 export const Rf = ( { link, rf } ) => (
-	<a href={link} target="_blank" className="link hover-orange" rel="noopener norefferrer"><sup>{rf}</sup></a>
+	<a href={link} target="_blank" rel="noopener norefferrer" className="link hover-orange" ><sup>{rf}</sup></a>
 );
 export const Iltr = ( { img, children } ) => (
-	<section className="flex justify-center flex-column-m flex-column-t overflow-visible">
-		<div className="w-40 w-100-m w-100-t pa3"><img src={img} alt="alt" /></div>
-		<div className="w-40 w-100-t w-100-m self-start db sticky">{children}</div>
+	<section className="flex justify-around items-start flex-column-m flex-column-t">
+		<div className="w-40 w-100-m w-100-t pa3 sticky-top"><img src={img} alt="alt" /></div>
+		<div className="sticky w-40 w-100-t w-100-m"><div>{children}</div></div>
 	</section>
 );
 

@@ -1599,7 +1599,7 @@ code {
 	position: fixed;
 }
 
-.sticky {
+.sticky-top {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 1rem;
