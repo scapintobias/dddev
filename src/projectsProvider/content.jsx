@@ -1,27 +1,68 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-	Main, Par, Sec, Sub, ParImg, Iltr, Img, Br, TwoImg, Head, Tit, P, Rf, FourImg
+	Main, Par, Sec, Sub, ParImg, Iltr, Img, Br, TwoImg, Head, Tit, P, Rf, FourImg, Pic
 } from "./components.jsx";
 import "./style.css"
 
 
-export function Heatwave() {
+export function Lima() {
 	return (
 		<Main>
-			<Img oneimg="http://anonima.design/archive/img/numeriprimi/primi_1.png" />
-			<Iltr
-				img="http://anonima.design/archive/img/numeriprimi/primi_4.png"
-				par="Specimens of the font involved for composing the logo and the rest of the Corporate Image."
-				tit="Our Headline"
-				par1="Originally drawn by Walter Haettenschweiler in 1954, derived from an assignment by Ernst Keller at Kunstgewerbeschule Zürich, and made as an improvement over Commercial - Grotesk( Haas, 1940 ).No lowercase.[Swiss Type Design ] Included in Lettera vol.1, an alphabet source book edited by Alex Stocker and Armin Haab.Also known simply as Schmalfette ( Bold Condensed).No official digital version is available, therefore  for the purpose of the project the entire typeface has been redesigned from scratch based on the original drawings, and it 's not commercially available."
-			/>
+			<Img oneimg="/archive/lima/4.png" />
+			<Pic img="/archive/lima/limalogo.png" className="mw8 center pv5 pv4-m ph3" />
+			<Par>
+				The first stage of the process consisted in a vast analysis of all the available material of both the existing and the future lines, in order to comprehend the vastness and complexity of the system, and its actual wayfinding.<Br /><Br />The outcome of this research has shown vast possibilities of improvement, from both a design and infrastructural integration perspective, to solve the lack of scalability, legibility, and consistency.<Br /><Br />The second stage consisted in the evaluation of the available channels to convey information through, which consist in: map, station signage, train signage, etc.<Br /><Br />The third stage consisted in the developement of a coherent system, which takes advantage of the stations’ architecture, has a inner modularity (hence using the pillars), and provides in a clear way the few but essential informations (station name, train direction, entries and exits)
+			</Par>
+			<Iltr img="/archive/lima/simplon.png">
+				<Head head="Specimens of the font involved for composing the logo and the rest of the Corporate Image." />
+				<Tit tit="Simplon Norm" />
+				<P>Simplon is a sans-serif typeface that is widely used for traffic, administrative and technical applications. It’s based on the German standards body DIN - Deutsches Institut für Normung (German Institute for Standardization), in the standard typefaces sheet published in 1931. Originally designed for industrial uses, the first DIN-type fonts were a simplified design that could be applied with limited technical difficulty. Due to the design’s legibility and uncomplicated, unadorned design, it has become popular for general purpose use in signage and display adaptations.</P>
+			</Iltr>
+			<Img oneimg="/archive/lima/section.png" />
+			<Pic img="/archive/lima/aeropuerto.png" className="ph3 pt3 mw68 center" imgClass="ba b--black" />
+			<Img oneimg="/archive/lima/salida.png" className="mw68 center" />
+			<Img oneimg="/archive/lima/map.png" />
+			<Par>
+				<Sec title="Map" />
+				This kind of representation shows a fictional geography by moving away from the concept that transportation maps had to position the underground geography directly to the aboveground geography. Such design moves away from the idea that the representation has to follow the actual geographical route of the lines. By replacing the strict geographically imposed rules, that requires that entities represented be placed exactly where they are located in the physical world, with a regular pattern of horizontal, vertical or diagonal lines the proposed map depicts much more clearly the relative locations of the different lines and the sequence of stations. In this way, the map turns out to be an useful support in gaining an understanding of the complexities of the underground lines, and an aid in travel planning. For these reasons it can act as a navigation tool to assist in working one’s way through the underground maze of lines and stations and as a reference once a journey is underway.
+			</Par>
+			<Img oneimg="/archive/lima/5.png" />
 		</Main> )
 };
+
+export function Ducati() {
+	return (
+		<Main>
+			<section className="ma3 ma0-m">
+				<div className="resp-container">
+					<iframe className="resp-iframe" src="https://www.youtube.com/embed/IhxD--LuNA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+				</div>
+				<p className=" mb2 ml3  minion gray tr tl-t tl-m f7">In collaboration with e-Novia.</p>
+			</section>
+
+
+		</Main> )
+};
+export function Mental() {
+	return (
+		<Main>
+			<section className="grid-3 ph3 pt3">
+				<div><img src="/archive/photo/mc/mc4.jpg" /></div>
+				<div><img src="/archive/photo/mc/mc1.jpg" /></div>
+				<div><img src="/archive/photo/mc/mc2.jpg" /></div>
+				<div><img src="/archive/photo/mc/mc3.jpg" /></div>
+				<div><img src="/archive/photo/mc/mc5.jpg" /></div>
+				<div><img src="/archive/photo/mc/mc6.jpg" /></div>
+			</section>
+
+		</Main> )
+};
+
 export function Pantone() {
 	return (
 		<Main>
-			<div className="gridp">
+			<div className="gridp mh3 mt3">
 				<img src="/archive/pantone/cocktails/A.png" alt='cocktail' />
 				<img src="/archive/pantone/cocktails/B.png" alt='cocktail' />
 				<img src="/archive/pantone/cocktails/C.png" alt='cocktail' />
@@ -39,13 +80,235 @@ export function Pantone() {
 			<Img oneimg="/archive/pantone/tram.png" />
 		</Main> )
 };
+export function Je() {
+	return (
+		<Main>
+			<section class="grid-3 ph3 pt3">
+				<div><img src="/archive/photo/je/je1.jpg" /></div>
+				<div><img src="/archive/photo/je/je2.jpg" /></div>
+				<div><img src="/archive/photo/je/je3.jpg" /></div>
+				<div><img src="/archive/photo/je/je4.jpg" /></div>
+				<div><img src="/archive/photo/je/je5.jpg" /></div>
+				<div><img src="/archive/photo/je/je6.jpg" /></div>
+				<div><img src="/archive/photo/je/je7.jpg" /></div>
+				<div><img src="/archive/photo/je/je8.jpg" /></div>
+				<div><img src="/archive/photo/je/je9.jpg" /></div>
+				<div><img src="/archive/photo/je/je10.jpg" /></div>
+				<div><img src="/archive/photo/je/je11.jpg" /></div>
+				<div><img src="/archive/photo/je/je12.jpg" /></div>
+				<div><img src="/archive/photo/je/je13.jpg" /></div>
+				<div><img src="/archive/photo/je/je14.jpg" /></div>
+				<div><img src="/archive/photo/je/je15.jpg" /></div>
+				<div><img src="/archive/photo/je/je16.jpg" /></div>
+				<div><img src="/archive/photo/je/je17.jpg" /></div>
+				<div><img src="/archive/photo/je/je18.jpg" /></div>
+				<div><img src="/archive/photo/je/je19.jpg" /></div>
+				<div><img src="/archive/photo/je/je20.jpg" /></div>
+				<div><img src="/archive/photo/je/je21.jpg" /></div>
+				<div><img src="/archive/photo/je/je22.jpg" /></div>
+				<div><img src="/archive/photo/je/je23.jpg" /></div>
+				<div><img src="/archive/photo/je/je24.jpg" /></div>
+				<div><img src="/archive/photo/je/je25.jpg" /></div>
+				<div><img src="/archive/photo/je/je26.jpg" /></div>
+				<div><img src="/archive/photo/je/je27.jpg" /></div>
+				<div><img src="/archive/photo/je/je28.jpg" /></div>
+				<div><img src="/archive/photo/je/je29.jpg" /></div>
+				<div><img src="/archive/photo/je/je30.jpg" /></div>
+				<div><img src="/archive/photo/je/je31.jpg" /></div>
+				<div><img src="/archive/photo/je/je32.jpg" /></div>
+				<div><img src="/archive/photo/je/je33.jpg" /></div>
+				<div><img src="/archive/photo/je/je34.jpg" /></div>
+				<div><img src="/archive/photo/je/je35.jpg" /></div>
+				<div><img src="/archive/photo/je/je36.jpg" /></div>
+			</section>
+		</Main > )
+};
+export function Mourn() {
+	return (
+		<Main>
+			<Img oneimg="/archive/mourn.png" className="mw8 center" />
+		</Main > )
+};
+
+export function Ideascudo() {
+	return (
+		<Main>
+			<Img oneimg="/archive/ideascudo/ideascudo_1.png" />
+			<Iltr img="/archive/ideascudo/ideascudo_2.png">
+				<Head head="Specimens of the font involved for composing the logo and the rest of the Corporate Image." />
+				<Tit tit="Permanent Headline" />
+				<P>A bold, highly compressed sans-serif typeface in the neo-grotesque style. It was designed by Karlgeorg Hoefer for the type foundry Ludwig & Mayer in Frankfurt am Main. It was released from 1964 and later issued by a range of companies in phototypesetting and digital versions.
+				<Rf link="http://www.klingspor-museum.de/KlingsporKuenstler/Schriftdesigner/Hoefer/KGHoefer.pdf"
+						rf="1" /></P>
+			</Iltr>
+		</Main > )
+};
+export function Tokyo() {
+	return (
+		<Main>
+			<Pic img="/archive/tokyo/tokyo_1.png" className="pa3 mw8 center" imgClass="ba b--black" />
+			<Par>
+				<Sec title="Univers" />
+				<ParImg oneimg="/archive/tokyo/tokyo_2.png" />
+				Univers was designed by Adrian Frutiger on Swiss principles for Charles Peignot at Deberny & Peignot.<Br /><Br />
+				Frutiger imposed strict discipline across all elements of the series, from light to dark, extra condensed to extended, a concordance of design that was possible in the foundry type and photocomposition fonts. Any version may be mixed within a word with any other. It may be argued that the design of the most popular central series is limited by strict conformity to little used extremes. If Helvetica gives us the strongest central designs at some sacrifice in uniformity across the series, Univers gives us a uniform series by disciplining the central designs.<Br /><Br />
+				Alteration of character widths required by the Monotype caster separates Monotype Univers from the original; the Linotype photocomposition version, designed by Frutiger, has a more even color across the series, achieved by relaxing the original rigid formula for stroke width.<Br /><Br />
+				IBM Selectric Univers, designed by Frutiger, is less successful, since it had to be placed on widths tuned for Times Roman.
+			</Par>
+
+
+		</Main > )
+};
+export function Syneco() {
+	return (
+		<Main>
+			<Img oneimg="/archive/syneco/syneco_1.png" />
+			<Iltr img="/archive/syneco/syneco_2.png">
+				<Head head="Specimens of the font involved for composing the logo and the rest of the Corporate Image." />
+				<Tit tit="Neue Haas Grotesk" />
+				<P>The first weights of Neue Haas Grotesk were designed in 1957-1958 by Max Miedinger for the Haas’sche Schriftgiesserei in Switzerland, with art direction by the company’s principal, Eduard Hoffmann. Neue Haas Grotesk was to be the answer to the British and German grotesques that had become hugely popular thanks to the success of functionalist Swiss typography. The typeface was soon revised and released as Helvetica by Linotype AG.</P>
+				<Tit tit="Our Bodoni" />
+				<P>Commissioned by Bert Di Pamphilis of WTC and designed by Tom Carnase under the direction of Massimo Vignelli. The goal of this 1989 Bodoni revival was to match the proportions of Neue Haas Grotesk.</P>
+			</Iltr>
+			<TwoImg
+				image1="/archive/syneco/syneco_3.png"
+				image2="/archive/syneco/syneco_4.png"
+			/>
+			<TwoImg
+				image1="/archive/syneco/syneco_6.png"
+				image2="/archive/syneco/syneco_5.png"
+			/>
+		</Main > )
+};
+export function Timeline() {
+	return (
+		<Main>
+			<Img oneimg="/archive/Timeline.png" />
+		</Main > )
+};
+export function Svolta() {
+	return (
+		<Main>
+			<section className="grid-3 ph3 pt3">
+				<div><img src="/archive/photo/st/st1.jpg" /></div>
+				<div><img src="/archive/photo/st/st2.jpg" /></div>
+				<div><img src="/archive/photo/st/st3.jpg" /></div>
+				<div><img src="/archive/photo/st/st4.jpg" /></div>
+				<div><img src="/archive/photo/st/st5.jpg" /></div>
+				<div><img src="/archive/photo/st/st6.jpg" /></div>
+				<div><img src="/archive/photo/st/st7.jpg" /></div>
+				<div><img src="/archive/photo/st/st8.jpg" /></div>
+				<div><img src="/archive/photo/st/st9.jpg" /></div>
+				<div><img src="/archive/photo/st/st10.jpg" /></div>
+				<div><img src="/archive/photo/st/st11.jpg" /></div>
+				<div><img src="/archive/photo/st/st12.jpg" /></div>
+			</section>
+
+		</Main > )
+};
+export function Parole() {
+	return (
+		<Main>
+			<Img oneimg="/archive/prigioniere/expo_8.png" className="mw8 center" />
+			<Img oneimg="/archive/prigioniere/expo_me.jpg" className="mw8 center" />
+			<div className="flex ph3 pt3 flex-column-m">
+				<Pic img="/archive/prigioniere/expo_2.jpg" className="pr2 pr0-m pb3-m" />
+				<Pic img="/archive/prigioniere/expo_3.jpg" className="pr2 pl2 pr0-m pl0-m pb3-m" />
+				<Pic img="/archive/prigioniere/expo_4.jpg" className="pl2 pl0-m" />
+			</div>
+			<Img oneimg="/archive/prigioniere/expo_7.jpg" className="mw8 center" />
+			<div className="flex ph3 pt3 flex-column-m">
+				<Pic img="/archive/prigioniere/expo_4a.jpg" className="pr2 pr0-m pb3-m" />
+				<Pic img="/archive/prigioniere/expo_5.jpg" className="pr2 pl2 pr0-m pl0-m pb3-m" />
+				<Pic img="/archive/prigioniere/expo_6.jpg" className="pl2 pl0-m" />
+			</div>
+		</Main > )
+};
+export function Borromeo() {
+
+	return (
+		<Main>
+			<Img oneimg="/archive/borromeo/borromeo_1.png" />
+			<Iltr img="/archive/borromeo/borro_type.png">
+				<Head head="Specimens of the font involved for composing the logo and the rest of the Corporate Image." />
+				<Tit tit="Didi Didot" />
+				<P>This showy 1970s take on Didot is credited by various sources to Herb Lubalin and Tom Carnase, but an <a href="https://fontsinuse.com/uses/9271/didi-typeface-ad" target="_blank" className="link hover-orange b">early LSC advertisement</a> credits Carnase alone. It’s possible that it was derived directly from <a href="https://fontsinuse.com/typefaces/31809/cbs-didot" target="_blank" className="link hover-orange b">CBS Didot.</a>
+					<Br /><Br />No official digital version is available, therefore for the purpose of the project the entire typeface has been redesigned from scratch based on the original drawings, and it's not commercially available.</P>
+			</Iltr>
+			<div className="ph3 mw9 center"><iframe src="https://www.google.com/maps/embed?pb=!4v1572006299758!6m8!1m7!1sbs99LhsPH4pUZBsn6TZcGw!2m2!1d45.46320821272399!2d9.182731010075717!3f195.446431159916!4f-1.5647693099731583!5f0.5970117501821992" width="100%" height="1080px" /></div>
+		</Main > )
+};
+export function Arte() {
+	return (
+		<Main>
+			<Img oneimg="/archive/corte/posters/poster.jpg" className="mw68 center" />
+			<Img oneimg="/archive/corte/posters/flyer.jpg" />
+			<Img oneimg="/archive/corte/posters/banner.jpg" />
+		</Main > )
+};
+export function Corte() {
+	return (
+		<Main>
+			<Img oneimg="/archive/corte/corte_1.png" />
+			<Iltr img="/archive/corte/corte_type.png">
+				<Head head="Specimens of the font involved for composing the logo and the rest of the Corporate Image." />
+				<Tit tit="Gill Sans" />
+				<P>Gill Sans was designed by Eric Gill: a versatile, brilliant, and prolifically successful designer of the early part of the last century. One of the main reasons for the enduring success of his namesake design is that it is based on Roman character shapes and proportions, making it unlike virtually any other sans serif out there. Gill also worked his own warmth and humanity into his design, resulting in a typeface in which each weight retains a distinct personality of its own.</P>
+				<Tit tit="Our Bodoni" />
+				<P>Commissioned by Bert Di Pamphilis of WTC and designed by Tom Carnase under the direction of Massimo Vignelli. The goal of this 1989 Bodoni revival was to match the proportions of Helvetica.</P>
+			</Iltr>
+			<Img oneimg="/archive/corte/corte_3.png" />
+			<Img oneimg="/archive/corte/corte_4.png" />
+			<Img oneimg="/archive/corte/corte_2.png" />
+		</Main > )
+};
+export function Expo() {
+	return (
+		<Main>
+			<Img oneimg="/archive/expo/expo_1.png" />
+			<Img oneimg="/archive/expo/expo_2.jpg" />
+			<Img oneimg="/archive/expo/expo_3.jpg" />
+			<Img oneimg="/archive/expo/expo_4.jpg" />
+		</Main > )
+};
+export function Migrants() {
+	return (
+		<Main>
+			<Img oneimg="/archive/migrants/migrants_1.png" />
+			<Iltr img="/archive/migrants/migrants_2.png" />
+
+			<Img oneimg="/archive/migrants/migrants_3.png" />
+			<Img oneimg="/archive/migrants/migrants_4.png" />
+		</Main > )
+};
+
+export function Numeriprimi() {
+	return (
+		<Main>
+			<Img oneimg="/archive/numeriprimi/primi_1.png" className="mw8 mw100-m center" />
+			<Iltr img="/archive/numeriprimi/primi_4.png">
+				<Head head="Specimens of the font involved for composing the Book." />
+				<Tit tit="Our Headline" />
+				<P>Originally drawn by Walter Haettenschweiler in 1954, derived from an assignment by Ernst Keller at Kunstgewerbeschule Zürich, and made as an improvement over Commercial-Grotesk (Haas, 1940).<Br /><Br />No lowercase.<Br /><Br />
+					<a href="http://www.swisstypedesign.ch/schriftfamilie/111/" target="_blank" className="link hover-orange b">Swiss Type Design</a> Included in Lettera vol. 1, an alphabet source book edited by Alex Stocker and Armin Haab. Also known simply as Schmalfette (“Bold Condensed”).<Br /><Br />No official digital version is available, therefore for the purpose of the project the entire typeface has been redesigned from scratch based on the original drawings, and it's not commercially available.</P>
+			</Iltr>
+			<Par>
+				<Sec title="Layout" />
+				<ParImg oneimg="/archive/numeriprimi/primi_3.png" className="ba b--light-silver" />
+				<ParImg oneimg="/archive/numeriprimi/primi_cover.png" />
+
+			</Par>
+			<Img oneimg="/archive/numeriprimi/primi_6.png" />
+			<Img oneimg="/archive/numeriprimi/primi_5.png" />
+		</Main > )
+};
 
 export function Castiglioni() {
 	return (
 		<Main>
 			<Par>
 				<Sec title="ACF" />
-				The Achille Castiglioni Foundation was set up in 2012 at the initiative of Achille’s heirs. It sets out to foster the work carried out in the studio museum located on Piazza Castello 27, evidence of the cultural, artistic and professional work of Achille Castiglioni. The Foundation is in charge of managing and using preserve, communicate and exhibit, objects related to the work carried dissemination activities and organises cally, its facilities are meant to effectively talents.	
+				The Achille Castiglioni Foundation was set up in 2012 at the initiative of Achille’s heirs. It sets out to foster the work carried out in the studio museum located on Piazza Castello 27, evidence of the cultural, artistic and professional work of Achille Castiglioni. The Foundation is in charge of managing and using preserve, communicate and exhibit, objects related to the work carried dissemination activities and organises cally, its facilities are meant to effectively talents.
 			</Par>
 			<Img oneimg="/archive/castiglioni/castiglioni_1.png" />
 			<Img oneimg="/archive/castiglioni/castiglioni_2.png" />
@@ -67,7 +330,7 @@ export function Rankin() {
 			</Iltr>
 			<Par><Sec title="Color palette" /></Par>
 			<Img oneimg="/archive/rankin/rankin_3.png" />
-			<Img oneimg="/archive/rankin/rankin_4.png" className="mt6"/>
+			<Img oneimg="/archive/rankin/rankin_4.png" className="mt6" />
 		</Main > )
 };
 export function Fearless() {
@@ -85,14 +348,15 @@ export function Fearless() {
 export function ManinP() {
 	return (
 		<Main>
-			<FourImg
-				image1="/archive/manin/capa.png"
-				image2="/archive/manin/ciuha.png"
-				image3="/archive/manin/tiepolo.png"
-				image4="/archive/manin/munch.png"
-			/>
+			<div className="gridp mh3 mt3">
+				<img src="/archive/manin/capa.png" alt='poster' />
+				<img src="/archive/manin/ciuha.png" alt='poster' />
+				<img src="/archive/manin/tiepolo.png" alt='poster' />
+				<img src="/archive/manin/munch.png" alt='poster' />
+			</div>
+
 			<Img oneimg="/archive/manin/manin_7.png"
-			className="mb2"
+				className="mb2"
 			/>
 			<TwoImg
 				image1="/archive/manin/manin_8.png"
@@ -108,8 +372,8 @@ export function Saf() {
 			<Iltr img="/archive/saf/saf_2.png">
 				<Head head="Specimens of the font involved for composing the logo and the rest of the Corporate Image." />
 				<Tit tit="Akzidenz Grotesk" />
-				<P>First issued by Berthold in 1898 as Accidenz-Grotesk. Many loosely related styles from various sources were incorporated into the family. Further extended and homogenized by G.G. Lange from the late 1950s on. Lange regards <a href="https://www.bertholdtypes.com/font/royal-grotesk/proplus/" target="_blank" className="link hover-orange">Royal-Grotesk</a> the key source and credits it to Ferdinand Theinhardt, but that is disputed, see Eckehart Schumacher-Gebler’s article in <a href="http://www.tinograss.de/albums/schriftgestalten/" target="_blank" className="link hover-orange">Tino Graß: Schriftgestalten</a> and <a href="http://kupferschrift.de/cms/2012/04/ag/" target="_blank" className="link hover-orange">Indra Kupferschmid’s blog post</a>. Distributed in the US and UK as
-                  <a href="https://books.google.it/books?id=AHq-uK6F-PUC&pg=PA10&lpg=PA10&dq=standard+akzidenz-grotesk&source=bl&ots=bh1Bcz8Dbh&sig=QyUqvslwf-PYb_B4upWJKxOTmRk&hl=en&sa=X&ei=s67EUqCXKcP4oATmlYCoDg&redir_esc=y#v=onepage&q=standard%20akzidenz-grotesk&f=false" target="_blank" className="link hover-orange">Standard</a> and commonly used in the 1950s–60s.</P>
+				<P>First issued by Berthold in 1898 as Accidenz-Grotesk. Many loosely related styles from various sources were incorporated into the family. Further extended and homogenized by G.G. Lange from the late 1950s on. Lange regards <a href="https://www.bertholdtypes.com/font/royal-grotesk/proplus/" target="_blank" className="link hover-orange b">Royal-Grotesk</a> the key source and credits it to Ferdinand Theinhardt, but that is disputed, see Eckehart Schumacher-Gebler’s article in <a href="http://www.tinograss.de/albums/schriftgestalten/" target="_blank" className="link hover-orange b">Tino Graß: Schriftgestalten</a> and <a href="http://kupferschrift.de/cms/2012/04/ag/" target="_blank" className="link hover-orange b">Indra Kupferschmid’s blog post</a>. Distributed in the US and UK as
+                  <a href="https://books.google.it/books?id=AHq-uK6F-PUC&pg=PA10&lpg=PA10&dq=standard+akzidenz-grotesk&source=bl&ots=bh1Bcz8Dbh&sig=QyUqvslwf-PYb_B4upWJKxOTmRk&hl=en&sa=X&ei=s67EUqCXKcP4oATmlYCoDg&redir_esc=y#v=onepage&q=standard%20akzidenz-grotesk&f=false" target="_blank" className="link hover-orange b">Standard</a> and commonly used in the 1950s–60s.</P>
 			</Iltr>
 			<Img oneimg="/archive/saf/saf_5.png" className="w-50 w-100-m center" />
 			<Img oneimg="/archive/saf/saf_3.png" className="pa0 ph3 pt3" />

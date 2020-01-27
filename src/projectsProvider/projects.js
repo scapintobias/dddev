@@ -12,7 +12,24 @@ import {
   Saf,
   ManinP,
   Rankin,
-  Castiglioni
+  Castiglioni,
+  Numeriprimi,
+  Migrants,
+  Expo,
+  Corte,
+  Arte,
+  Borromeo,
+  Parole,
+  Svolta,
+  Timeline,
+  Syneco,
+  Tokyo,
+  Ideascudo,
+  Mourn,
+  Je,
+  Ducati,
+  Mental,
+  Lima
 } from './content'
 
 const createProject = ( title, subtitle, type, year, content ) => ( {
@@ -29,21 +46,21 @@ export const projects = [
     "Subway system",
     "wayfinding",
     2019,
-    Pantone()
+    Lima()
   ),
   createProject(
     "Mental Coach",
     "Corporate",
     "photography",
     2018,
-    Heatwave()
+  Mental()
   ),
   createProject(
     "Ducati 1260 Multistrada",
     "Ducati Link App",
     "video",
     2018,
-    Heatwave()
+    Ducati()
   ),
   createProject(
     "Pantone",
@@ -57,70 +74,70 @@ export const projects = [
     "Corporate",
     "photography",
     2017,
-    Pantone()
+    Je()
   ),
   createProject(
     "Mourn",
     "9/11",
     "poster",
     2016,
-    Pantone()
+    Mourn()
   ),
   createProject(
     "Ideascudo",
     "Gruppo Creamoda",
     "logo",
     2016,
-    Heatwave()
+    Ideascudo()
   ),
   createProject(
     "Tokio 2020",
     "Olympics",
     "logo",
     2016,
-    Pantone()
+    Tokyo()
   ),
   createProject(
     "Syneco",
     "Oil",
     "corporate",
     2016,
-    Heatwave()
+    Syneco()
   ),
   createProject(
     "Joseph Müller-Brockmann",
     "Timeline",
     "poster",
     2016,
-    Pantone()
+    Timeline()
   ),
   createProject(
     "Electoral campaign",
     "Superheroes",
     "photography",
     2015,
-    Pantone()
+    Svolta()
   ),
   createProject(
     "Parole Prigioniere",
     "Expo 2015",
     "photography",
     2015,
-    Pantone()
+    Parole()
   ),
   createProject(
     "Borromeo5",
     "Restaurant",
     "corporate",
     2015,
-    Heatwave()
+    Borromeo()
   ),
   createProject(
     "Corte d’Arte",
     "Sbacon",
     "exhibit",
     2015,
-    Pantone()
+    Arte()
   ),
 
   createProject(
@@ -128,28 +145,28 @@ export const projects = [
     "Gallery",
     "corporate",
     2014,
-    Heatwave()
+    Corte()
   ),
   createProject(
     "Expo",
     "Milano 2015",
     "logo",
     2013,
-    Pantone()
+    Expo()
   ),
   createProject(
     "Migrants",
     "Untold story",
     "print",
     2013,
-    Heatwave()
+    Migrants()
   ),
   createProject(
     "A century in prime numbers",
     "A handful of papers / Book",
     "print",
     2013,
-    Heatwave()
+    Numeriprimi()
   ),
   createProject(
     "Achille Castiglioni",

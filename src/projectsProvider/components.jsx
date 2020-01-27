@@ -1,7 +1,7 @@
 import React from "react";
 import CN from "classnames";
 import "./style.css"
-export const Main = ( {children} ) => (
+export const Main = ( { children } ) => (
 	<main className="pb3">{children}</main>
 );
 export const Par = ( { className, children } ) => (
@@ -32,8 +32,8 @@ export const Quote = ( { quote } ) => (
 
 );
 
-export const ParImg = ( { oneimg } ) => (
-	<div className="mv3">
+export const ParImg = ( { oneimg, className } ) => (
+	<div className={CN( "mv3", className )}>
 		<img src={oneimg} alt="img"></img>
 	</div>
 );
@@ -41,6 +41,12 @@ export const ParImg = ( { oneimg } ) => (
 export const Img = ( { oneimg, className } ) => (
 	<div className={CN( "ph3 pt3", className )}>
 		<img src={oneimg} alt="img"></img>
+	</div>
+)
+
+export const Pic = ( { img, className, imgClass } ) => (
+	<div className={CN( className )}>
+		<img src={img} alt="img" className={CN( imgClass )}></img>
 	</div>
 )
 
