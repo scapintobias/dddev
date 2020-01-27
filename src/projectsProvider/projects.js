@@ -1,5 +1,4 @@
 import {
-  Heatwave,
   Pantone,
   Craf,
   Abstract,
@@ -53,7 +52,7 @@ export const projects = [
     "Corporate",
     "photography",
     2018,
-  Mental()
+    Mental()
   ),
   createProject(
     "Ducati 1260 Multistrada",

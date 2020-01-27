@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
-	Main, Par, Sec, Sub, ParImg, Iltr, Img, Br, TwoImg, Head, Tit, P, Rf, FourImg, Pic
+	Main, Par, Sec, ParImg, Iltr, Img, Br, TwoImg, Head, Tit, P, Rf, Pic
 } from "./components.jsx";
 import "./style.css"
 
@@ -36,7 +35,8 @@ export function Ducati() {
 		<Main>
 			<section className="ma3 ma0-m">
 				<div className="resp-container">
-					<iframe className="resp-iframe" src="https://www.youtube.com/embed/IhxD--LuNA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+					<iframe className="resp-iframe" title="myFrame"
+						src="https://www.youtube.com/embed/IhxD--LuNA0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture allowfullscreen" />
 				</div>
 				<p className=" mb2 ml3  minion gray tr tl-t tl-m f7">In collaboration with e-Novia.</p>
 			</section>
@@ -48,12 +48,12 @@ export function Mental() {
 	return (
 		<Main>
 			<section className="grid-3 ph3 pt3">
-				<div><img src="/archive/photo/mc/mc4.jpg" /></div>
-				<div><img src="/archive/photo/mc/mc1.jpg" /></div>
-				<div><img src="/archive/photo/mc/mc2.jpg" /></div>
-				<div><img src="/archive/photo/mc/mc3.jpg" /></div>
-				<div><img src="/archive/photo/mc/mc5.jpg" /></div>
-				<div><img src="/archive/photo/mc/mc6.jpg" /></div>
+				<div><img src="/archive/photo/mc/mc4.jpg" alt="mental" /></div>
+				<div><img src="/archive/photo/mc/mc1.jpg" alt="mental" /></div>
+				<div><img src="/archive/photo/mc/mc2.jpg" alt="mental" /></div>
+				<div><img src="/archive/photo/mc/mc3.jpg" alt="mental" /></div>
+				<div><img src="/archive/photo/mc/mc5.jpg" alt="mental" /></div>
+				<div><img src="/archive/photo/mc/mc6.jpg" alt="mental" /></div>
 			</section>
 
 		</Main> )
@@ -84,42 +84,42 @@ export function Je() {
 	return (
 		<Main>
 			<section class="grid-3 ph3 pt3">
-				<div><img src="/archive/photo/je/je1.jpg" /></div>
-				<div><img src="/archive/photo/je/je2.jpg" /></div>
-				<div><img src="/archive/photo/je/je3.jpg" /></div>
-				<div><img src="/archive/photo/je/je4.jpg" /></div>
-				<div><img src="/archive/photo/je/je5.jpg" /></div>
-				<div><img src="/archive/photo/je/je6.jpg" /></div>
-				<div><img src="/archive/photo/je/je7.jpg" /></div>
-				<div><img src="/archive/photo/je/je8.jpg" /></div>
-				<div><img src="/archive/photo/je/je9.jpg" /></div>
-				<div><img src="/archive/photo/je/je10.jpg" /></div>
-				<div><img src="/archive/photo/je/je11.jpg" /></div>
-				<div><img src="/archive/photo/je/je12.jpg" /></div>
-				<div><img src="/archive/photo/je/je13.jpg" /></div>
-				<div><img src="/archive/photo/je/je14.jpg" /></div>
-				<div><img src="/archive/photo/je/je15.jpg" /></div>
-				<div><img src="/archive/photo/je/je16.jpg" /></div>
-				<div><img src="/archive/photo/je/je17.jpg" /></div>
-				<div><img src="/archive/photo/je/je18.jpg" /></div>
-				<div><img src="/archive/photo/je/je19.jpg" /></div>
-				<div><img src="/archive/photo/je/je20.jpg" /></div>
-				<div><img src="/archive/photo/je/je21.jpg" /></div>
-				<div><img src="/archive/photo/je/je22.jpg" /></div>
-				<div><img src="/archive/photo/je/je23.jpg" /></div>
-				<div><img src="/archive/photo/je/je24.jpg" /></div>
-				<div><img src="/archive/photo/je/je25.jpg" /></div>
-				<div><img src="/archive/photo/je/je26.jpg" /></div>
-				<div><img src="/archive/photo/je/je27.jpg" /></div>
-				<div><img src="/archive/photo/je/je28.jpg" /></div>
-				<div><img src="/archive/photo/je/je29.jpg" /></div>
-				<div><img src="/archive/photo/je/je30.jpg" /></div>
-				<div><img src="/archive/photo/je/je31.jpg" /></div>
-				<div><img src="/archive/photo/je/je32.jpg" /></div>
-				<div><img src="/archive/photo/je/je33.jpg" /></div>
-				<div><img src="/archive/photo/je/je34.jpg" /></div>
-				<div><img src="/archive/photo/je/je35.jpg" /></div>
-				<div><img src="/archive/photo/je/je36.jpg" /></div>
+				<div><img src="/archive/photo/je/je1.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je2.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je3.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je4.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je5.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je6.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je7.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je8.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je9.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je10.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je11.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je12.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je13.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je14.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je15.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je16.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je17.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je18.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je19.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je20.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je21.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je22.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je23.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je24.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je25.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je26.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je27.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je28.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je29.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je30.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je31.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je32.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je33.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je34.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je35.jpg" alt="je" /></div>
+				<div><img src="/archive/photo/je/je36.jpg" alt="je" /></div>
 			</section>
 		</Main > )
 };
@@ -190,18 +190,18 @@ export function Svolta() {
 	return (
 		<Main>
 			<section className="grid-3 ph3 pt3">
-				<div><img src="/archive/photo/st/st1.jpg" /></div>
-				<div><img src="/archive/photo/st/st2.jpg" /></div>
-				<div><img src="/archive/photo/st/st3.jpg" /></div>
-				<div><img src="/archive/photo/st/st4.jpg" /></div>
-				<div><img src="/archive/photo/st/st5.jpg" /></div>
-				<div><img src="/archive/photo/st/st6.jpg" /></div>
-				<div><img src="/archive/photo/st/st7.jpg" /></div>
-				<div><img src="/archive/photo/st/st8.jpg" /></div>
-				<div><img src="/archive/photo/st/st9.jpg" /></div>
-				<div><img src="/archive/photo/st/st10.jpg" /></div>
-				<div><img src="/archive/photo/st/st11.jpg" /></div>
-				<div><img src="/archive/photo/st/st12.jpg" /></div>
+				<div><img src="/archive/photo/st/st1.jpg" alt="svolta" /></div>
+				<div><img src="/archive/photo/st/st2.jpg" alt="svolta" /></div>
+				<div><img src="/archive/photo/st/st3.jpg" alt="svolta" /></div>
+				<div><img src="/archive/photo/st/st4.jpg" alt="svolta" /></div>
+				<div><img src="/archive/photo/st/st5.jpg" alt="svolta" /></div>
+				<div><img src="/archive/photo/st/st6.jpg" alt="svolta" /></div>
+				<div><img src="/archive/photo/st/st7.jpg" alt="svolta" /></div>
+				<div><img src="/archive/photo/st/st8.jpg" alt="svolta" /></div>
+				<div><img src="/archive/photo/st/st9.jpg" alt="svolta" /></div>
+				<div><img src="/archive/photo/st/st10.jpg" alt="svolta" /></div>
+				<div><img src="/archive/photo/st/st11.jpg" alt="svolta" /></div>
+				<div><img src="/archive/photo/st/st12.jpg" alt="svolta" /></div>
 			</section>
 
 		</Main > )
@@ -232,10 +232,10 @@ export function Borromeo() {
 			<Iltr img="/archive/borromeo/borro_type.png">
 				<Head head="Specimens of the font involved for composing the logo and the rest of the Corporate Image." />
 				<Tit tit="Didi Didot" />
-				<P>This showy 1970s take on Didot is credited by various sources to Herb Lubalin and Tom Carnase, but an <a href="https://fontsinuse.com/uses/9271/didi-typeface-ad" target="_blank" className="link hover-orange b">early LSC advertisement</a> credits Carnase alone. It’s possible that it was derived directly from <a href="https://fontsinuse.com/typefaces/31809/cbs-didot" target="_blank" className="link hover-orange b">CBS Didot.</a>
+				<P>This showy 1970s take on Didot is credited by various sources to Herb Lubalin and Tom Carnase, but an <a href="https://fontsinuse.com/uses/9271/didi-typeface-ad" target="_blank" rel="noopener noreferrer" className="link hover-orange b">early LSC advertisement</a> credits Carnase alone. It’s possible that it was derived directly from <a href="https://fontsinuse.com/typefaces/31809/cbs-didot" rel="noopener noreferrer" className="link hover-orange b">CBS Didot.</a>
 					<Br /><Br />No official digital version is available, therefore for the purpose of the project the entire typeface has been redesigned from scratch based on the original drawings, and it's not commercially available.</P>
 			</Iltr>
-			<div className="ph3 mw9 center"><iframe src="https://www.google.com/maps/embed?pb=!4v1572006299758!6m8!1m7!1sbs99LhsPH4pUZBsn6TZcGw!2m2!1d45.46320821272399!2d9.182731010075717!3f195.446431159916!4f-1.5647693099731583!5f0.5970117501821992" width="100%" height="1080px" /></div>
+			<div className="ph3 mw9 center"><iframe title="myFrame" src="https://www.google.com/maps/embed?pb=!4v1572006299758!6m8!1m7!1sbs99LhsPH4pUZBsn6TZcGw!2m2!1d45.46320821272399!2d9.182731010075717!3f195.446431159916!4f-1.5647693099731583!5f0.5970117501821992" width="100%" height="1080px" /></div>
 		</Main > )
 };
 export function Arte() {
@@ -290,7 +290,7 @@ export function Numeriprimi() {
 				<Head head="Specimens of the font involved for composing the Book." />
 				<Tit tit="Our Headline" />
 				<P>Originally drawn by Walter Haettenschweiler in 1954, derived from an assignment by Ernst Keller at Kunstgewerbeschule Zürich, and made as an improvement over Commercial-Grotesk (Haas, 1940).<Br /><Br />No lowercase.<Br /><Br />
-					<a href="http://www.swisstypedesign.ch/schriftfamilie/111/" target="_blank" className="link hover-orange b">Swiss Type Design</a> Included in Lettera vol. 1, an alphabet source book edited by Alex Stocker and Armin Haab. Also known simply as Schmalfette (“Bold Condensed”).<Br /><Br />No official digital version is available, therefore for the purpose of the project the entire typeface has been redesigned from scratch based on the original drawings, and it's not commercially available.</P>
+					<a href="http://www.swisstypedesign.ch/schriftfamilie/111/" rel="noopener noreferrer" target="_blank" className="link hover-orange b">Swiss Type Design</a> Included in Lettera vol. 1, an alphabet source book edited by Alex Stocker and Armin Haab. Also known simply as Schmalfette (“Bold Condensed”).<Br /><Br />No official digital version is available, therefore for the purpose of the project the entire typeface has been redesigned from scratch based on the original drawings, and it's not commercially available.</P>
 			</Iltr>
 			<Par>
 				<Sec title="Layout" />
@@ -372,8 +372,8 @@ export function Saf() {
 			<Iltr img="/archive/saf/saf_2.png">
 				<Head head="Specimens of the font involved for composing the logo and the rest of the Corporate Image." />
 				<Tit tit="Akzidenz Grotesk" />
-				<P>First issued by Berthold in 1898 as Accidenz-Grotesk. Many loosely related styles from various sources were incorporated into the family. Further extended and homogenized by G.G. Lange from the late 1950s on. Lange regards <a href="https://www.bertholdtypes.com/font/royal-grotesk/proplus/" target="_blank" className="link hover-orange b">Royal-Grotesk</a> the key source and credits it to Ferdinand Theinhardt, but that is disputed, see Eckehart Schumacher-Gebler’s article in <a href="http://www.tinograss.de/albums/schriftgestalten/" target="_blank" className="link hover-orange b">Tino Graß: Schriftgestalten</a> and <a href="http://kupferschrift.de/cms/2012/04/ag/" target="_blank" className="link hover-orange b">Indra Kupferschmid’s blog post</a>. Distributed in the US and UK as
-                  <a href="https://books.google.it/books?id=AHq-uK6F-PUC&pg=PA10&lpg=PA10&dq=standard+akzidenz-grotesk&source=bl&ots=bh1Bcz8Dbh&sig=QyUqvslwf-PYb_B4upWJKxOTmRk&hl=en&sa=X&ei=s67EUqCXKcP4oATmlYCoDg&redir_esc=y#v=onepage&q=standard%20akzidenz-grotesk&f=false" target="_blank" className="link hover-orange b">Standard</a> and commonly used in the 1950s–60s.</P>
+				<P>First issued by Berthold in 1898 as Accidenz-Grotesk. Many loosely related styles from various sources were incorporated into the family. Further extended and homogenized by G.G. Lange from the late 1950s on. Lange regards <a href="https://www.bertholdtypes.com/font/royal-grotesk/proplus/" rel="noopener noreferrer" target="_blank" className="link hover-orange b">Royal-Grotesk</a> the key source and credits it to Ferdinand Theinhardt, but that is disputed, see Eckehart Schumacher-Gebler’s article in <a href="http://www.tinograss.de/albums/schriftgestalten/" target="_blank" rel="noopener noreferrer" className="link hover-orange b">Tino Graß: Schriftgestalten</a> and <a href="http://kupferschrift.de/cms/2012/04/ag/" target="_blank" rel="noopener noreferrer" className="link hover-orange b">Indra Kupferschmid’s blog post</a>. Distributed in the US and UK as
+                  <a href="https://books.google.it/books?id=AHq-uK6F-PUC&pg=PA10&lpg=PA10&dq=standard+akzidenz-grotesk&source=bl&ots=bh1Bcz8Dbh&sig=QyUqvslwf-PYb_B4upWJKxOTmRk&hl=en&sa=X&ei=s67EUqCXKcP4oATmlYCoDg&redir_esc=y#v=onepage&q=standard%20akzidenz-grotesk&f=false" rel="noopener noreferrer" className="link hover-orange b">Standard</a> and commonly used in the 1950s–60s.</P>
 			</Iltr>
 			<Img oneimg="/archive/saf/saf_5.png" className="w-50 w-100-m center" />
 			<Img oneimg="/archive/saf/saf_3.png" className="pa0 ph3 pt3" />
