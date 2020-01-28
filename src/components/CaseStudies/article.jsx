@@ -10,9 +10,11 @@ export const Par = ( { className, children } ) => (
 
 );
 
-export const Sec = ( { title } ) => (
-
-	<div className="silver helvetica f1 fw7 tracked pt4 pb3 lh-title">{title}</div>
+export const Sec = ( { title, subtitle } ) => (
+	<section>
+		<div className="silver helvetica f1 fw7 tracked pt4 pb3 lh-title">{title}</div>
+		<div className="orange f2 i lh-title pb3">{subtitle}</div>
+	</section>
 
 );
 

@@ -35,11 +35,11 @@ export const ParImg = ( { oneimg } ) => (
 	</div>
 );
 
-export const Img = ( { oneimg } ) => (
-	<div className="mw800 mauto ph3 ph0-m">
+export const Img = ( { oneimg, className } ) => (
+	<div className={CN( "ph3 pt3 center", className )}>
 		<img src={oneimg} alt="img"></img>
 	</div>
-);
+)
 export const LImg = ( { oneimg, className } ) => (
 	<div className={CN( "ma3 w-third fl fn-t fn-l fn-m", className )}>
 		<img src={oneimg} alt="img"></img>
@@ -64,29 +64,25 @@ export const Br = () => ( <span>
 </span> );
 
 export const ProJ = ( { children } ) => (
-	<section className="mv4 justify-center flex flex-column-m flex-column-t flex-column-l">
+	<section className="mv4 justify-center flex flex-wrap">
 		{children}
 	</section>
 );
 
 export const More = ( {
-	title1,
-	link1,
-	bgImagei,
-	className
+	link,
+	title,
+	subtitle
 } ) => (
-		<section className="flex mh3 mt2-l mt2-m">
-			<Link to={link1} className="link w5 w-100-l w-100-t w-100-m br3  ph2-m shadow-hover mb3-m mb3-l mb3-t">
-				<div
-					className={CN(
-						"br3 bg-animate w5 w-100-l w-100-m w-100-t h5 cover bg-center",
-						className
-					)}
-					style={{
-						backgroundImage: `url(${bgImagei})`
-					}}>
-					<p className="f1 helvetica fw7 absolute bottom-1 right-1 pb2 pr3-m tracked">{title1}</p>
 
+		<section className="flex mh2 mt2-l mt2-m">
+			<Link to={link}>
+				<div className='ba'>
+					<div className='bw5 bt b--navy shadow-hover h5 w5 flex flex-column'>
+						<div className="f1 f2-m fw7 tracked helvetica lh-solid ph2 pv1">{title}</div>
+						<div className="orange minion f2 f3-m ph2 i lh-title">{subtitle}</div>
+						<div className="helvetica fw6 f3 pb2 ph2 absolute bottom-0 right-0">Read more</div>
+					</div>
 				</div>
 			</Link>
 		</section>
@@ -103,8 +99,8 @@ export const Biblio = ( {
 } ) => (
 
 		<a href={link} target="_blank" className="link" rel="noopener noreferrer">
-			<div className={CN( "mb2", className )}>
-				<div className="hover-orange">
+			<div className={CN( className )}>
+				<div className="hover-orange pb2">
 					<p className="pt2 fw6 helvetica">{author}</p>
 					<p className="i f27">{name}</p>
 					<p>{publication}
@@ -116,7 +112,7 @@ export const Biblio = ( {
 	);
 
 export const Invision = ( { prototype } ) => (
-		<div className="tso-m">
-		<iframe width="438" height="930" src={prototype} frameBorder="0" allowFullScreen /></div>
-	
+	<div className="tso-m">
+		<iframe title="myframe" width="438" height="930" src={prototype} frameBorder="0" allowFullScreen /></div>
+
 );

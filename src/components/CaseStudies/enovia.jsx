@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
 	Title,
-	Br
+	Br, ProJ, More
+
 } from "./components.jsx";
 import { Par, Sec } from "./article.jsx";
 export function Enovia() {
@@ -78,11 +78,21 @@ export function Enovia() {
 				interested’ in visual changes and whatnot.
 					<Br />
 				If you want to know more in detail what happened with the Yape corporate image, or what I did in the
-				project I was involved in, you can have a peak, or—if you prefer—dive down into the{" "}
-				<Link className="helvetica fw6 f3 link navy hover-orange" to="./yape">specific file</Link>.
+				project I was involved in, you can have a peak, or—if you prefer—dive down into thespecific file.
 
 			</Par>
+			<ProJ>
+				<More
+					link="./yape"
+					title="Yape" />
+				<More
+					link="./yapesrl"
+					title="Yape"
+					subtitle="Design System"
+				/>
 
+
+			</ProJ>
 
 		</main>
 	);

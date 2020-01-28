@@ -1,11 +1,11 @@
 import React from 'react';
-import {Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel} from 'react-accessible-accordion';
+import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 import './style.css';
 
-export function Collapsible(props) {
+export function Collapsible( props ) {
 
 	return (
-		<Accordion allowZeroExpanded={true} className="mv3 ">
+		<Accordion allowZeroExpanded={true}>
 			<AccordionItem>
 				<AccordionItemHeading className="helvetica  f4 navy">
 					<AccordionItemButton>

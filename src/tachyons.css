@@ -1383,6 +1383,10 @@ code {
 	max-width: 100%;
 }
 
+.mw-90 {
+	max-width: 90%;
+}
+
 .mw1 {
 	max-width: 1rem;
 }

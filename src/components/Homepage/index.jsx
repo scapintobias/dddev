@@ -4,9 +4,9 @@ import {
 } from "react-router-dom";
 import TextLoop from "react-text-loop";
 const RandomCity = () => (
-	<span><br className="dn di-ns di-m di-l dn-t"></br>
+	<span><br className="dn di-l di-t di-m"></br>
 		<TextLoop interval={700}>
-			<span>Germany</span>
+			<span>Belgium</span>
 			<span>Australia</span>
 			<span>UK</span>
 			<span>USA</span>
@@ -25,10 +25,10 @@ const RandomCity = () => (
 
 export const Homepage = props => (
 	<main>
-		<section className="pt2 pb5 pl3 pr3 pl2-m pr2-m mw9 mw-100-m">
+		<section className="pt2 pb5 pl3 pr3 pl2-m pr2-m mw-90 mw-100-m">
 			<div className="helvetica navy lh-title tracked-tight f-7 f-45-m fw6">
 				<span className="orange">Product</span> &{" "}
-				<span className="orange">Interaction</span> Designer <span>based{" "}in</span>{" "}<RandomCity />.
+				<span className="orange">Interaction</span> Designer <span>based{" "}in</span>{" "}<RandomCity />
 			</div>
 			<p className="pt7 pt6-m minion navy f-6 f2-m lh-title-s">
 				My name is{" "}
