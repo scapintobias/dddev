@@ -10,7 +10,10 @@ import {
 	Br,
 	ProJ,
 	More,
-	Biblio
+	Biblio, Iltr,
+	Head,
+	Tit,
+	P
 } from "./components.jsx";
 import Vimeo from '@u-wave/react-vimeo';
 import {
@@ -323,8 +326,18 @@ export function Yapesrl() {
 				title="Yape"
 				subtitle="Unmanned Ground Vehicle"
 				description="Case Study on design system development"
-				line2="In 2018 Yape transformed into a remotely-driven drone. This is the story of how I made a positive difference in the process." />
+				line2="A sneak peak into the start of a new visual system." />
 			<Vimeo video="https://vimeo.com/387650908" width="680px" responsive className="ma3" />
+			
+			<Iltr img="/img/yapetype.png">
+				<Head head="Specimens of the font involved for composing the design system." />
+				<Tit tit="Franklin Gothic" />
+				<P>The ITC Franklin Gothic is a reimagining of Franklin Gothic, a design that dates back to 1902. It retains the personality and character of the original typeface, with only a slight increase in x-height and character width to distinguish it from the first version. Although newer typeface families such as Helvetica, Univers and Frutiger have the same basic proportions and attributes as Franklin Gothic, the similarity ends there. ITC Franklin Gothic retains all the strength and vitality typical of early American sans serif typefaces.
+				<Br />
+					Capitals are wide (typographers would call them “square”), lowercase letters share the proportions and letter shapes of serif typefaces – and character stroke weights echo the serif-styled counterparts in that they have an obvious contrast. For example, the left side of the A is lighter than the right, and the first stroke of the M is lighter than the other three.
+				</P>
+
+			</Iltr>
 			<Img oneimg="/img/yapetype.jpg" className="mw8 pa3" />
 			<Img oneimg="https://www.startupitaliaopensummit.eu/wp-content/uploads/2019/11/Yape_logo.png" className="mw8 pa3" />
 			<Par className="mb5">

@@ -116,3 +116,23 @@ export const Invision = ( { prototype } ) => (
 		<iframe title="myframe" width="438" height="930" src={prototype} frameBorder="0" allowFullScreen /></div>
 
 );
+
+export const Head = ( { head } ) => (
+	<p className="f4 ph3 pt3 minion silver lh-solid">{head}</p>
+);
+export const Tit = ( { tit } ) => (
+	<p className="f2 fw5 pa3 helvetica silver lh-solid">{tit}</p>
+);
+export const P = ( { children } ) => (
+	<p className="f3 ph3 pb3 minion silver lh-solid">{children}</p>
+);
+export const Rf = ( { link, rf } ) => (
+	<a href={link} target="_blank" rel="noopener norefferrer" className="link hover-orange" ><sup>{rf}</sup></a>
+);
+
+export const Iltr = ( { img, children } ) => (
+	<section className="flex justify-around items-start flex-column-m flex-column-t">
+		<div className="w-40 w-100-m w-100-t pa3 sticky-top"><img src={img} alt="alt" /></div>
+		<div className="sticky w-40 w-100-t w-100-m"><div>{children}</div></div>
+	</section>
+);
