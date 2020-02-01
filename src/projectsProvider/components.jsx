@@ -79,7 +79,7 @@ export const P = ( { children } ) => (
 	<p className="f3 ph3 pb3 minion silver lh-solid">{children}</p>
 );
 export const Rf = ( { link, rf } ) => (
-	<a href={link} target="_blank" rel="noopener norefferrer" className="link hover-orange" ><sup>{rf}</sup></a>
+	<a href={link} target="_blank" rel="noopener noreferrer" className="link hover-orange" ><sup>{rf}</sup></a>
 );
 export const Iltr = ( { img, children } ) => (
 	<section className="flex justify-around items-start flex-column-m flex-column-t">
