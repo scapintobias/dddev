@@ -32,7 +32,6 @@ import {
 
 import { Yape, Yapesrl } from "./components/CaseStudies/yape";
 import { Enovia } from "./components/CaseStudies/enovia";
-import { Venues } from "./components/CaseStudies/musicvenues";
 function ScrollToTop( {
 	children
 } ) {
@@ -102,7 +101,6 @@ function PageContent() {
 					<Route path="/work/" exact component={Tab} />
 					<Route path="/work/eNovia" exact component={Enovia} />
 					<Route path="/work/yape" exact component={Yape} />
-					<Route path="/work/musicvenues" exact component={Venues} />
 					<Route path="/work/yapesrl" exact component={Yapesrl} />
 				</Switch>
 			</animated.div>
