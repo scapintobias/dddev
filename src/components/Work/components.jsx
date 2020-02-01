@@ -6,7 +6,7 @@ import CN from "classnames";
 import "./style.css";
 
 export const Grid = ( { children } ) => (
-	<section className="mw68 center">
+	<section className="mw68 center pb3">
 		{children}
 	</section>
 );
