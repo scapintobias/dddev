@@ -11,7 +11,7 @@ export const Title = ({
   description,
   line2,
 }) => (
-  <section className="flex pb2 bb flex-column-m mb3">
+  <section className="flex pb2 bb flex-column-m">
     <section className="flex flex-column justify-between helvetica lh-solid ph3 w-50 w-100-m br bn-m">
       <div className="pb2 fw6 helvetica f4">
         <p className="navy">{place}</p>
