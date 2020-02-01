@@ -47,70 +47,70 @@ th,
 thead,
 tr,
 ul {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
 }
 
 /************************************************
 Table
 ************************************************/
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	line-height: 1.5;
-	min-height: 100vh;
+  line-height: 1.5;
+  min-height: 100vh;
 }
 
 a img {
-	border: none;
+  border: none;
 }
 
 body,
 input {
-	color: #000;
-	font-weight: normal;
-	font-size: 87.5%;
-	line-height: 1.5em;
-	font-family: Helvetica, Impact, Arial, sans-serif;
+  color: #000;
+  font-weight: normal;
+  font-size: 87.5%;
+  line-height: 1.5em;
+  font-family: Helvetica, Impact, Arial, sans-serif;
 }
 
 h2 {
-	font-weight: bold;
-	clear: both;
+  font-weight: bold;
+  clear: both;
 }
 
 h3 {
-	font-weight: normal;
-	font-style: italic;
-	x-color: #ef5419;
-	clear: both;
+  font-weight: normal;
+  font-style: italic;
+  x-color: #ef5419;
+  clear: both;
 }
 
 h4 {
-	color: #ef5419;
+  color: #ef5419;
 }
 
 h6 {
-	color: #ef5419;
-	clear: both;
+  color: #ef5419;
+  clear: both;
 }
 
 .footer {
-	align-items: flex-end;
-	color: #666;
-	padding-bottom: 1rem;
+  align-items: flex-end;
+  color: #666;
+  padding-bottom: 1rem;
 }
 
 .icon {
-	display: flex;
-	justify-content: center;
-	padding-bottom: 1rem;
-	padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .icon img {
-	width: 5rem;
+  width: 5rem;
 }
