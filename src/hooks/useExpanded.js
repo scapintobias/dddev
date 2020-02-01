@@ -1,7 +1,4 @@
-import {
-  useState,
-  useEffect
-} from "react";
+import { useState, useEffect } from "react";
 
 export const useExpanded = toggleSelector => {
   const [expanded, setExpanded] = useState(false);
