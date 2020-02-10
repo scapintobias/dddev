@@ -764,7 +764,7 @@ export function Castiglioni() {
 export function Rankin() {
   return (
     <Main>
-      <Img oneimg="/cat/rankin/rankin_1.png" className="mw8 center mb4 mb0-m"/>
+      <Img oneimg="/cat/rankin/rankin_1.png" className="mw8 center mb4 mb0-m" />
 
       <Iltr img="/cat/rankin/rankin_2.png">
         <Head head="Specimens of the font involved for composing the logo and the rest of the Corporate Image." />
@@ -788,15 +788,15 @@ export function Fearless() {
   return (
     <Main>
       <section className="mw8 center">
-      <Img oneimg="/cat/fearless/fearless_1.png" />
+        <Img oneimg="/cat/fearless/fearless_1.png" />
 
-      <Img oneimg="/cat/fearless/fearless_5.png" />
+        <Img oneimg="/cat/fearless/fearless_5.png" />
 
-      <Img oneimg="/cat/fearless/fearless_2.png" />
+        <Img oneimg="/cat/fearless/fearless_2.png" />
 
-      <Img oneimg="/cat/fearless/fearless_3.png" />
+        <Img oneimg="/cat/fearless/fearless_3.png" />
 
-      <Img oneimg="/cat/fearless/fearless_4.png" />
+        <Img oneimg="/cat/fearless/fearless_4.png" />
       </section>
     </Main>
   );

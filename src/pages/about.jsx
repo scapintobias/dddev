@@ -1,7 +1,7 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import {Br} from '../components/CaseStudies/components.jsx';
-import {Par} from '../components/CaseStudies/article.jsx';
+import { Link } from 'react-router-dom';
+import { Br } from '../components/CaseStudies/components.jsx';
+import { Par } from '../components/CaseStudies/article.jsx';
 
 export function About() {
   return (

@@ -2,8 +2,8 @@ import React from 'react';
 import CN from 'classnames';
 import './style.css';
 
-export const Main = ({children}) => <main className="pb3">{children}</main>;
-export const Par = ({className, children}) => (
+export const Main = ({ children }) => <main className="pb3">{children}</main>;
+export const Par = ({ className, children }) => (
   <section className="flex justify-center flex-column-l flex-column-t flex-column-m mv3 mh3-m mh4-t mh5-l">
     <section
       className={CN(
@@ -15,7 +15,7 @@ export const Par = ({className, children}) => (
   </section>
 );
 
-export const Sec = ({title, subtitle}) => (
+export const Sec = ({ title, subtitle }) => (
   <div className="silver helvetica f1 fw7 tracked pt4 pb3 lh-title">
     {title}
     <br></br>
@@ -23,33 +23,33 @@ export const Sec = ({title, subtitle}) => (
   </div>
 );
 
-export const Sub = ({title}) => (
+export const Sub = ({ title }) => (
   <div className="silver  helvetica f25 fw6  pt4 pb3 lh-title">{title}</div>
 );
 
-export const Quote = ({quote}) => (
+export const Quote = ({ quote }) => (
   <div className="navy i minion i f27 lh-solid pl4 bl bw2">{quote}</div>
 );
 
-export const ParImg = ({oneimg, className}) => (
+export const ParImg = ({ oneimg, className }) => (
   <div className={CN('mv3', className)}>
     <img src={oneimg} alt="img"></img>
   </div>
 );
 
-export const Img = ({oneimg, className}) => (
+export const Img = ({ oneimg, className }) => (
   <div className={CN('ph3 pt3', className)}>
     <img src={oneimg} alt="img"></img>
   </div>
 );
 
-export const Pic = ({img, className, imgClass}) => (
+export const Pic = ({ img, className, imgClass }) => (
   <div className={CN(className)}>
     <img src={img} alt="img" className={CN(imgClass)}></img>
   </div>
 );
 
-export const TwoImg = ({image1, image2, className, classNamee}) => (
+export const TwoImg = ({ image1, image2, className, classNamee }) => (
   <div className="flex-row flex-column-m flex justify-center ph35 overflow-visible ph3-m">
     <div className="pr0-m pb3-m w-100-m pr2 w-50">
       <img src={image1} alt="img"></img>
@@ -60,7 +60,7 @@ export const TwoImg = ({image1, image2, className, classNamee}) => (
   </div>
 );
 
-export const FourImg = ({image1, image2, image3, image4}) => (
+export const FourImg = ({ image1, image2, image3, image4 }) => (
   <div className="flex-row flex-column-m flex justify-center ph35 pt3 ph3-m">
     <img src={image1} alt="img" className="pr0-m pb3-m w-100-m pr1 w-25"></img>
     <img src={image2} alt="img" className="ph1 ph0-m pb3-m w-100-m w-25"></img>
@@ -69,16 +69,16 @@ export const FourImg = ({image1, image2, image3, image4}) => (
   </div>
 );
 
-export const Head = ({head}) => (
+export const Head = ({ head }) => (
   <p className="f4 ph3 pt3 minion silver lh-solid">{head}</p>
 );
-export const Tit = ({tit}) => (
+export const Tit = ({ tit }) => (
   <p className="f2 fw5 pa3 helvetica silver lh-solid">{tit}</p>
 );
-export const P = ({children}) => (
+export const P = ({ children }) => (
   <p className="f3 ph3 pb3 minion silver lh-solid">{children}</p>
 );
-export const Rf = ({link, rf}) => (
+export const Rf = ({ link, rf }) => (
   <a
     href={link}
     target="_blank"
@@ -87,7 +87,7 @@ export const Rf = ({link, rf}) => (
     <sup>{rf}</sup>
   </a>
 );
-export const Iltr = ({img, children}) => (
+export const Iltr = ({ img, children }) => (
   <section className="flex justify-around items-start flex-column-m flex-column-t">
     <div className="w-40 w-100-m w-100-t pa3 sticky-top">
       <img src={img} alt="alt" />
