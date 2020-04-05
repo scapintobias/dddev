@@ -27,3 +27,4 @@ export const Card = ({ link, title, subtitle, description, className }) => (
     </Link>
   </section>
 );
+

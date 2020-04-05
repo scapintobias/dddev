@@ -12,7 +12,7 @@ export const Title = ({
   line2,
 }) => (
     <section className="flex pb2 bb flex-column-m">
-      <section className="flex flex-column justify-between helvetica lh-solid ph3 w-50 w-100-m br bn-m">
+      <section className="flex flex-column justify-between helvetica lh-copy ph3 w-50 w-100-m br bn-m">
         <div className="pb2 fw6 helvetica f4">
           <p className="navy">{place}</p>
           <p className="silver">{time}</p>
@@ -25,7 +25,7 @@ export const Title = ({
           {subtitle}
         </div>
       </section>
-      <section className="lh-solid w-50 w-100-m pl3 pr3 pt2-m flex flex-column-reverse ">
+      <section className="lh-copy w-50 w-100-m pl3 pr3 pt2-m flex flex-column-reverse ">
         <div className="f2 minion fw5 f25-m navy">{line2}</div>
         <div className="pb2 f2 minion i fw5 f25-m orange">{description}</div>
       </section>
@@ -33,7 +33,7 @@ export const Title = ({
   );
 
 export const ParImg = ({ oneimg }) => (
-  <div className="mv3">
+  <div className="mt4 mb2">
     <img src={oneimg} alt="img"></img>
   </div>
 );

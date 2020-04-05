@@ -31,11 +31,15 @@ export function Header(props) {
             </NavLink>
           </li>
           <li className="f4 pt3-m tr-m tr-t pr35-m">
+            <NavLink exact to="/resources">
+              Resources
+            </NavLink></li>
+          <li className="f4 pt3-m tr-m tr-t pr35-m">
             <NavLink exact to="/about">
               About
             </NavLink>
           </li>
-
+          
           <li className="pt3-m pb2-m tr-m tr-t pr35-m pt3-m pr3-m">
             <a href="mailto:info@discipline.design?subject=Enquiry">
               <span className="helvetica f4">@</span>

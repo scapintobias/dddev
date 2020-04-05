@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import CN from "classnames";
 export const Par = ({ className, children }) => (
-  <section className="flex justify-center flex-column-l flex-column-t flex-column-m mv3 mh3-m mh4-t mh5-l">
+  <section className="flex justify-center flex-column-l flex-column-t flex-column-m mt4 mh3-m mh4-t mh5-l">
     <section
       className={CN(
-        "w-50 w-100-m w-100-l w-100-t f27 f3-m minion lh-solid",
+        "w-50 w-100-m w-100-l w-100-t f27 f3-m minion lh-copy",
         className
       )}
     >
@@ -57,3 +57,12 @@ export const Reveal = ({ button, title, text }) => {
     </main>
   );
 };
+
+export const Insert = props => (
+	<section className="center flex flex-column-m items-center mv4">
+		<div className="mongoose w-40 w-100-m fw4 f1 lh-solid  pr4">
+			{props.caps}
+		</div>
+		<div className="minion w-60 i w-100-m fw3 f25  lh-copy pl3">{props.write}</div>
+	</section>
+);

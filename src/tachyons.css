@@ -1178,6 +1178,9 @@ code {
 	font-family: ltc-bodoni-175, serif;
 }
 
+.mongoose {
+	font-family: "mongoose", sans-serif;
+}
 
 .i {
 	font-style: italic;
@@ -1256,6 +1259,22 @@ code {
 
 .h4 {
 	height: 8rem;
+}
+
+.h49 {
+	height: 9rem;
+}
+
+.h410 {
+	height: 10rem;
+}
+
+.h411 {
+	height: 11rem;
+}
+
+.h412 {
+	height: 12rem;
 }
 
 .h5 {
@@ -1339,7 +1358,7 @@ code {
 }
 
 .lh-solid {
-	line-height: 1.2;
+	line-height: 1;
 }
 
 .lh-leading {
@@ -1355,7 +1374,7 @@ code {
 }
 
 .lh-copy {
-	line-height: 1.5;
+	line-height: 1.2;
 }
 
 .link {
@@ -1473,6 +1492,10 @@ code {
 
 .w-10 {
 	width: 10%;
+}
+
+.w-15 {
+	width: 15%;
 }
 
 .w-20 {
@@ -3465,6 +3488,10 @@ code {
 
 .f-4 {
 	font-size: 4rem;
+}
+
+.f-ssh {
+	font-size: 3.3rem;
 }
 
 .f1 {
@@ -5629,7 +5656,7 @@ code {
 	}
 }
 
-@media and screen (max-width:768px) {
+@media (max-width:768px) {
 	.tso-m {
 		width: 300px;
 		height: 500px;
@@ -6348,6 +6375,22 @@ code {
 
 	.h4-m {
 		height: 8rem;
+	}
+
+	.h49-m {
+		height: 9rem;
+	}
+
+	.h410-m {
+		height: 10rem;
+	}
+
+	.h411-m {
+		height: 11rem;
+	}
+
+	.h412-m {
+		height: 12rem;
 	}
 
 	.h5-m {

@@ -8,10 +8,11 @@ import { useRouter } from './hooks/useRouter';
 import { Header } from './components/Header';
 import { Tab } from './components/Work';
 
-import { Home, Project, Projects, About } from './pages';
+import { Home, Project, Projects, Resources, About } from './pages';
 
 import { Yape, Yapesrl } from './components/CaseStudies/yape';
 import { Enovia } from './components/CaseStudies/enovia';
+import {Receipts} from './components/CaseStudies/receipts'
 function ScrollToTop({ children }) {
   const {
     location: { pathname },
@@ -65,11 +66,13 @@ function PageContent() {
         <Route path="/archive" exact component={Projects} />
         <Route path="/archive/:type" exact component={Projects} />
         <Route path="/archive/:type/:year/:slug" component={Project} />
+        <Route path="/resources" exact component={Resources} />
         <Route path="/about/" component={About} />
         <Route path="/work/" exact component={Tab} />
         <Route path="/work/eNovia" exact component={Enovia} />
         <Route path="/work/yape" exact component={Yape} />
         <Route path="/work/yapesrl" exact component={Yapesrl} />
+        <Route path="/work/receipts" exact component={Receipts} />
       </Switch>
     </animated.div>
   ));
