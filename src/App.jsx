@@ -12,7 +12,7 @@ import { Home, Project, Projects, Resources, About } from './pages';
 
 import { Yape, Yapesrl } from './components/CaseStudies/yape';
 import { Enovia } from './components/CaseStudies/enovia';
-import {Receipts} from './components/CaseStudies/receipts'
+
 function ScrollToTop({ children }) {
   const {
     location: { pathname },
@@ -72,7 +72,7 @@ function PageContent() {
         <Route path="/work/eNovia" exact component={Enovia} />
         <Route path="/work/yape" exact component={Yape} />
         <Route path="/work/yapesrl" exact component={Yapesrl} />
-        <Route path="/work/receipts" exact component={Receipts} />
+
       </Switch>
     </animated.div>
   ));

@@ -16,7 +16,7 @@ export function Header(props) {
         <NavLink to="/" className="logo helvetica">
           DisciplineDesign
         </NavLink>
-        <div className="menu-icon" onClick={toggleExpanded}>
+        <div className="menu-icon fr" onClick={toggleExpanded}>
           <span className="navicon" />
         </div>
         <ul className="fw5 menu">

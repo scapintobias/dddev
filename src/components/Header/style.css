@@ -61,7 +61,7 @@ svg:hover #instagram {
 .header .menu-icon {
   position: relative;
   display: inline-block;
-  float: right;
+  /* float: right; */
   padding: 25px 20px;
   cursor: pointer;
   user-select: none;
@@ -101,7 +101,7 @@ svg:hover #instagram {
 }
 
 .header.expanded .menu {
-  max-height: 240px;
+  max-height: 300px;
 }
 
 .header.expanded .menu-icon .navicon {

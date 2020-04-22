@@ -7,17 +7,10 @@ export function Tab() {
 			<Grid>
 				<div className="ph3 pt3 mh3 mt2 ba">
 					<p className="navy helvetica f1 fw7 tracked pb4 lh-title">
-						If you can't find it, design it
+						If you can't find it, design it.
 					</p>
-					<p className="minion i tr orange pb2">Lella & Massimo Vignelli</p>
+					<p className="minion f4 i tr orange pb2">Lella & Massimo Vignelli</p>
 				</div>
-				{/* <Card
-					link="./work/receipts"
-					title="Receipts"
-					subtitle="Product Design"
-					description="A web app to get rid of termic-paper-receipts"
-					className="hover-silver link bg-animate navy"
-				/> */}
 				<Card
 					link="./work/yape"
 					title="Yape"

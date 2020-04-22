@@ -3,14 +3,14 @@ import CN from 'classnames';
 
 export const Grid = ({ title, children }) => (
 	<article>
-		<h2 className="f-4 silver f1-m helvetica fw8 mv4 mt3-m mb4-m ml3 pl2 pl0-m">
+		<p className="f-4 silver f1-m helvetica fw8 mv3 mt3-m mb4-m ml3 pl2 pl0-m">
 			{title}
-		</h2>
+		</p>
 		<section className="cf ph3 pb3">{children}</section>
 	</article>
 );
 
-export const Card = props => (
+export const Card = (props) => (
 	<section className="fl w-25 w-third-ns w-50-l w-50-t w-100-m pa2 pa0-m pb3-m">
 		<a href={props.link} target="_blank" rel="noopener noreferrer">
 			<div className={CN('bw5 bl', props.class)}>
@@ -30,7 +30,7 @@ export const Card = props => (
 export function Resources() {
 	return (
 		<main>
-			<Grid title="Books">
+			<Grid>
 				<Card
 					class="dim"
 					title="About Face"
