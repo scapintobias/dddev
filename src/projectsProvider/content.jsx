@@ -13,12 +13,14 @@ import {
 	P,
 	Rf,
 	Pic,
+	Collab,
 } from './components.jsx';
 import './style.css';
 
 export function Lima() {
 	return (
 		<Main>
+			<Collab href="http://www.aetherotopies.com/" collab="Samuel Iuri" />
 			<Img oneimg="/cat/lima/4.png" />
 
 			<Pic img="/cat/lima/limalogo.png" className="mw8 center pv5 pv4-m ph3" />
@@ -147,6 +149,7 @@ export function Mental() {
 export function Pantone() {
 	return (
 		<Main>
+			<Collab href="http://www.aetherotopies.com/" collab="Samuel Iuri" />
 			<div className="gridp mh3 mt3">
 				<img src="/cat/pantone/cocktails/A.png" alt="cocktail" />
 

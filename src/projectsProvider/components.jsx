@@ -76,12 +76,7 @@ export const P = ({ children }) => (
 	<p className="f3 ph3 pb3 minion silver lh-copy">{children}</p>
 );
 export const Rf = ({ link, rf }) => (
-	<a
-		href={link}
-		target="_blank"
-		rel="noopener noreferrer"
-		className="link hover-orange"
-	>
+	<a href={link}>
 		<sup>{rf}</sup>
 	</a>
 );
@@ -97,3 +92,17 @@ export const Iltr = ({ img, children }) => (
 );
 
 export const Br = () => <br></br>;
+
+export const Collab = ({ href, collab }) => (
+	<div className="f4 fw5 ph3 pv2 helvetica bg-orange white lh-copy">
+		This project was developed in close collaboration with:{' '}
+		<a
+			href={href}
+			target="_blank"
+			rel="noopener noreferrer"
+			className="link fw7 hover-navy"
+		>
+			{collab}
+		</a>
+	</div>
+);

@@ -77,7 +77,7 @@ export function Resources() {
 					class="hover-orange"
 					title="Grid Systems"
 					author="Josef Müller-Brockmann"
-					link="https://www.amazon.com/gp/product/1500615994/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1500615994&linkCode=as2&tag=mrmrs01-20&linkId=b323b793cb846f1eb184a1d875b97c08"
+					link="https://www.amazon.com/Grid-systems-graphic-design-communication/dp/3721201450/ref=sr_1_1?crid=2HQRFYQ8VGBOC&dchild=1&keywords=grid+systems+in+graphic+design&qid=1588077479&sprefix=grid+syst%2Caps%2C390&sr=8-1"
 				/>
 				<Card
 					class="dim"
