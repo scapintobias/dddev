@@ -3,7 +3,7 @@ import CN from 'classnames';
 
 export const Grid = ({ title, children }) => (
 	<article>
-		<p className="f-4 silver f1-m helvetica fw8 mv3 mt3-m mb4-m ml3 pl2 pl0-m">
+		<p className="f-4 silver f1-m helvetica fw8  mb3 mt3-m mb4-m ml3 pl2 pl0-m">
 			{title}
 		</p>
 		<section className="cf ph3 pb3">{children}</section>
@@ -27,9 +27,18 @@ export const Card = (props) => (
 	</section>
 );
 
+export const Hr = () => <div className="bb w-100" />;
+
 export function Resources() {
 	return (
 		<main>
+			<div className="pa3 flex flex-column w-50 w-100-m center">
+				<p className="navy helvetica f1 fw7 tracked pb4 lh-title">
+					If you can't find it, design it.
+				</p>
+				<p className="minion f4 i  orange pb2">Lella & Massimo Vignelli</p>
+			</div>
+			<Hr />
 			<Grid>
 				<Card
 					class="dim"

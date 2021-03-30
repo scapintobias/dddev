@@ -3,10 +3,21 @@ html {
 	-webkit-text-size-adjust: 100%;
 }
 
+html img {
+	width: 100%;
+	height: 100%;
+}
+
+.whole {
+	width: 100vw;
+
+}
+
 body {
 	margin: 0;
 	color: #001b44;
 }
+
 
 h1 {
 	font-size: 2em;
@@ -3028,6 +3039,10 @@ code {
 
 .ma3 {
 	margin: 1rem;
+}
+
+.ma33 {
+	margin: 1.5rem;
 }
 
 .ma4 {
@@ -9197,6 +9212,11 @@ code {
 
 	.f-4-l {
 		font-size: 4rem;
+
+	}
+
+	.f-ssh-l {
+		font-size: 3.3rem;
 	}
 
 	.f1-l {

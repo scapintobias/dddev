@@ -1,18 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Br } from '../components/CaseStudies/components.jsx';
-import { Par } from '../components/CaseStudies/article.jsx';
+
+export const Br = () => (
+	<span>
+		<br></br>
+		<br></br>
+	</span>
+);
 
 export function About() {
 	return (
-		<main>
-			<Par className="mb4">
-				<img
-					alt="Tobias"
-					src="/img/about.jpg"
-					className="br-100 h7 w7 mb5 db center"
-				/>
-				I was born in the Venice’ countryside, in a family of carpenters, architects
+		<main className="whole">
+			<div className="mv6 ph3 measure center minion f3 lh-copy">
+				I was born in the Venice countryside, in a family of carpenters, architects
 				and designers. And that has been a strong starting point.
 				<Br />
 				When I was sophomore in high school, I met Maurizio and Armando Milani,
@@ -50,13 +49,8 @@ export function About() {
 				time). And so I enrolled, in february 2017, starting a whole new chapter. I
 				gained my degree in april 2019 with a thesis on 'User Experience design for
 				land-drones remote driving', theme arose from my work experience during this
-				time, which you can find writings about in the
-				<Link className="helvetica fw7 f3 link hover-green" to="/work/eNovia">
-					{' '}
-					e-Novia{' '}
-				</Link>
-				file.
-			</Par>
+				time, which you can find writings among my projects.
+			</div>
 		</main>
 	);
 }

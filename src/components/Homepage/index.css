@@ -1,0 +1,5 @@
+.wrap {
+	height: calc(100vh - 53px);
+	width: 100vw;
+	background-color: #EF5418;
+}

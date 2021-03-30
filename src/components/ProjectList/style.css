@@ -1,6 +1,7 @@
 .projects-list {
   list-decoration: none;
   padding: 0 1rem 1rem;
+  width: 100vw;
 }
 
 .projects-list a {

@@ -29,6 +29,8 @@ import {
 	Ducati,
 	Mental,
 	Lima,
+	Yape,
+	YapeSrl,
 } from './content';
 
 const createProject = (title, subtitle, type, year, content) => ({
@@ -41,6 +43,8 @@ const createProject = (title, subtitle, type, year, content) => ({
 
 export const projects = [
 	createProject('Metro de Lima', 'Subway system', 'wayfinding', 2019, Lima()),
+	createProject('Yape', 'e-Novia', 'ux', 2018, Yape()),
+	createProject('Yape', 'e-Novia', 'corporate', 2018, YapeSrl()),
 	createProject('Mental Coach', 'Corporate', 'photography', 2018, Mental()),
 	createProject(
 		'Ducati 1260 Multistrada',
