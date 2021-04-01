@@ -30,7 +30,7 @@ export function Lima() {
 			<Main>
 				<Img oneimg="/cat/lima/4.png" />
 
-				<Pic img="/cat/lima/limalogo.png" className="mw8 center pv5 pv4-m ph3" />
+				<Pic img="/cat/lima/limalogo.png" className="mw8 center pv5 pv4-m" />
 
 				<Par>
 					The first stage of the process consisted in a vast analysis of all the
@@ -107,7 +107,7 @@ export function Yape() {
 	return (
 		<Main>
 			<Img oneimg="https://e-novia.it/wp-content/uploads/2018/11/6_Yape_REV01.jpg" />
-			<p className="mr3 mb2 ml3  minion gray tr tl-t tl-m f7">
+			<p className="mr3 mb2 ml3 ma0-m  minion gray tr tl-t tl-m f5">
 				To comply with my confidentiality agreement I have omitted and appropriated
 				confidential information. These designs are a reinterpretation of the
 				original.
@@ -455,7 +455,7 @@ export function YapeSrl() {
 				video="https://vimeo.com/387650908"
 				width="680px"
 				responsive
-				className=""
+				className="pb3"
 			/>
 
 			<Iltr img="/img/yapetype.png">
@@ -479,10 +479,10 @@ export function YapeSrl() {
 					three.
 				</P>
 			</Iltr>
-			<Img oneimg="/img/yapetype.jpg" className="mw8 center pa3" />
+			<Img oneimg="/img/yapetype.jpg" className="mw8 center pv3" />
 			<Img
 				oneimg="https://www.startupitaliaopensummit.eu/wp-content/uploads/2019/11/Yape_logo.png"
-				className="mw8 center pa3 mb7"
+				className="mw8 center pv3 mb7"
 			/>
 
 			{/* <Par className="mb5">
@@ -558,7 +558,7 @@ export function Ducati() {
 						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture allowfullscreen"
 					/>
 				</div>
-				<p className=" mb2 ml3  minion gray tr tl-t tl-m f7">
+				<p className=" mt2  minion gray tr tl-t tl-m f6">
 					In collaboration with e-Novia.
 				</p>
 			</section>
@@ -663,7 +663,7 @@ export function Pantone() {
 					design, a colourful, tendsetting social event – just like{' '}
 					<span className="b helvetica fw7">PANTONE</span>.
 				</Par>
-				<Img oneimg="/cat/pantone/pantone_2.png" />
+				<Img oneimg="/cat/pantone/pantone_2.png" className="pb3" />
 
 				<Img oneimg="/cat/pantone/tram.png" />
 			</Main>
@@ -674,42 +674,114 @@ export function Je() {
 	return (
 		<Main>
 			<ImgRid>
-				<img src="/cat/photo/je/je1.jpg" alt="je" />
-				<img src="/cat/photo/je/je2.jpg" alt="je" />
-				<img src="/cat/photo/je/je3.jpg" alt="je" />
-				<img src="/cat/photo/je/je4.jpg" alt="je" />
-				<img src="/cat/photo/je/je5.jpg" alt="je" />
-				<img src="/cat/photo/je/je6.jpg" alt="je" />
-				<img src="/cat/photo/je/je7.jpg" alt="je" />
-				<img src="/cat/photo/je/je8.jpg" alt="je" />
-				<img src="/cat/photo/je/je9.jpg" alt="je" />
-				<img src="/cat/photo/je/je10.jpg" alt="je" />
-				<img src="/cat/photo/je/je11.jpg" alt="je" />
-				<img src="/cat/photo/je/je12.jpg" alt="je" />
-				<img src="/cat/photo/je/je13.jpg" alt="je" />
-				<img src="/cat/photo/je/je14.jpg" alt="je" />
-				<img src="/cat/photo/je/je15.jpg" alt="je" />
-				<img src="/cat/photo/je/je16.jpg" alt="je" />
-				<img src="/cat/photo/je/je17.jpg" alt="je" />
-				<img src="/cat/photo/je/je18.jpg" alt="je" />
-				<img src="/cat/photo/je/je19.jpg" alt="je" />
-				<img src="/cat/photo/je/je20.jpg" alt="je" />
-				<img src="/cat/photo/je/je21.jpg" alt="je" />
-				<img src="/cat/photo/je/je22.jpg" alt="je" />
-				<img src="/cat/photo/je/je23.jpg" alt="je" />
-				<img src="/cat/photo/je/je24.jpg" alt="je" />
-				<img src="/cat/photo/je/je25.jpg" alt="je" />
-				<img src="/cat/photo/je/je26.jpg" alt="je" />
-				<img src="/cat/photo/je/je27.jpg" alt="je" />
-				<img src="/cat/photo/je/je28.jpg" alt="je" />
-				<img src="/cat/photo/je/je29.jpg" alt="je" />
-				<img src="/cat/photo/je/je30.jpg" alt="je" />
-				<img src="/cat/photo/je/je31.jpg" alt="je" />
-				<img src="/cat/photo/je/je32.jpg" alt="je" />
-				<img src="/cat/photo/je/je33.jpg" alt="je" />
-				<img src="/cat/photo/je/je34.jpg" alt="je" />
-				<img src="/cat/photo/je/je35.jpg" alt="je" />
-				<img src="/cat/photo/je/je36.jpg" alt="je" />
+				<div>
+					<img src="/cat/photo/je/je1.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je2.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je3.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je4.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je5.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je6.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je7.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je8.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je9.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je10.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je11.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je12.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je13.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je14.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je15.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je16.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je17.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je18.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je19.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je20.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je21.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je22.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je23.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je24.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je25.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je26.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je27.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je28.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je29.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je30.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je31.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je32.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je33.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je34.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je35.jpg" alt="je" />
+				</div>
+				<div>
+					<img src="/cat/photo/je/je36.jpg" alt="je" />
+				</div>
 			</ImgRid>
 		</Main>
 	);
@@ -749,8 +821,8 @@ export function Tokyo() {
 		<Main>
 			<Pic
 				img="/cat/tokyo/tokyo_1.png"
-				className="ph3 mw8 center"
-				imgClass="ba b--black"
+				className="mw8 center"
+				imgClass="ba b--mid-gray"
 			/>
 
 			<Par>
@@ -938,12 +1010,12 @@ export function Borromeo() {
 					original drawings, and it's not commercially available.
 				</P>
 			</Iltr>
-			<div className="ph3 mw9 center">
+			<div className="mw9 center">
 				<iframe
 					title="map"
 					src="https://www.google.com/maps/embed?pb=!4v1593527146194!6m8!1m7!1soRCLTqKyBGT0y6ozxy-H2Q!2m2!1d45.46314368044688!2d9.182473936322225!3f94.38994941469211!4f1.7059391248629936!5f0.7820865974627469"
 					width="100%"
-					height="650"
+					height="640"
 					frameborder="0"
 					style={{ border: '0' }}
 					allowfullscreen=""
@@ -968,7 +1040,7 @@ export function Arte() {
 export function Corte() {
 	return (
 		<Main>
-			<Img oneimg="/cat/corte/corte_1.png" />
+			<Img oneimg="/cat/corte/corte_1.png" className="pb4-m" />
 
 			<Iltr img="/cat/corte/corte_type.png">
 				<Head head="Specimens of the font involved for composing the logo and the rest of the Corporate Image." />
@@ -1116,7 +1188,7 @@ export function Rankin() {
 export function Fearless() {
 	return (
 		<Main>
-			<section className="mw8 center">
+			<section className="mw8 center pt3-m">
 				<Img oneimg="/cat/fearless/fearless_1.png" className="pb3" />
 
 				<Img oneimg="/cat/fearless/fearless_5.png" className="pb3" />

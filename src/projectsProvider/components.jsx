@@ -10,8 +10,9 @@ import {
 import './style.css';
 
 export const Main = ({ children }) => <main className="ma33">{children}</main>;
+
 export const Par = ({ className, children }) => (
-	<section className="flex justify-center flex-column-l flex-column-t flex-column-m mv3 mh3-m mh4-t mh5-l">
+	<section className="flex justify-center flex-column-l flex-column-t flex-column-m mv3">
 		<section
 			className={CN(
 				'w-50 w-100-m w-100-l w-100-t f27 f3-m minion lh-copy',
@@ -85,13 +86,13 @@ export const ImgRid = ({ children }) => (
 );
 
 export const Head = ({ head }) => (
-	<p className="f4 ph3 pt3 minion silver lh-copy">{head}</p>
+	<p className="f5 ph3 ph0-m pt3 minion silver lh-copy">{head}</p>
 );
 export const Tit = ({ tit }) => (
-	<p className="f2 fw5 pa3 helvetica silver lh-title">{tit}</p>
+	<p className="f2 fw5 pa3 ph0-m helvetica silver lh-title">{tit}</p>
 );
 export const P = ({ children }) => (
-	<p className="f3 ph3 pb3 minion silver lh-copy">{children}</p>
+	<p className="f3 ph3 ph0-m pb3 minion silver lh-copy">{children}</p>
 );
 export const Rf = ({ link, rf }) => (
 	<a href={link}>
@@ -100,7 +101,7 @@ export const Rf = ({ link, rf }) => (
 );
 export const Iltr = ({ img, children }) => (
 	<section className="flex justify-around items-start flex-column-m flex-column-t">
-		<div className="w-40 w-100-m w-100-t pa3">
+		<div className="w-40 w-100-m w-100-t pa3 pa0-m pa0-l pa0-t">
 			<img src={img} alt="alt" className="w-100" />
 		</div>
 		<div className="sticky w-40 w-100-t w-100-m">
